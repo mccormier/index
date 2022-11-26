@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Declaration du type de document en html -->
+<!DOCTYPE HTML PUBLIC "type_HTML" "adresse_DTD" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" /> 
+  <meta http-equiv="pragma" content="no-cache" /> 
+  <meta name="expires" content="never" /> 
+  <meta name="keywords" content="TEXT/HTML/CSS/JavaScript" /> 
+  <meta name="description" content="Service divers" /> 
+  <meta name="locale" content="fr_CA" />
+  <meta name="distribution" content="global" />
+  <meta name="type" content="website" /> 
+  <meta name="title" content="Marc Cormier" /> 
+  <meta name="author" content="Marc Cormier" />
+    <!-- CSS @media screen width ... -->
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="greeting(), run(), getLocation()">
+  <div id="mySidenav" class="sidenav"> </div>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+  <center><header><h1>Accueil</h1><p id="countDown"></p></header><hr></center>
+  <div id="input"><h2 id="greeting"></h2>
+    <label id="input">Courriel / Email</label><label id="input">Password</label><br/>
+    <input type="text" id="mail" value="e@mail.com">
+    <input type="password" id="passw" value="password">
+    <input type="button" id="validate" value="Connection / Inscription" onclick="validate()"> </div><hr>
+<div id="wrap">
+  <div id="sandBox"> <center><h3>Sandbox</h3></center>
+  <input type="button" name="Run" id="run" value="Run >>" onclick="run()" /> 
+<div id="scripts">
+  <b>HTML</b>
+  <div class="script">
+    <textarea id="html"><div id="demo" onclick="myFunction()"> <pre class="textnode">Hello world!</pre> </div> </textarea>
+  </div> 
+  <b>CSS</b>
+  <div class="script">
+    <textarea id="css">#demo{width:100px;height:50px;border:1px solid black;box-shadow:1px 3px 5px grey;} #demo:hover{background-color:red;} pre:hover{color:yellow;} 
+    </textarea>
+  </div> 
+  <b>JavaScript</b>
+  <div class="script">
+    <textarea id="js" readonly>function myFunction(){}
+    </textarea>
+  </div> 
+</div>
+  <p id="resolution">Result resolution: 720 x 342px</p>
+  <div class="result"> 
+    <p id="result"></p> 
+  </div> 
+</div>
+</div>
+<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+<center><div id="footer"></div></center>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
