@@ -173,12 +173,12 @@ h2:hover{cursor:pointer;}
     }
     #fbLink{
       position:relative;
-      left:10px;
+      left:20px;
       bottom:0px;
     }
     #mailtoLink{
       position:relative;
-      left:20px;
+      left:10px;
       bottom:0px;
     }
     /* SOCIAL LINK */

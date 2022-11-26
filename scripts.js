@@ -256,12 +256,14 @@ img.setAttribute('id', 'linkTree');
 img.setAttribute('alt', 'linkTr.ee');
 footer.appendChild(img);
 //
+/*
 img=document.createElement('img');
 img.src='/index/IMG/FBlogo.png';
 img.setAttribute('onclick', "location.href='https://www.facebook.com/cormiermac'");
 img.setAttribute('class', 'socialLink');
 img.setAttribute('id', 'fbLink');
 footer.appendChild(img);
+*/
 //
 img=document.createElement('img');
 img.src='/index/IMG/mailto.png';
