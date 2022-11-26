@@ -166,14 +166,19 @@ h2:hover{cursor:pointer;}
       height:35px;
       cursor:pointer;
     }
-    #fbLink{
+    #linkTree{
       position:relative;
       left:0px;
       bottom:0px;
     }
-    #mailtoLink{
+    #fbLink{
       position:relative;
       left:10px;
+      bottom:0px;
+    }
+    #mailtoLink{
+      position:relative;
+      left:20px;
       bottom:0px;
     }
     /* SOCIAL LINK */

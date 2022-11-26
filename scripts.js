@@ -247,7 +247,15 @@ img.setAttribute('class', 'teamViewerImgLink');
 img.setAttribute('onclick', "window.location.href='https://www.teamviewer.com/fr-ca/telecharger/windows/'");
 footer.appendChild(img);
 //
-	/* SOCIAL MEDIA LINKS */
+  /* SOCIAL MEDIA LINKS */
+img=document.createElement('img');
+img.src='/index/IMG/linkTree.png';
+img.setAttribute('onclick', "location.href='https://www.linktr.ee/mcormier'");
+img.setAttribute('class', 'socialLink');
+img.setAttribute('id', 'linkTree');
+img.setAttribute('alt', 'linkTr.ee');
+footer.appendChild(img);
+//
 img=document.createElement('img');
 img.src='/index/IMG/FBlogo.png';
 img.setAttribute('onclick', "location.href='https://www.facebook.com/cormiermac'");
