@@ -1,0 +1,79 @@
+	canvas {
+	display: block;
+	margin: auto;
+	border: 2px solid black;
+	
+}
+
+#playbutton {
+	width: 100px;
+	height: 50px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: orange;
+	cursor: pointer;
+}
+#left {
+	width: 50px;
+	height: 25px;
+	display: block;
+	margin: auto;
+	margin-top: auto;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: red;
+	cursor: pointer;
+}
+#right {
+	width: 50px;
+	height: 25px;
+	display: block;
+	margin: auto;
+	margin-top: auto;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: blue;
+	cursor: pointer;
+}
+#down {
+	width: 50px;
+	height: 25px;
+	display: block;
+	margin: auto;
+	margin-top: auto;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: green;
+	cursor: pointer;
+}
+#rotate {
+	width: 50px;
+	height: 25px;
+	display: block;
+	margin: auto;
+	margin-top: auto;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: yellow;
+	cursor: pointer;
+}
+#drop {
+	width: 50px;
+	height: 25px;
+	display: block;
+	margin: auto;
+	margin-top: auto;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: perpule;
+	cursor: pointer;
+}
