@@ -1,3 +1,5 @@
+title=document.getElementByTagName('title');
+title.innerHTML=/*ActivePage+" | "+*/"MC INFO ELECTRO";
 /* getting user coord */
 function getLocation() {
   if (navigator.geolocation) {

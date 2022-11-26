@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
-	<title>INFO ELECTRO</title>
+	<title></title>
 	<style type="text/css">
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {html {    
@@ -22,5 +22,13 @@
     background: url('site-en-maintenance.jpg') no-repeat center fixed; } }
 </style>
 </head>
-<body></body>
+<body>
+	<script type="text/javascript">
+		newlink = document.createElement('button');
+newlink.setAttribute('onclick', 'window.history.back()');
+newlink.style="font-size:2em;font-weight:bold;margin:30px;padding:6px;border:3px solid black;box-shadow:1px 2px 5px 3px darkgrey;";
+newlink.innerHTML='Go Back';
+document.body.appendChild(newlink);
+	</script>
+</body>
 </html>
