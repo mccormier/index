@@ -2,6 +2,7 @@
     h3{line-height:.8;text-decoration:underline;}
     h1{margin:30px;padding:10px;}
     table,tr,th,td{border:1px solid black;padding:6px;}
+    #subNav:hover{cursor:pointer;}
     .hide{display:none;}
     /* typewriter */
     .typewriter {
