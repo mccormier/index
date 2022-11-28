@@ -1,3 +1,9 @@
+/*
+// 
+var body=document.getElementByTagName("body");
+body.onload = function() {greeting(), getLocation()};
+//
+*/
 /* getting user coord */
 function getLocation() {
   if (navigator.geolocation) {
@@ -35,9 +41,20 @@ var x = setInterval(function() {
 }, 1000);
 /* CountDown */
 /* GREETING */
+function greeting() {
+  let uFname;
+  let person = prompt("Quel est votre prénom:", "Marc");
+  if (person == null || person == "") {
+    uFname = "fName='Undefined'";
+  } else {
+    uFname = person;
+  }
+//  showGreeting();
+// }
+//
 const time = new Date().getHours();
 var greeting;
-function greeting(){
+//function showGreeting(){
     if (time < 10) {
         greeting = "Good morning, &nbsp"; 
     } else if (time < 20) {
@@ -46,7 +63,7 @@ function greeting(){
         greeting = "Good evening, &nbsp"; 
     } 
     document.getElementById("greeting").innerHTML = greeting+
-    "{User.fName};."; 
+    "{User."+uFname+"};"; 
 }
 /* GREETING */
 /* MENU */
