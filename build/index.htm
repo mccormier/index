@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Tetris Game</title>
+		<title>Tetris Game | MC INFO</title>
+		<link rel='stylesheet' href='tetris.css' />
 		<link rel='stylesheet' href='style.css' />
 	</head>
 <!-- -->
-<body onload="greeting()">
+<body onload="greeting(), getLocation()">
+	<img src="site-en-maintenance.jpg" style="width:200px;height:100px;position:absolute;left:200px;top:20px;">
   <div id="mySidenav" class="sidenav"> </div>
-<span style="font-size:30px;cursor:pointer;" onclick="goIndex()">&#9776; Menu</span>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
   <center><header><h1>HTML5 Tetris</h1><p id="countDown"></p></header><hr></center>
   <div id="input"><h2 id="greeting"></h2>
     <label id="input">Courriel / Email</label><label id="input">Password</label><br/>
@@ -27,6 +29,7 @@
 	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 <center><div id="footer"></div></center>
 <!-- -->
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="tetris.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 	</body>
 </html>

@@ -1,7 +1,4 @@
-i{font-size:12px;} 
-			.wrap{margin-left:85px;margin-right:85px;padding:16px;}
-			.wrapped{width:500px;padding:0px;}
-            html{
+html{
   -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -21,9 +18,7 @@ h1{margin:0px;}
 #countDown:hover{background:lightgrey;color:black;border-radius:25px 25px 25px 25px;}
 #greeting{float:right;margin-top:0px;}
 #greeting:hover{cursor:default;}
-/*
 #validate{cursor:pointer;}
-*/
 label#input{margin-left: 78px;}
 input{margin-left:35px;}
 .done{text-decoration:line-through;}
@@ -157,21 +152,18 @@ position:absolute;left:500px;top:260px;
   background:orange;
   border:3px dashed black;
   box-shadow: 2px 3px 4px #515151;
-  width:250px;
-  height:95px;
+  width:1480px;
+  height:500px;
   text-align: center;
   line-height:1.1;
-  margin:25px;
-  position:absolute;
-  right:15px;
-  top:5px;
+  margin:5px;
 }
 h2:hover{cursor:pointer;}
     /* Navigator Properties */
     /* SOCIAL LINK */
     .socialLink{
-      width:20px;
-      height:20px;
+      width:35px;
+      height:35px;
       cursor:pointer;
     }
     #linkTree{
@@ -196,4 +188,3 @@ h2:hover{cursor:pointer;}
   bottom:0px;
   text-align:center;
 }
-#footer a{text-decoration:none;color:black;}

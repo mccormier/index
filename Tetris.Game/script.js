@@ -1,4 +1,7 @@
-	 COLS = 10, ROWS = 20;
+function goIndex(){
+	window.location.href="http://mccormier.github.io/index/";
+}
+COLS = 10, ROWS = 20;
 var board = [];
 var lose;
 var interval;
