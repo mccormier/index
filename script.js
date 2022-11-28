@@ -189,7 +189,7 @@ div.appendChild(newlink);
 //
 /* Tetris */
 newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/tetris.game');
+newlink.setAttribute('href', '/index/tetrisGame');
 newlink.innerHTML='Tetris';
 div.appendChild(newlink);
 //
