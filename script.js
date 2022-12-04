@@ -328,8 +328,8 @@ function validAdmins() {
 var i = prompt("Enter your Username:");
 let l = localStorage.getItem("admin");
      if (i === l) {
-      alert('Merci!');
-      window.location.href='/index/storageControl.htm';
+      alert('Merci!'); 
+      window.location.href='/index/webStorage.htm';
     } else {
     alert('Username inconnu');
     }
