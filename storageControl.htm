@@ -11,8 +11,12 @@
     #keyI, #getI{padding:3px;}
     #getI{margin-left:50px;}
   </style>
+      <link rel='stylesheet' href='style.css' />
 </head>
-<body><center>
+<body>
+    <div id="mySidenav" class="sidenav"> </div>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+<center>
 <h1>This script use Web Storage Method of items for this domain.</h1><h2>Create new account itm</h2>
 <label>Username</label>
 <label>Courriel</label>
@@ -90,5 +94,9 @@ function getItem() {
   }
 }
 </script>
-</center></body>
+</center>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+<center><div id="footer"></div></center>
+<script type="text/javascript" src="script.js"></script>
+</body>
 </html>

@@ -39,7 +39,6 @@ function saveData(position) {
   localStorage.setItem(visitor+"Longitude", "Longitude &nbsp "+position.coords.longitude);
 }
 /* getting user coord */
-var aPw='aPassw';
 /* CountDown */
 var countDownDate = new Date("Aug 03, 2025 12:21:13").getTime();
 var x = setInterval(function() {
@@ -327,9 +326,12 @@ footer.appendChild(img);
 function validateUser() {}
 function validAdmins() {
 var i = prompt("Enter your Username:");
-    if (i === aPw) {
+let l = localStorage.getItem("admin");
+     if (i === l) {
+      alert('Merci!');
       window.location.href='/index/storageControl.htm';
     } else {
     alert('Username inconnu');
     }
   }
+  localStorage.setItem('admin', 'gitAdmin');
