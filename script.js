@@ -328,7 +328,8 @@ function validateUser() {}
 function validAdmins() {
 var i = prompt("Enter your Username:");
     if (i === aPw) {
-        window.location.href='/D:/mccormier.github.io/index/storageControl.htm';
-/*      window.location.href='/index/storageControl.htm'; */
+      window.location.href='/index/storageControl.htm';
+    } else {
+      alert('Username inconnu');
     }
     }
