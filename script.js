@@ -331,7 +331,7 @@ var i = prompt("Enter your Username:");
 const l = localStorage.getItem("admin");
      if (i != null && i === l) {
       alert('Merci!'); 
-      window.location.href='/index/webStorage.htm';
+      window.location.href='/index/Utilisateurs/';
   } else if (i === null || i === "null") { alert("Entrer votre nom d'utilisateur.");
   } else {
     alert('Username inconnu');

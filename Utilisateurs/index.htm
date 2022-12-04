@@ -13,7 +13,8 @@
   </style>
       <link rel='stylesheet' href='style.css' />
 </head>
-<body onload="validatePassword()">
+<!-- <body onload="validatePassword()"> -->
+<body>
     <div id="mySidenav" class="sidenav"> </div>
 <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
 <center>
@@ -35,6 +36,7 @@
 <button onclick="keyIndex()">get the key on a given position</button><br/>
 <button onclick="deletelItems()"><b>clear localStorage</b></button><br/>
 <script>
+var kiki = localStorage.setItem("admin","aPassw");
   //
   function validatePassword(){
 var i = prompt("Enter your Password:");
