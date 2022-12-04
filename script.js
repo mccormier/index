@@ -322,18 +322,7 @@ footer.appendChild(img);
     '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
     'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
     '<a href="https://dev.w3.org/html5/spec-LC/">5</a>.<br/>'+
-    '<a id="obj" onclick="validAdmins()">&#xFFFC;</a>'+
+    '<a id="obj" href="/index/Utilisateurs/">&#xFFFC;</a>'+
     '<br/>&#169 '+year+"&nbsp par Marc Cormier.";
 /* FOOTER */
 function validateUser() {}
-function validAdmins() {
-var i = prompt("Enter your Username:");
-const l = localStorage.getItem("admin");
-     if (i != null && i === l) {
-      alert('Merci!'); 
-      window.location.href='/index/Utilisateurs/';
-  } else if (i === null || i === "null") { alert("Entrer votre nom d'utilisateur.");
-  } else {
-    alert('Username inconnu');
-    }
-  }
