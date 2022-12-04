@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+    body{margin:30px;padding:0px;}
+    button, input, p, label{font-size:21px;}
+    input{margin:10px;padding:5px;}
+    button{margin:10px;padding:5px;}
+    label{margin:110px;text-decoration:underline;}
+    #keyI, #getI{padding:3px;}
+    #getI{margin-left:50px;}
+  </style>
+</head>
+<body><center>
+<h1>This script use Web Storage Method of items for this domain.</h1><h2>Create new account itm</h2>
+<label>Username</label>
+<label>Courriel</label>
+<label>Password</label><br/>
+<input type="text" id="uName" value="username">
+<input type="text" id="uEmail" value="e@mail.com">
+<input type="password" id="uPass" value="password">
+<br/><button onclick="createItems()">Create</button>
+<hr>
+<p id="demo" style="font-size:27px;font-weight:bold;"></p>
+<button onclick="itemsLength()">Get number of items saved in localStorage</button>
+<input type="button" value="display items" onclick="displaylocal();" /><br/>
+<input type="text" id="keyI" value="Key" size="13">
+<input type="text" id="getI" value="0" size="5"><br/>
+<button onclick="getItem()">get key value</button>
+<button onclick="keyIndex()">get the key on a given position</button><br/>
+<button onclick="deletelItems()"><b>clear localStorage</b></button><br/>
+<script>
+function createItems() {
+    if (localStorage.account) {
+    localStorage.account = Number(localStorage.account)+1;
+  } else {
+    localStorage.account = 1;
+  }
+//
+  var account = localStorage.account;
+  var uName = document.getElementById('uName').value;
+  var uEmail = document.getElementById('uEmail').value;
+  var uPass = document.getElementById('uPass').value;
+//
+  localStorage.setItem("uName"+account, uName);
+  localStorage.setItem("uEmail"+account, uEmail);
+  localStorage.setItem("uPass"+account, uPass);
+  localStorage.setItem("uNumb", account);
+  localStorage.setItem("uTime", Date.now());
+  getLocation();
+  document.getElementById("demo").innerHTML = account;
+}
+
+function deletelItems() {
+  var txt;
+  if (confirm("Supprimé le localStorage ?")) {
+  localStorage.clear();
+  alert('Suppression du localStorage !');
+    txt = "Vous avez supprimé le localStorage.";
+  } else {
+    txt = "Vous avez annulé la suppression du localStorage.";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+function itemsLength() {
+  var w = localStorage.length;
+  document.getElementById("demo").innerHTML = w;
+}
+
+function keyIndex() {
+  var h = document.getElementById('keyI').value;
+  var y = localStorage.key(h);
+  document.getElementById("demo").innerHTML = y;
+}
+
+function getItem() {
+  var keyItem = document.getElementById("getI").value;
+  var getI = localStorage.getItem(keyItem);
+  document.getElementById("demo").innerHTML = getI;
+}
+
+  function displaylocal() {
+  var l, i;
+  document.getElementById("demo").innerHTML = "";
+  for (i = 0; i < localStorage.length; i++) {
+  x = localStorage.key(i);
+  document.getElementById("demo").innerHTML += x + "<br>";
+  }
+}
+</script>
+</center></body>
+</html>

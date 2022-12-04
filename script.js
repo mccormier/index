@@ -1,17 +1,33 @@
-/*
-// 
-var body=document.getElementByTagName("body");
-body.onload = function() {greeting(), getLocation()};
-//
-*/
+/* GREETING */
+function greeting() {
+  let uName = sessionStorage.getItem("userName");
+  let person = prompt("Quel est votre nom:", "Votre nom");
+  /* save visitor name in sessionStorage and print it to screen if exist */
+  if (person == null || person == "") {
+    uName = "fName='Undefined'";
+  } else {
+    uName = person;
+    sessionStorage.setItem('userName', uName);
+  }
+const time = new Date().getHours();
+var greeting;
+    if (time < 10) {
+        greeting = "Good morning, &nbsp"; 
+    } else if (time < 20) {
+        greeting = "Good day, &nbsp"; 
+    } else {
+        greeting = "Good evening, &nbsp"; 
+    } 
+    document.getElementById("greeting").innerHTML = greeting+
+    "{User."+uName+"};"; 
+}
+/* GREETING */
 /* getting user coord */
-function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.watchPosition(saveData);
   } else { 
     alert('Geolocation is not supported by this browser.');
   }
-}
 function saveData(position) {
       if (localStorage.visitor) {
     localStorage.visitor = Number(localStorage.visitor)+1;
@@ -23,6 +39,7 @@ function saveData(position) {
   localStorage.setItem(visitor+"Longitude", "Longitude &nbsp "+position.coords.longitude);
 }
 /* getting user coord */
+var aPw='aPassw';
 /* CountDown */
 var countDownDate = new Date("Aug 03, 2025 12:21:13").getTime();
 var x = setInterval(function() {
@@ -40,32 +57,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 /* CountDown */
-/* GREETING */
-function greeting() {
-  let uFname;
-  let person = prompt("Quel est votre prénom:", "Marc");
-  if (person == null || person == "") {
-    uFname = "fName='Undefined'";
-  } else {
-    uFname = person;
-  }
-//  showGreeting();
-// }
-//
-const time = new Date().getHours();
-var greeting;
-//function showGreeting(){
-    if (time < 10) {
-        greeting = "Good morning, &nbsp"; 
-    } else if (time < 20) {
-        greeting = "Good day, &nbsp"; 
-    } else {
-        greeting = "Good evening, &nbsp"; 
-    } 
-    document.getElementById("greeting").innerHTML = greeting+
-    "{User."+uFname+"};"; 
-}
-/* GREETING */
 /* MENU */
 div = document.getElementById('mySidenav');
 newlink = document.createElement('a');
@@ -331,5 +322,13 @@ footer.appendChild(img);
     '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
     'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
     '<a href="https://dev.w3.org/html5/spec-LC/">5</a>.'+
-    "<br/>&#169 "+year+"&nbsp par Marc Cormier.";
+    '<br/><a onclick="validAdmins()">&#169 </a>'+year+"&nbsp par Marc Cormier.";
 /* FOOTER */
+function validateUser() {}
+function validAdmins() {
+var i = prompt("Enter your Username:");
+    if (i === aPw) {
+        window.location.href='/D:/mccormier.github.io/index/storageControl.htm';
+/*      window.location.href='/index/storageControl.htm'; */
+    }
+    }
