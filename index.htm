@@ -10,16 +10,17 @@
 <!-- -->
 	<img src="\index\IMG\site-en-maintenance.jpg" style="width:200px;height:100px;position:absolute;left:200px;top:20px;">
   <div id="mySidenav" class="sidenav"> </div>
-  <div class="maintenance" onmouseover="showCoords(event)" ondblclick="alert('You Double click This Element')" onmouseout="clearCoor()">
+  <div class="maintenance" onmouseover="showCoords(event)" ondblclick="alert('You Double click This Element'), navigateur()" onmouseout="clearCoor()">
         <p id="cursor" onclick="alert('You clicked an HTML P Element with an id cursor')"></p>
     </div>
 <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
   <center><header><h1>Mc Cormier</h1><p id="countDown"></p></header><hr></center>
   <div id="input"><h2 id="greeting"></h2>
-    <label id="input">Courriel / Email</label><label id="input">Password</label><br/>
-    <input type="text" id="mail" value="e@mail.com">
-    <input type="password" id="passw" value="password">
-    <input type="button" id="validate" value="Connection / Inscription" onclick="validateUser()"> </div><hr>
+    <label id="input">Username</label><label id="input">Password</label><br/>
+    <!-- <input type="text" id="mail" value="e@mail.com"> -->
+    <input type="text" id="userName" value="Username">
+    <input type="password" id="passWord" value="Password">
+    <input type="button" id="validate" value="Connection / Inscription" onclick="validateUser(userName, passWord)"> </div><hr>
     <div class="wrap">
     	<p> <b>♻️ Recyclage, Achat & Dépannage Informatique.</b><br/><br/>
     		<b>ENTRETIEN & RÉPARATION D'ORDINATEUR</b><br/> 

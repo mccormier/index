@@ -321,7 +321,7 @@ footer.appendChild(img);
     '<a href="https://jquery.com/">jQuery</a>, '+
     '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
     'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
-    '<a href="https://dev.w3.org/html5/spec-LC/">5</a>.<br/>'+
+    '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
     '<a id="obj" href="/index/Utilisateurs/">&#xFFFC;</a>'+
     '<br/>&#169 '+year+"&nbsp par Marc Cormier.";
 /* FOOTER */
