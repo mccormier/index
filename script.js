@@ -84,116 +84,12 @@ newlink.setAttribute('href', '/index/MCBrady');
 newlink.innerHTML='IRC Channel';
 div.appendChild(newlink);
 //
-/*
-subNav=document.createElement('div');
-subNav.setAttribute('class', 'dropdown');
-div.appendChild(subNav);
-/* MEMBRE */
-/**/
-/*
+/* Bottom Menu Links */
+/* SandBox */
 newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/Membre');
-newlink.innerHTML='Membre(s)';
-subNav.appendChild(newlink);
-*/
-//
-/*
-subNavCont=document.createElement('div');
-subNavCont.setAttribute('class', 'dropdown-content');
-subNav.appendChild(subNavCont);
-/* MEMBRE - ADMIN */
-/**/
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/Membre/Admin');
-newlink.setAttribute('class', 'dropdown-content');
-newlink.innerHTML='Admin(s)';
-subNavCont.appendChild(newlink);
-//
-/* MEMBRE - USER */
-/**/
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/Membre/User');
-newlink.setAttribute('class', 'dropdown-content');
-newlink.innerHTML='Utilisateur(s)';
-subNavCont.appendChild(newlink);
-//
-/* MEMBRE - CLIENTS */
-/**/
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/Membre/Client');
-newlink.setAttribute('class', 'dropdown-content');
-newlink.innerHTML='Client(s)';
-subNavCont.appendChild(newlink);
-//
-/* MEMBRE - FORUM */
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/Membre/Forum');
-newlink.setAttribute('class', 'dropdown-content');
-newlink.innerHTML='Forum';
-subNavCont.appendChild(newlink);
-//
-subNav=document.createElement('div');
-subNav.setAttribute('class', 'dropdown');
-div.appendChild(subNav);
-/* SERVICE */
-/**/
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/Service');
-newlink.innerHTML='Service';
-subNav.appendChild(newlink);
-//
-subNavCont=document.createElement('div');
-subNavCont.setAttribute('class', 'dropdown-content');
-subNav.appendChild(subNavCont);
-/* SERVICE - Informatique */
-/**/
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/srv/info');
-newlink.setAttribute('class', 'dropdown-content');
-newlink.innerHTML='Informatique';
-subNavCont.appendChild(newlink);
-//
-/* SERVICE - Outils */
-/**/
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/srv/ref/tools');
-newlink.setAttribute('class', 'dropdown-content');
-newlink.innerHTML='Outils';
-subNavCont.appendChild(newlink);
-//
-/* SERVICE - Références */
-/**/
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/srv/ref');
-newlink.setAttribute('class', 'dropdown-content');
-newlink.innerHTML='Références';
-subNavCont.appendChild(newlink);
-//
-*/
-/* Movie List */
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/list/movies');
-newlink.innerHTML='Movies';
+newlink.setAttribute('href', '/index/sandBox');
+newlink.innerHTML='SandBox';
 div.appendChild(newlink);
-*/
-//
-/*
-/* Navigator Properties */
-/*
-newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/navigator.Properties');
-newlink.innerHTML='Nav.Properties';
-div.appendChild(newlink);
-*/
 //
 /* Tetris */
 newlink = document.createElement('a');

@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sandbox</title>
+		<style type="text/css">
+		#hd{font-family: "Comic Sans MS", cursive, sans-serif;
+		color:black;text-decoration:none;}
+		.script{width:40vw;height:18vh;background-color:white;border:1px solid grey;box-shadow:2px 3px 4px lightgrey;margin:5px;padding:3px;columns: 497px 2;}
+		#html,#css,#js{width:39vw;height:16vh;}
+		pre{margin:6px;}
+		#resolution{position:absolute;right:175px;top:70px;text-decoration:underline;}
+		.result{
+		width:520px;height:247px;background-color:white;border:1px solid grey;box-shadow:2px 3px 4px lightgrey;margin:0px;padding:3px;columns: 497px 2;
+			position:absolute;right:10px;top:122px;}
+		#result{margin:1px;width:468px;height:325px;}
+		#run{
+position:absolute;left:370px;top:50px;
+			padding:12px 13px;background-color:#00ff00;font-weight:bold;font-size:16px;}
+		#run:hover{background-color:yellow;}
+		#backBtn:hover{background-color:darkgrey;color:white;box-shadow:1px 2px 3px 5px lightgrey;}
+	</style>
+</head>
+<header>
+	<h1><a id="hd" href="#">Sandbox</a></h1>
+	<input type="button" name="Run" id="run" value="Run >>" onclick="run()" />
+</header>
+	<b>HTML</b><div class="script"><textarea id="html"><div id="demo" onclick="myFunction()">
+<pre>Hello world!</pre>
+</div>
+	</textarea></div>
+	<b>CSS</b><div class="script"><textarea id="css">#demo{width:100px;height:50px;border:1px solid black;box-shadow:1px 3px 5px grey;}
+#demo:hover{background-color:red;}
+pre:hover{color:yellow;}
+	</textarea></div>
+	<b>JavaScript</b><div class="script"><textarea id="js" readonly>function myFunction(){}</textarea></div>
+	<p id="resolution">Result resolution: 720 x 342px</p><div class="result">
+		<p id="result"></p>
+	</div>
+	<input type="button" value="Go Back" id="backBtn" onclick="window.history.back()" style="font-size:21px;font-weight:bold;margin:25px;padding:3px;">
+	<footer><center>
+		<p id="footer"></p>
+	</center></footer>
+<script type="text/javascript">
+	var year=new Date().getFullYear();
+	var a='<!DOCTYPE html> <html> <head> <meta charset="utf-8" /><style type="text/css">';
+	var b='</style> </head> <body>';
+	var c='<script type="text/javascript">';
+var d='</ script></body></html>';
+	function run(){
+			var html=document.getElementById('html').value;
+			var css=document.getElementById('css').value;
+			var js=document.getElementById('js').value;
+			var code=a+css+b+html+c+js+d;
+		var e=document.getElementById('result').innerHTML=code;
+	}
+</script>
+</body>
+</html>
