@@ -13,7 +13,7 @@
   </style>
       <link rel='stylesheet' href='style.css' />
 </head>
-<body>
+<body onload="validatePassword()">
     <div id="mySidenav" class="sidenav"> </div>
 <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
 <center>
@@ -35,6 +35,20 @@
 <button onclick="keyIndex()">get the key on a given position</button><br/>
 <button onclick="deletelItems()"><b>clear localStorage</b></button><br/>
 <script>
+  //
+  function validatePassword(){
+var i = prompt("Enter your Password:");
+const l = localStorage.getItem("admin");
+     if (i != null && i === l) {
+      alert('Merci!'); 
+      window.location.href='/index/webStorage.htm';
+  } else if (i === null || i === "null") { 
+      window.location.href='/index/';
+  } else {
+      window.location.href='/index/';
+    }
+  }
+//
 function createItems() {
     if (localStorage.account) {
     localStorage.account = Number(localStorage.account)+1;

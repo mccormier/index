@@ -1,4 +1,5 @@
 /*
+//  const visitorName = sessionStorage.getItem("userName");
 function greet() {
 if (sessionStorage.getItem("userName") != null) || (sessionStorage.getItem("userName") != "null") {
     document.getElementById("greeting").innerHTML = greeting+"{User."+uName+"};";
@@ -320,17 +321,19 @@ footer.appendChild(img);
     '<a href="https://jquery.com/">jQuery</a>, '+
     '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
     'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
-    '<a href="https://dev.w3.org/html5/spec-LC/">5</a>.'+
-    '<br/><a onclick="validAdmins()">&#169 </a>'+year+"&nbsp par Marc Cormier.";
+    '<a href="https://dev.w3.org/html5/spec-LC/">5</a>.<br/>'+
+    '<a id="obj" onclick="validAdmins()">&#xFFFC;</a>'+
+    '<br/>&#169 '+year+"&nbsp par Marc Cormier.";
 /* FOOTER */
 function validateUser() {}
 function validAdmins() {
 var i = prompt("Enter your Username:");
-let l = localStorage.getItem("admin");
-     if (i === l) {
+const l = localStorage.getItem("admin");
+     if (i != null && i === l) {
       alert('Merci!'); 
       window.location.href='/index/webStorage.htm';
-    } else {
+  } else if (i === null || i === "null") { alert("Entrer votre nom d'utilisateur.");
+  } else {
     alert('Username inconnu');
     }
   }
