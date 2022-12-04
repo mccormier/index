@@ -334,4 +334,3 @@ let l = localStorage.getItem("admin");
     alert('Username inconnu');
     }
   }
-  localStorage.setItem('admin', 'gitAdmin');
