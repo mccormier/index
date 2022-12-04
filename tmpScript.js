@@ -1,26 +1,27 @@
-/*
-function greet() {
-if (sessionStorage.getItem("userName") != null) || (sessionStorage.getItem("userName") != "null") {
-    document.getElementById("greeting").innerHTML = greeting+"{User."+uName+"};";
-} else { greeting(); } }
-/*
+//  const visitorName = sessionStorage.getItem("userName");
 /* GREETING */
 function greeting() {
-  let uName = sessionStorage.getItem("userName");
+//  if (visitorName === null) {
   let person = prompt("Quel est votre nom:", "Votre nom");
-  if (person == null || person == "") {
+  /* save visitor name in sessionStorage and print it to screen if exist */
+  else if (person == null || person == "") {
     uName = "fName='Undefined'";
   } else {
     uName = person;
-    sessionStorage.setItem('userName',uName);
+//    sessionStorage.setItem('userName', uName);
   }
 const time = new Date().getHours();
 var greeting;
-    if (time < 10) {greeting = "Good morning, &nbsp"; } 
-    else if (time < 20) {greeting = "Good day, &nbsp"; }
-    else {greeting = "Good evening, &nbsp"; }
-    document.getElementById("greeting").innerHTML = greeting+"{User."+uName+"};";
+    if (time < 10) {
+        greeting = "Good morning, &nbsp"; 
+    } else if (time < 20) {
+        greeting = "Good day, &nbsp"; 
+    } else {
+        greeting = "Good evening, &nbsp"; 
+    } 
+    document.getElementById('greeting').innerHTML=greeting+"{User."+uName+"}";
 }
+//  }
 /* GREETING */
 /* getting user coord */
   if (navigator.geolocation) {
