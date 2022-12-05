@@ -224,3 +224,18 @@ function validateUser() {
   alert('Maintenance en cours..');
 //  window.location.href='/index/Login/'; 
 }
+//
+/* Copy/Paste Detector */
+document.body.addEventListener("keydown", function (ev) {
+    ev = ev || window.event;  
+    var key = ev.which || ev.keyCode; 
+    var ctrl = ev.ctrlKey ? ev.ctrlKey : ((key === 17)
+        ? true : false);
+    if (key == 86 && ctrl) {
+        alert("Ctrl+V is pressed.");
+    }
+    else if (key == 67 && ctrl) {
+        alert("Ctrl+C is pressed.");
+    }
+}, false);
+//
