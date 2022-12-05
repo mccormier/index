@@ -9,6 +9,15 @@ if (sessionStorage.getItem("userName") != null) || (sessionStorage.getItem("user
     document.getElementById("greeting").innerHTML = greeting+"{User."+uName+"};";
 } else { greeting(); } }
 /*
+//
+/* Get json.ip*/
+/*
+<script type="text/javascript">
+function getIP(json) {alert("Your public IPV4 address is: "+json.ip); }
+</script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+/*
+//
 /* GREETING */
 function greeting() {
   let uName = sessionStorage.getItem("userName");
@@ -25,7 +34,7 @@ var greeting;
     if (time < 10) {  greeting = "Good morning, &nbsp"; } 
     else if (time < 20) { greeting = "Good day, &nbsp"; }
     else {greeting = "Good evening, &nbsp"; }
-    document.getElementById("greeting").innerHTML = greeting+"{User.fName};";
+    document.getElementById("greeting").innerHTML = greeting+"{User.fName}";
 /* GREETING */
 /* getting user coord */
   if (navigator.geolocation) {
