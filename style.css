@@ -174,19 +174,9 @@ h2:hover{cursor:pointer;}
       height:20px;
       cursor:pointer;
     }
-    #linkTree{
-      position:relative;
-      left:0px;
-      bottom:0px;
-    }
-    #fbLink{
-      position:relative;
-      left:20px;
-      bottom:0px;
-    }
     #mailtoLink{
       position:relative;
-      left:10px;
+      left:0px;
       bottom:0px;
     }
     /* SOCIAL LINK */
@@ -197,4 +187,4 @@ h2:hover{cursor:pointer;}
   text-align:center;
 }
 #footer a{text-decoration:none;color:black;}
-#obj:hover{cursor:pointer;}
+#obj:hover{cursor:pointer;color:white;}

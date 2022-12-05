@@ -181,44 +181,30 @@ img.setAttribute('class', 'teamViewerImgLink');
 img.setAttribute('onclick', "window.location.href='https://www.teamviewer.com/fr-ca/telecharger/windows/'");
 footer.appendChild(img);
 //
-  /* SOCIAL MEDIA LINKS */
-img=document.createElement('img');
-img.src='/index/IMG/linkTree.png';
-img.setAttribute('onclick', "location.href='https://www.linktr.ee/mcormier'");
-img.setAttribute('class', 'socialLink');
-img.setAttribute('id', 'linkTree');
-img.setAttribute('alt', 'linkTr.ee');
-footer.appendChild(img);
-//
-/*
-img=document.createElement('img');
-img.src='/index/IMG/FBlogo.png';
-img.setAttribute('onclick', "location.href='https://www.facebook.com/cormiermac'");
-img.setAttribute('class', 'socialLink');
-img.setAttribute('id', 'fbLink');
-footer.appendChild(img);
-*/
-//
+/* MailTo */
 img=document.createElement('img');
 img.src='/index/IMG/mailto.png';
 img.setAttribute('onclick', "location.href='mailto:marccormierpro@gmail.com'");
 img.setAttribute('class', 'socialLink');
 img.setAttribute('id', 'mailtoLink');
 footer.appendChild(img);
-/* SOCIAL MEDIA LINKS */
     //
     rCopy=document.createElement('p');
     rCopy.setAttribute('style', 'font-size:9px;');
     footer.appendChild(rCopy);
     rCopy.innerHTML="document.lastModified; "+lastModif+"<br/>"+
-    '<br/>Créer avec <a href="https://www.javascript.com/">JavaScript</a>, '+
+    '<br/>Créer avec<br/>'+
+    '<a href="https://www.javascript.com/">JavaScript</a>, '+
     '<a href="https://www.w3.org/TR/WD-DOM/introduction.html">DOM</a>, '+
     '<a href="https://www.json.org/json-en.html">JSON</a>, '+
     '<a href="https://jquery.com/">jQuery</a>, '+
     '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
     'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
     '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
-    '<a id="obj" href="/index/Utilisateurs/">&#xFFFC;</a>'+
-    '<br/>&#169 '+year+"&nbsp par Marc Cormier.";
-/* FOOTER */
-function validateUser() {}
+    '<a id="obj" href="#">&#xFFFC; </a>'+
+    '<br/>&#169 '+year+'&nbsp par Marc Cormier.';
+    /* FOOTER */
+function validateUser() { 
+  alert('Maintenance en cours..');
+//  window.location.href='/index/Login/'; 
+}
