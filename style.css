@@ -16,7 +16,7 @@ body {
 margin:10px;
 padding:7px;
 }
-#logo{width:100px;height:100px;position:absolute;left:205px;top:15px;}
+#logo{width:75px;height:75px;position:absolute;left:205px;top:15px;}
 h1{margin:0px;}
 #countDown{width:333px;height:auto;margin:6px;padding:4px;background:darkgrey;box-shadow:2px 3px 4px 6px;color:white;font-size:2em;font-weight:bold;}
 #countDown:hover{background:lightgrey;color:black;border-radius:25px 25px 25px 25px;}
