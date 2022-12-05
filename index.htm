@@ -67,6 +67,10 @@
     </div>
 	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 <center><div id="footer"></div></center>
+<script type="text/javascript">
+function getIP(json) {alert("Your public IPV4 address is: "+json.ip); }
+</script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
