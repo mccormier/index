@@ -1,3 +1,7 @@
+var sidenav=document.createElement('div');
+sidenav.setAttribute('id', 'mySidenav');
+sidenav.setAttribute('class', 'sidenav');
+document.body.appendChild(sidenav);
 /*
 //  const visitorName = sessionStorage.getItem("userName");
 function greet() {
@@ -15,13 +19,13 @@ function greeting() {
     uName = person;
     sessionStorage.setItem('userName',uName);
   }
+}
 const time = new Date().getHours();
 var greeting;
-    if (time < 10) {greeting = "Good morning, &nbsp"; } 
-    else if (time < 20) {greeting = "Good day, &nbsp"; }
+    if (time < 10) {  greeting = "Good morning, &nbsp"; } 
+    else if (time < 20) { greeting = "Good day, &nbsp"; }
     else {greeting = "Good evening, &nbsp"; }
-    document.getElementById("greeting").innerHTML = greeting+"{User."+uName+"};";
-}
+    document.getElementById("greeting").innerHTML = greeting+"{User.fName};";
 /* GREETING */
 /* getting user coord */
   if (navigator.geolocation) {
@@ -58,51 +62,63 @@ var x = setInterval(function() {
 }, 1000);
 /* CountDown */
 /* MENU */
-div = document.getElementById('mySidenav');
+sidenav = document.getElementById('mySidenav');
 newlink = document.createElement('a');
 newlink.setAttribute('class', 'closebtn');
 newlink.setAttribute('href', 'javascript:void(0)');
 newlink.setAttribute('onclick', 'closeNav()');
 newlink.innerHTML='&times;';
-div.appendChild(newlink);
+sidenav.appendChild(newlink);
 //
 /* INDEX */
 newlink = document.createElement('a');
 newlink.setAttribute('href', '/index/');
 newlink.innerHTML='Accueil';
-div.appendChild(newlink);
+sidenav.appendChild(newlink);
 //
 /* ABOUT */
 newlink = document.createElement('a');
 newlink.setAttribute('href', '/index/About');
 newlink.innerHTML='À Propos';
-div.appendChild(newlink);
+sidenav.appendChild(newlink);
+//
+/* References */
+newlink = document.createElement('a');
+newlink.setAttribute('href', '/index/References');
+newlink.innerHTML='Références';
+sidenav.appendChild(newlink);
+//
+/* Service */
+newlink = document.createElement('a');
+newlink.setAttribute('href', '#');
+newlink.innerHTML='Service';
+sidenav.appendChild(newlink);
 //
 /* IRC CHANNEL */
 newlink = document.createElement('a');
 newlink.setAttribute('href', '/index/MCBrady');
 newlink.innerHTML='IRC Channel';
-div.appendChild(newlink);
+sidenav.appendChild(newlink);
 //
 /* Bottom Menu Links */
 /* SandBox */
 newlink = document.createElement('a');
 newlink.setAttribute('href', '/index/sandBox');
 newlink.innerHTML='SandBox';
-div.appendChild(newlink);
+sidenav.appendChild(newlink);
 //
 /* Tetris */
 newlink = document.createElement('a');
 newlink.setAttribute('href', '/index/tetrisGame');
 newlink.innerHTML='Tetris';
-div.appendChild(newlink);
+sidenav.appendChild(newlink);
 //
 /* GO BACK */
 newlink = document.createElement('a');
 newlink.setAttribute('onclick', 'window.history.back()');
 newlink.setAttribute('id', 'backBtn');
 newlink.innerHTML='Go Back';
-div.appendChild(newlink);
+sidenav.appendChild(newlink);
 //
 function openNav() {document.getElementById("mySidenav").style.width = "250px";}
 function closeNav() {document.getElementById("mySidenav").style.width = "0";}
@@ -192,8 +208,8 @@ footer.appendChild(img);
     rCopy=document.createElement('p');
     rCopy.setAttribute('style', 'font-size:9px;');
     footer.appendChild(rCopy);
-    rCopy.innerHTML="document.lastModified; "+lastModif+"<br/>"+
-    '<br/>Créer avec<br/>'+
+    rCopy.innerHTML= lastModif+
+    '<br/><br/>Créer avec<br/>'+
     '<a href="https://www.javascript.com/">JavaScript</a>, '+
     '<a href="https://www.w3.org/TR/WD-DOM/introduction.html">DOM</a>, '+
     '<a href="https://www.json.org/json-en.html">JSON</a>, '+
