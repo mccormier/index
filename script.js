@@ -208,8 +208,7 @@ footer.appendChild(img);
     rCopy=document.createElement('p');
     rCopy.setAttribute('style', 'font-size:9px;');
     footer.appendChild(rCopy);
-    rCopy.innerHTML= lastModif+
-    '<br/><br/>Créer avec<br/>'+
+    rCopy.innerHTML='Créer avec<br/>'+
     '<a href="https://www.javascript.com/">JavaScript</a>, '+
     '<a href="https://www.w3.org/TR/WD-DOM/introduction.html">DOM</a>, '+
     '<a href="https://www.json.org/json-en.html">JSON</a>, '+
@@ -218,7 +217,8 @@ footer.appendChild(img);
     'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
     '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
     '<a id="obj" href="#">&#xFFFC; </a>'+
-    '<br/>&#169 '+year+'&nbsp par Marc Cormier.';
+    '<br/>&#169 '+year+'&nbsp par Marc Cormier.'+
+    '<br/><br/>'+lastModif;
     /* FOOTER */
 function validateUser() { 
   alert('Maintenance en cours..');
