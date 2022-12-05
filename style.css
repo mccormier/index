@@ -16,6 +16,7 @@ body {
 margin:10px;
 padding:7px;
 }
+#logo{width:100px;height:100px;position:absolute;left:205px;top:15px;}
 h1{margin:0px;}
 #countDown{width:333px;height:auto;margin:6px;padding:4px;background:darkgrey;box-shadow:2px 3px 4px 6px;color:white;font-size:2em;font-weight:bold;}
 #countDown:hover{background:lightgrey;color:black;border-radius:25px 25px 25px 25px;}
@@ -159,8 +160,8 @@ position:absolute;left:500px;top:260px;
   background:orange;
   border:3px dashed black;
   box-shadow: 2px 3px 4px #515151;
-  width:250px;
-  height:95px;
+  width:115px;
+  height:69px;
   text-align: center;
   line-height:1.1;
   margin:25px;
