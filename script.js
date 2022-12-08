@@ -1,3 +1,12 @@
+var bgColor=prompt('background color?', 'white');
+if (bgColor != null && bgColor === 'black') {
+document.body.style.backgroundColor=bgColor;
+document.getElementById("main").style.color = "white";
+}
+else {  
+document.body.style.backgroundColor=bgColor;
+}
+//
 var sidenav=document.createElement('div');
 sidenav.setAttribute('id', 'mySidenav');
 sidenav.setAttribute('class', 'sidenav');

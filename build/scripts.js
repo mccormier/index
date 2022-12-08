@@ -1,9 +1,7 @@
-/*
-title=document.getElementByTagName('title');
-title.innerHTML=
-/*ActivePage+" | "+*/
-//"MC INFO ELECTRO";
-/**/
+var bgColor=prompt('background color?', 'white');
+if (bgColor != null) {  
+document.body.style.backgroundColor=bgColor;
+}
 /* getting user coord */
 function getLocation() {
   if (navigator.geolocation) {

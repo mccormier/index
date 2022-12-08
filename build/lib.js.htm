@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+doc=document;
+function $(id){return doc.getElementById(id)}
+/*
+ zulu=doc.body.innerHTML;
+ doc.write(zulu);
+ doc.html.appendChild(head, body);
+*/
+/*
+ docType=doc.createElement('!DOCTYPE');
+ html=doc.createElement('html');
+ meta=doc.getElementByTagName('meta');
+ STYLE=doc.getElementByTagName('link');
+*/
+//
+/*
+ doc.title='eys';
+ doc.head.appendChild(title);
+*/
+//
+function hScript(){
+hScript = doc.createElement("script");
+hScript.type = "text/javascript";
+hScript.src = "http://somedomain.com/somescript";
+hScript.innerHTML='';
+$("head").append(hScript);
+}
+function script(){
+script = doc.createElement("script");
+script.type = "text/javascript";
+script.src = "http://somedomain.com/somescript";
+script.innerHTML='';
+$("body").append(script);
+}
+//
+/*
+ main=doc.createElement('main');
+ div=doc.createElement('div');
+ header=doc.createElement('header');
+ //
+ nav=doc.createElement('nav');
+ link=doc.createElement('a');
+// <object data="img.video.jpg.html.mp4" type="image/jpg" width="400" height="300"></object>
+//
+ object=doc.createElement('object');
+ section=doc.createElement('section');
+ article=doc.createElement('article');
+ aside=doc.createElement('aside');
+ details=doc.createElement('details');
+ summary=doc.createElement('summary');
+ address=doc.createElement('address');
+ mark=doc.createElement('mark');
+ para=doc.createElement('p');
+ pre=doc.createElement('pre');
+ form=doc.createElement('form');
+ input=doc.createElement('input');
+ button=doc.createElement('button');
+ figure=doc.createElement('figure');
+ figcaption=doc.createElement('figcaption');
+ img=doc.createElement('img');
+ table=doc.createElement('table');
+ tr=doc.createElement('tr');
+ th=doc.createElement('th');
+ td=doc.createElement('td');
+ ul=doc.createElement('ul');
+ ol=doc.createElement('ol');
+ li=doc.createElement('li');
+ footer=doc.createElement('footer');
+//
+pre;
+pre.setAttribute('id', 'txtnode');
+pre.innerHTML='eYs';
+doc.body.appendChild(pre);
+*/
+//
+let xp=document.createElement('p');
+xp.innerHTML='eys eys';
+document.body.appendChild(xp);
+</script>
+</body>
+</html>
