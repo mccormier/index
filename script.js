@@ -114,7 +114,7 @@ sidenav.appendChild(newlink);
 //
 /* IRC CHANNEL */
 newlink = document.createElement('a');
-newlink.setAttribute('href', '/index/MCBrady');
+newlink.setAttribute('href', '/index/MCBrady.htm');
 newlink.innerHTML='IRC Channel';
 sidenav.appendChild(newlink);
 //

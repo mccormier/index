@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</title>
+    <link rel = "stylesheet" type = "text/css" href = "styles/style.css" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png"/>
+    <script src="scripts/local-storage.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZC1DBETDC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9ZC1DBETDC');
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="menu-bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <button class="menu-icon" type="button" onclick="myNav()"></button>
+        <h1>Local Storage</h1>
+        <h2>API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</h2>
+    </header>
+
+    <nav id="ham-menu">
+        <div id="nav-menu" class="hide"></div>
+    </nav>
+
+    <main>
+
+        <section>
+            <h4>Zoom</h4>
+            <a href="https://byui.zoom.us/recording/play/rhS0opfvjUwHc6aWBSgGlSvDlyzPtCWifGSg6Ak_WQltT5mWCedQBAkzXELdGuje?continueMode=true">Zoom recording - starts at 00:25</a>              
+        </section>
+
+        <section>
+            <h2>Link List</h2>
+            <ul>
+                <li><a href="https://www.kirupa.com/html5/storing_and_retrieving_an_array_from_local_storage.htm" target="_blank">Storing and Retrieving
+                an Array from Local Storage</a></li>
+                <li><a href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank">w3schools - HTML5 Web Storage</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank">Web Storage API</a></li>
+                <li><a href="https://css-tricks.com/localstorage-examples/" target="_blank">Examples of Sites where localStorage should or is being used</a></li>
+                <li><a href="https://www.taniarascia.com/how-to-use-local-storage-with-javascript/" target="_blank">How to Use Local Storage with JavaScript</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Jc_Yycz7MEc" target="_blank">Simple HTML5 localStorage Example</a></li>
+                <li><a href="https://www.w3schools.com/jsref/prop_win_sessionstorage.asp" target="_blank">Window sessionStorage Property</a></li>
+                <li><a href="https://www.youtube.com/watch?v=AUOzvFzdIk4" target="_blank">Storing objects with Local Storage in JavaScript</a></li>
+                <li><a href="https://www.youtube.com/watch?v=RbfG7NLKDgQ" target="_blank">How To Store A JavaScript Array in Local Storage</a></li>
+                <li><a href="https://www.telerik.com/blogs/save-for-later-feature-in-forms-using-localstorage" target="_blank">Save for Later Feature in Forms Using LocalStorage</a></li>
+                <li><a href="https://www.competa.com/blog/storing-javascript-object-localstorage/" target="_blank">Storing a JavaScript object in localStorage</a></li>
+                <li><a  href="https://javascript.info/localstorage" target="_blank">LocalStorage, sessionStorage</a></li>
+                <li><a href="https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/" target="_blank">How to Connect an API with JavaScript</a></li>
+                <li><a href="https://www.youtube.com/watch?v=k8yJCeuP6I8" target="_blank">How to use Local Storage in JavaScript</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Videos</h2>
+            <iframe src="https://www.youtube.com/embed/k8yJCeuP6I8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        
+        <section>
+            <h2>API</h2>
+            <p>An API allows you to pull data from another website to use in your own site or in an application. The following data is pulled from the NYT Books List API.
+                It lists the first ten categories of books in the API.
+            </p>
+
+<!-- Pre Code-->
+<pre><code>let books = new XMLHttpRequest();
+books.open('GET', bestBooks);
+books.send();
+books.onload =  function () {
+    let booksInfo = 
+    JSON.parse(books.responseText);
+    var category = "";
+    for (var i = 0; 
+        i &lt; booksInfo.results.length; 
+        i++) {
+        category += 
+            booksInfo.results[i].display_name 
+            + "&lt;br&gt;";
+    }
+    document.getElementById("bookCategories")
+        .innerHTML = category;
+}</code></pre>
+            <h4>Star Wars Categories from API</h4>
+            <div id="starWarsInfo"></div>
+        </section>
+
+        <section>
+            <h2>What is Web Storage?</h2>
+            <p>Web Storage is where you store data on the a user's browser instead of on the server. The two types of storage are local and session storage. Local storage 
+                saves the data in the user's browser with no expiration date. Session storage saves the data until the current session is ended Data is stored using 
+                <code>key:value</code> pairs. Data can only be saved as strings. Examples of where you might use it are to to remember a username, a term last searched, 
+                remember previous checkbox configurations, load HTML content onto page so it is faster to load if reloaded, 
+            </p>
+
+            <section>
+                <h3>Local Storage</h3>
+                <p>There are several methods you can use for local storage: setItem, getItem, key, length, removeItem, and clear.</p>
+                
+                <div>
+                    <code>localStorage.setItem("key", "value");</code><br>
+                    <button type="button" onclick="setItem()">Click to setItem</button>
+                    <div id="setItem"></div>
+                </div>
+                <div>
+                    <code>localStorage.getItem("key", "value");</code><br>
+                    <button type="button" onclick="getItem()">Click to getItem</button>
+                    <div id="getItem"></div>
+                </div>
+                <div>
+                    <code>localStorage.key(index);</code><br>
+                    <button type="button" onclick="key()">Click to Get Key</button>
+                    <div id="key"></div>
+                </div>
+                <div>
+                    <code>localStorage.length;</code><br>
+                    <button type="button" onclick="length()">Click to Get Length</button>
+                    <div id="length"></div>
+                </div>
+                <div>
+                    <code>localStorage.removeItem("key");</code><br>
+                    <button type="button" onclick="removeItem()">Click to Get Remove Item</button>
+                    <div id="removeItem"></div>
+                </div>
+                <div>
+                    <code>localStorage.clear();</code><br>
+                    <button type="button" onclick="clearStorage()">Click to Clear LocalStorage</button>
+                    <div id="clearStorage"></div>
+                </div>
+            </section>
+    
+            <section>
+                <h3>Session Storage</h3>
+                <p>Both session and local storage use the same methods.</p>
+                <ul>
+                    <li><code>sessionStorage.setItem("key", "value");</code></li>
+                    <li><code>sessionStorage.getItem("key", "value");</code></li>
+                    <li><code>sessionStorage.key(index);</code></li>
+                    <li><code>sessionStorage.length;</code></li>
+                    <li><code>sessionStorage.removeItem("key");</code></li>
+                    <li><code>sessionStorage.clear();</code></li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <h2>Storing and Retrieving Different Types of Data</h2>
+            <section>
+                <h3>Simple Data</h3>
+                <p>Single inputs can be added to or changed and saved into localStorage using <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code>.</p>
+                <input type="text" value="Hello" id="textfield" />
+                <button type="button" onclick="save()">Save</button><button type="button" onclick="removeData()">Remove</button>
+                <p>Stored data is retrieved or removed: <span id="simpleData"></span>
+            </section>
+
+            <section>
+                <h3>Arrays</h3>
+                <p></p>
+                <button type="button" onclick="storeArray()">Store Array</button>
+                <p>Store array in local storage: <br><span id="userArray"></span></p>
+                <p>Retrieve index 0 from array: <br><span id="retrieveIndex"></span></p>
+                <h4>Example Code</h4>
+<!-- Pre Code-->
+<pre><code>var user = ["Tyler", "Braden", "Mary"];
+var stringifyUsers = JSON.stringify(user);
+sessionStorage.setItem("users", stringifyUsers);
+document.getElementById("userArray").innerHTML = 
+    sessionStorage.getItem("users");
+var retrieveUser = 
+    JSON.parse(sessionStorage["users"])
+document.getElementById("retrieveIndex").innerHTML 
+    = retrieveUser[0];</code></pre>
+            </section>
+
+            <section>
+                <h3>Associative Arrays</h3>
+                <p>These types of arrays are written like an object but referenced similar to an array, but with the key name instead of index number.</p>
+                <button type="button" onclick="assocArray()">See Array</button>
+                <div id="assocArray"></div>
+            </section>
+
+            <section>
+                <h3>Objects</h3>
+                <p>Objects must be turned into strings in order to be viewed in localStorage in the inspect dashboard.</p>
+                <button type="button" onclick="storeObject()">Store Object</button>
+                <div id="storeObj"></div>
+                <h4>Example Code</h4>
+<!-- Pre Code-->
+<pre><code>var person = {
+    firstName : "Mary", 
+    lastName : "Allen", 
+    age : "20"};
+
+var personString = JSON.stringify(firstPerson);
+sessionStorage.setItem("newPerson", personString);
+document.getElementById("storeObj").innerHTML = 
+    sessionStorage.getItem("newPerson");</code></pre>
+            </section>
+    
+        </section>
+        
+    </main>
+    
+    <footer></footer>
+
+    <script src="scripts/json-scripts.js"></script>
+    <script src="scripts/styles.js"></script>
+    <script src="scripts/toggleham.js"></script>
+    <script src="scripts/api.js"></script>  
+
+</body>
+</html>
