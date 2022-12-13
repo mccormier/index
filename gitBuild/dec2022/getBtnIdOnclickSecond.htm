@@ -1,0 +1,15 @@
+<!DOCTYPE HTML> 
+<html> 
+<body style = "text-align:center;">           
+<button id="1" onClick="myFun(this.id)"> Button1 </button>
+<button id="2" onClick="myFun(this.id)"> Button2 </button>
+<button id="3" onClick="myFun(this.id)"> Button3 </button>
+<p id="output" style="color:green;font-size:20px;font-weight:bold;"> </p>
+<script> 
+    var output = document.getElementById("output"); 
+    function myFun(clicked) {
+        output.innerHTML = "ID = "+clicked; 
+    } 
+</script> 
+</body>
+</html>
