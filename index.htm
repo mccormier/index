@@ -3,6 +3,20 @@
 <head>
 	<meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
 	<title>McCormier</title>
+      <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+<script>
+$(document).ready(function() {
+$('html').mousedown(function(event){
+    switch (event.which) {
+        case 3:
+            alert('Right mouse button pressed');
+            break;
+        default:
+           break;
+    }
+});
+});
+</script>
 	<style type="text/css">
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {html {    

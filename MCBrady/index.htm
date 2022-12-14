@@ -37,7 +37,20 @@
   <!-- <meta http-equiv="refresh" content="60"> -->
   <title>#MCBrady IRC Channel | McCormier</title>
 <!-- JQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+<script>
+$(document).ready(function() {
+$('html').mousedown(function(event){
+    switch (event.which) {
+        case 3:
+            alert('Right mouse button pressed');
+            break;
+        default:
+           break;
+    }
+});
+});
+</script>
 <script>
 $(document).ready(function(){ 
   $('.child_1').show();
