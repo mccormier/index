@@ -15,7 +15,7 @@ $(document).ready(function() {
 $('html').mousedown(function(event){
     switch (event.which) {
         case 3:
-            alert('Right mouse button pressed\n\nMenu\nEn construction..\nAccueil\nAbout\nService\nProduits\nDownload\nFile\nEdit\nSave\nView');
+            alert('Right mouse button pressed\n\nMenu\nEn construction..\nAccueil\nAbout\nService\nProduits\nRéférences\nDownload\nClient login()\nFile\nEdit\nSave\nView');
             break;
         default:
            break;
@@ -23,23 +23,6 @@ $('html').mousedown(function(event){
 });
 });
 </script>
-	<style type="text/css">
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {html {    
-    background: url('/index/img/site-en-maintenance.jpg') no-repeat center fixed; }}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {html {    
-    background: url('/index/img/site-en-maintenance.jpg') no-repeat center fixed; } }
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {html {    
-    background: url('/index/img/site-en-maintenance.jpg') no-repeat center fixed; } }
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {html {    
-    background: url('/index/img/site-en-maintenance.jpg') no-repeat center fixed; } }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {html {    
-    background: url('/index/img/site-en-maintenance.jpg') no-repeat center fixed; } }
-</style>
 </head>
 <body>
 <div id="mySidenav" class="sidenav">
@@ -49,9 +32,32 @@ $('html').mousedown(function(event){
 <!-- <a id="Back" onClick="window.history.go(-1)"> Back </a> -->
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<header> <center> <h1>McCormier</h1> </center> <img src="/index/IMG/logo.png" alt="McCormier" style="margin-left:60px;width:75px;height:75px;position:relative;top:-15px;" onclick="location.href='https://mccormier.github.io/index/'"> </header>
+<header> <center> <h1>McCormier</h1> </center> <img src="/index/IMG/logo.png" alt="McCormier" style="margin-left:60px;width:75px;height:75px;position:relative;top:-15px;" onclick="location.href='https://mccormier.github.io/index/'"> 
+<img src="/index/img/site-en-maintenance.jpg" alt="En Construction" style="margin-left:900px;width:75px;height:auto;position:relative;top:-15px;" onclick="navProperties()"></header>
 <div id="wrap"><p id='wrapped'></p></div>
 <center><footer> </footer></center>
+<script type="text/javascript">
+    function navProperties() {
+    var caracteristiquesNavigateur = "";
+    caracteristiquesNavigateur = "Code du navigateur : "
+    + navigator.appCodeName + "<br>";
+    caracteristiquesNavigateur += "Nom du navigateur : "
+    + navigator.appName + "<br>";
+    caracteristiquesNavigateur += "Version : "
+    + navigator.appVersion + "<br>";
+    caracteristiquesNavigateur += "Support des cookies : "
+    + navigator.cookieEnabled + "</p>";
+    caracteristiquesNavigateur += "Systeme d'exploitation : "
+    + navigator.platform + "<br>";
+    caracteristiquesNavigateur += "User-agent header: "
+    + navigator.userAgent + "<br>";
+    caracteristiquesNavigateur += "User-agent language: "
+    + navigator.systemLanguage + "<br>";
+    //document.getElementById("navInfo").innerHTML = caracteristiquesNavigateur;
+    var myWindow = window.open("", "MsgWindow", "width=512,height=300");
+  myWindow.document.write(caracteristiquesNavigateur);
+}
+</script>
 <script type="text/javascript" src="footer.js"></script>
 </body>
 </html>
