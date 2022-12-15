@@ -2,12 +2,14 @@ lastModif=document.lastModified;
 year=new Date().getFullYear();
 footer=document.getElementsByTagName('footer')[0];
 /* TeamViewer */
+/*
 img = document.createElement('img');
 img.setAttribute('src', '/index/IMG/teamViewer.png');
 img.setAttribute('alt', 'teamViewer');
 img.setAttribute('class', 'teamViewerImgLink');
 img.setAttribute('onclick', "window.location.href='https://www.teamviewer.com/fr-ca/telecharger/windows/'");
 footer.appendChild(img);
+*/
 /* MailTo */
 img=document.createElement('img');
 img.src='/index/IMG/mailto.png';
