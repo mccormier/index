@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body><center>
+<!-- Formulaire de demande de création de code QR correspondant à un numéro de téléphone -->
+<!-- NG: ne pas modifier les attributs name des différents input -->
+<h2>QR code permettant de lancer un appel téléphonique</h2>
+<form method="post"
+action="http://qr-code-generator.iwwwit.com/generateur-qr-code.php">
+Numéro de téléphone : <input type="text" name="tel-num" id="tel-num" value="(123)456-7890" />
+<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+<input type="hidden" name="err" class="err-l" value="L" />
+<input type="hidden" name="qrsize" class="qrsize" value="300" /><br /><br />
+<input type="submit" name="sub" value="Génération du code QR" />
+</form>
+</center>
+</body>
+</html>

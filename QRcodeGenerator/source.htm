@@ -1,0 +1,795 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+
+<title>Générateur de QR Codes -  QR Code (2D Barcode) Generator - URL, Contact (MECARD), SMS, E-mail, EVENT (vCalendar), Conseil en communication avec QR Codes et codes à barres 2D, datamatrix, MicrosoftTag</title>
+<meta name="google-site-verification" content="K-n7z1A36njkeVc6wjQIKCNeAfQCfEzpufoa6mKOscs" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="keywords" content="QRcodes, QR Codes, 2dCodes, 2D barcodes, generator QRCodes, générateur codes QR, QR Code android" />
+<meta name="description" content="QR Codes generator 2D barcodes - Générateur de QR Codes : codes à barres 2D Encodez : URL ; CONTACT (MECARD) ; rendez-vous (vCalendar)  ; SMS (texting message) ; SIMPLE TEXT Message ... " />
+
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="viewport" content="width=device-width, maximum-scale=1" />
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+	<script type="text/javascript" src="toggleElements/jquery.toggleElements.pack.js"></script>
+	<script type="text/javascript" src="js/me.js"></script>
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
+	<link rel="stylesheet" type="text/css" href="toggleElements/toggleElements.css" />
+	<link rel="stylesheet" type="text/css" href="toggleElements/toggleElements2.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-qr-code-generateur.css" />
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17921702-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+<div id="header">
+
+<p>
+<span class="langues" id="fr"> Français  </span>
+<span  class="langues" id="en"> English  </span>
+<a href="#footer" class="ancres" >Contact</a>
+<a href="#WhatAreQRCodes" class="ancres" >QR Code ?</a>
+<!--
+<span class="langues" id="de"> Deutch  </span>
+<span class="langues" id="es"> Español  </span>
+-->
+</p>
+
+	<h1>QR Codes Generator - Générateur de QR codes  -  @eQRoeil</h1>
+		<p>
+		 <img src="images/QRCodesGenerator-IwWwiT.png" alt="QRCode contenant le lien vers ce site http://qr-code-generator.iwwwit.com" />
+		<span class="c_fr"><span class="fl">&lt; - - </span> Le lien vers ce site <strong>Flashez </strong>! <em>Partagez </em>!</span>
+		</p>
+		
+</div>
+<div id="wrapper">
+<div id="intro">
+<h2 class="c_fr">Créez vos <strong>QR Codes</strong>, codes à barres à deux dimensions.</h2>
+<h2 class="c_en" lang="en" >Create your <strong>QR Codes</strong>, 2D barcodes</h2>
+<p class="c_en">2011-01-26 :<br /><strong>New features</strong> <br />
+<a href="denim-qr-code.php" >You wear jeans, why don't your QRcodes ?</a><br />
+<a href="valentine-qr-code.php" >Valentine QR code</a><br />
+<a href="random-customized-design-qr-code.php" >Custom design QRcodes (for URLs)</a><br />
+<a href="qr-code-twitter-follow-me.php" >Twitter user's Design QRcode</a> 
+
+</p>
+<p class="c_fr">2011-01-26 :<br /><strong>Nouvelles fonctionnalités</strong> <br />
+<a href="denim-qr-code.php" >Les QR codes portent des jeans !</a><br />
+<a href="valentine-qr-code.php" >Pour la Saint-Valentin, dîtes-le avec des Q&oelig;uRs</a><br />
+<a href="random-customized-design-qr-code.php" >QR codes design avec couleurs et formes aléatoires, pour les adresses de site web (URLs)</a><br />
+<a href="qr-code-twitter-follow-me.php" >Spécial Twitter :  QRcode customisé qui lie vers vos tweets</a> 
+
+</p>
+<p class="c_fr">27-09-2010 :<br />
+		Ce site a changé, si vous êtes déjà venu ne soyez pas surpris ! <br />
+		Les changements : 
+		</p>
+		<ul class="c_fr">
+		<li>Traduction en anglais</li>
+		<li>Modification de la mise en page et de la navigation : code allégé</li>
+		<li><strong>Onglet "options"</strong> : Il est désormais possible de créer des QR Codes de 600px, de prévisualiser les choix des couleurs</li>
+		<li>Ajout de fonctionnalités : tweet sur Twitter, Connection à un réseau WIFI</li>
+		</ul>
+		<p class="c_en" lang="en" >
+		2010-09-27 : <br />
+		This site have changed :</p>
+		<ul class="c_en" lang="en" >
+		<li>English translation</li>
+		<li>New navigation and design : lighter code</li>
+		<li>Options : New size available QR codes 600px, colors preview (test before validate !)</li>
+		<li>New : tweet on Twitter, WIFI connection </li>
+		</ul>
+</div>
+
+			
+			<div class="toggler-1" title="Options">
+			
+			<h2>Options</h2>
+			<p class="c_fr">
+			ATTENTION si javascript est désactivé sur votre navigateur, ces options ne sont pas disponibles.
+			</p>
+			<p class="c_en" lang="en" >
+			WITHOUT javascript these options are not available.
+			</p>
+				<h3><span class="c_fr">Choix des couleurs du QR Code</span><span class="c_en" lang="en" >QR code : Colors</span></h3>
+				<div id="qr-preview">
+<table class="qr" cellpadding="0" cellspacing="0">
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="on"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="on"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+<tr><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+</table>
+</div>
+				<p class="c_fr">
+				Choisissez une couleur de fond <strong>claire</strong> et une couleur de premier plan <strong>foncée</strong>, le contraste est très important pour une bonne lecture. <strong>TESTEZ la lecture</strong> avec le QR code ci-contre.
+				</p>
+				<p class="c_en" lang="en" >
+				Choose a <strong>light background color</strong> and a <strong>dark foreground color. </strong><strong>TEST</strong> with the QR code on the right.
+				</p>
+				<p>
+				<label for="bcolor"><span class="c_fr">Couleur de fond : </span><span class="c_en" lang="en" >Background Color : </span></label>
+				<input type="text" maxlength="6" size="6" id="bcolor" name ="bcolor" class="color" value="ffffff" /><span id="app_b"> <span class="c_fr"> Appliquer - - ></span><span class="c_en" lang="en" > Apply - - ></span></span>
+				</p>
+				<p>
+				<label for="fcolor"><span class="c_fr">Couleur de premier plan : </span><span class="c_en" lang="en" >Foreground Color : </span></label>
+				<input type="text" maxlength="6" size="6" id="fcolor" name ="fcolor" class="color" value="000000" /><span id="app_f"><span class="c_fr"> Appliquer - - ></span><span class="c_en" lang="en" > Apply - - ></span></span>
+				</p>
+				
+				<h3><span class="c_fr">Niveau de Correction (L par défaut)</span><span class="c_en" lang="en" >QR code : Correction level</span></h3>
+				<p class="radio">								
+				<label class="err-level" for="link-L"><input type="radio" checked="checked" name="err" value="L" id="link-L"  /> L</label>
+				<label class="err-level" for="link-M"><input type="radio" name="err" value="M" id="link-M"  /> M</label>
+				<label class="err-level" for="link-Q"><input type="radio" name="err" value="Q" id="link-Q"  /> Q</label>
+				<label class="err-level" for="link-H"><input type="radio" name="err" value="H" id="link-H"  /> H</label>
+				</p>
+				
+				<h3><span class="c_fr">Taille du QR Code</span><span class="c_en" lang="en" >QR Code : size</span></h3>
+				<p>
+				<label class="err-level" for="qrsize300"> 300px <input type="radio" value="300" id="qrsize300" name="qrsize" checked="checked" /></label>
+				<label class="err-level" for="qrsize600"> 600px <input type="radio" value="600" id="qrsize600" name="qrsize" /></label>
+				</p>
+				
+			<hr class="clear" />
+			
+			</div>
+			
+			<div class="toggler-1 opened" title="URL">
+				<h2>
+				<span class="c_fr">QR code contenant un lien vers un site web</span>
+				<span class="c_en" lang="en" >QR code : Browse to a website</span>
+				</h2>
+				<form method="post" action="createur-qr-code.php">
+				<p>
+				<label for="QRCodesLink"></label>
+				<input type="text" size="50" id="QRCodesLink" name="QRCodesLink" value="http://" />
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				</p>
+				
+				<p><input type="submit" name="sub" value="QRCode" /></p>
+
+				</form>
+			</div>
+			
+			<div class="toggler-1" title="MECARD">
+				
+			<h2>
+			<span class="c_fr">Générez votre QRCode contenant vos coordonnées : Carte de visite virtuelle</span>
+			<span class="c_en" lang="en" >Contact Informations</span> - MeCard
+			</h2>
+
+			<p><span class="c_fr">Ce QR Code permettra d'enregistrer le contact, de lui envoyer un e-mail ou de composer son numéro contenu dans le code barre 2D</span></p>
+			<p>
+			<span class="c_en" lang="en" >Record Mecard, send e-mail, make a call...</span>
+			</p>
+			<form method="post" action="createur-qr-code.php">
+
+				<p>
+				<label for="mecard-name">
+				<span class="c_fr">Nom et prénom : </span>
+				<span class="c_en" lang="en" >Last Name and First Name : </span></label>
+				<input type="text" name="mecard-name" id="mecard-name" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-nump">
+				<span class="c_fr">Numéro de téléphone : </span>
+				<span class="c_en" lang="en" >Phone Number : </span></label>
+				<input type="text" name="mecard-nump" id="mecard-nump" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-numf">
+				<span class="c_fr">Numéro de téléphone : </span>
+				<span class="c_en" lang="en" >Phone Number : </span></label>
+				<input type="text" name="mecard-numf" id="mecard-numf" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-mail1">E-mail : </label>
+				<input type="text" name="mecard-mail1" id="mecard-mail1" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-adr">
+				<span class="c_fr">Adresse : Séparez les champs (numéro, rue, code postal, ville) par des virgules "<strong> , </strong>"</span>
+				<span class="c_en" lang="en" >Adress : use commas "<strong> , </strong>" between items (city, country, ...)</span></label>
+				<input type="text" name="mecard-adr" id="mecard-adr" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-uri">
+				<span class="c_fr">Site internet : </span>
+				<span class="c_en" lang="en" >Web adress : </span></label>
+				<input type="text" name="mecard-uri" id="mecard-uri" value="http://" size="50" />
+				
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				</p>
+				<p><input type="submit" name="sub" value="QRCodeMecard" /></p>
+			</form>
+	
+			
+			</div>
+			
+			<div class="toggler-1" title="EVENT vCalendar">
+			<h3>
+			<span class="c_fr">Générez votre QRCode contenant un rendez-vous, un événement (VCalendar)</span>
+			<span class="c_en" lang="en" >Create a 2D barcode for your events : vCalendar.</span>
+			</h3>
+
+			<form method="post" action="createur-qr-code.php">
+
+				<p>
+				<label for="cal-title">
+				<span class="c_fr">Titre : </span>
+				<span class="c_en" lang="en" >Title : </span></label>
+				<input type="text" name="cal-title" id="cal-title" value="" />
+				</p>
+				
+				<fieldset>
+				<legend><span class="c_fr"> Date début </span><span class="c_en" lang="en" > Start Date </span></legend>
+												
+				<p>
+				<label for="event-bd">
+				<span class="c_fr">Jour : </span>
+				<span class="c_en" lang="en" >Day : </span>
+				</label><select id="event-bd" name="event-bd">
+				<option value="01" >01</option>
+				<option value="02" >02</option>
+				<option value="03" >03</option>
+				<option value="04" >04</option>
+				<option value="05" >05</option>
+				<option value="06" >06</option>
+				<option value="07" >07</option>
+				<option value="08" >08</option>
+				<option value="09" >09</option>
+				<option value="10" selected="selected" >10</option>
+				<option value="11" >11</option>
+				<option value="12" >12</option>
+				<option value="13" >13</option>
+				<option value="14" >14</option>
+				<option value="15" >15</option>
+				<option value="16" >16</option>
+				<option value="17" >17</option>
+				<option value="18" >18</option>
+				<option value="19" >19</option>
+				<option value="20" >20</option>
+				<option value="21" >21</option>
+				<option value="22" >22</option>
+				<option value="23" >23</option>
+				<option value="24" >24</option>
+				<option value="25" >25</option>
+				<option value="26" >26</option>
+				<option value="27" >27</option>
+				<option value="28" >28</option>
+				<option value="29" >29</option>
+				<option value="30" >30</option>
+				<option value="31" >31</option>
+								</select>
+				<label for="event-bm"><span class="c_fr">Mois : </span><span class="c_en" lang="en" >Month : </span></label>
+				<select name="event-bm" id="event-bm">
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12" selected="selected" >12</option>
+								</select>
+				
+				<label for="event-by">
+				<span class="c_fr">Année : </span>
+				<span class="c_en" lang="en" >Year : </span>
+				</label>
+				<select name="event-by" id="event-by">
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+								</select>
+				
+				<label for="event-bh">H : </label>
+				<select id="event-bh" name="event-bh">
+				<option value="00" >00</option>
+				<option value="01" >01</option>
+				<option value="02" >02</option>
+				<option value="03" >03</option>
+				<option value="04" >04</option>
+				<option value="05" >05</option>
+				<option value="06" >06</option>
+				<option value="07" >07</option>
+				<option value="08" >08</option>
+				<option value="09" >09</option>
+				<option value="10" >10</option>
+				<option value="11" >11</option>
+				<option value="12" >12</option>
+				<option value="13" >13</option>
+				<option value="14" >14</option>
+				<option value="15" >15</option>
+				<option value="16" >16</option>
+				<option value="17" >17</option>
+				<option value="18" >18</option>
+				<option value="19" >19</option>
+				<option value="20" >20</option>
+				<option value="21" >21</option>
+				<option value="22" >22</option>
+				<option value="23" >23</option>
+								</select>
+				
+				<label for="event-bmin">min : </label>
+				<select id="event-bmin" name="event-bmin">
+				<option value="00" >00</option>
+				<option value="05" >05</option>
+				<option value="10" >10</option>
+				<option value="15" >15</option>
+				<option value="20" >20</option>
+				<option value="25" >25</option>
+				<option value="30" >30</option>
+				<option value="35" >35</option>
+				<option value="40" >40</option>
+				<option value="45" >45</option>
+				<option value="50" >50</option>
+				<option value="55" >55</option>
+								</select>
+				</p>
+				</fieldset>
+				
+				
+				<fieldset>
+				<legend><span class="c_fr"> Date fin </span><span class="c_en" lang="en" > End Date </span></legend>
+				
+								
+				<p><label for="event-ed"><span class="c_fr">Jour : </span><span class="c_en" lang="en" >Day : </span></label>
+				<select id="event-ed" name="event-ed">
+				<option value="01" >01</option>
+				<option value="02" >02</option>
+				<option value="03" >03</option>
+				<option value="04" >04</option>
+				<option value="05" >05</option>
+				<option value="06" >06</option>
+				<option value="07" >07</option>
+				<option value="08" >08</option>
+				<option value="09" >09</option>
+				<option value="10" selected="selected" >10</option>
+				<option value="11" >11</option>
+				<option value="12" >12</option>
+				<option value="13" >13</option>
+				<option value="14" >14</option>
+				<option value="15" >15</option>
+				<option value="16" >16</option>
+				<option value="17" >17</option>
+				<option value="18" >18</option>
+				<option value="19" >19</option>
+				<option value="20" >20</option>
+				<option value="21" >21</option>
+				<option value="22" >22</option>
+				<option value="23" >23</option>
+				<option value="24" >24</option>
+				<option value="25" >25</option>
+				<option value="26" >26</option>
+				<option value="27" >27</option>
+				<option value="28" >28</option>
+				<option value="29" >29</option>
+				<option value="30" >30</option>
+				<option value="31" >31</option>
+								</select>
+				<label for="event-em"><span class="c_fr">Mois : </span><span class="c_en" lang="en" >Month : </span></label>
+				<select name="event-em" id="event-em">
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12" selected="selected" >12</option>
+								</select>
+				
+				<label for="event-ey"><span class="c_fr">Année : </span><span class="c_en" lang="en" >Year : </span></label>
+				<select name="event-ey" id="event-ey">
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+								</select>
+				<label for="event-eh">H : </label>
+				<select id="event-eh" name="event-eh">
+				<option value="00" >00</option>
+				<option value="01" >01</option>
+				<option value="02" >02</option>
+				<option value="03" >03</option>
+				<option value="04" >04</option>
+				<option value="05" >05</option>
+				<option value="06" >06</option>
+				<option value="07" >07</option>
+				<option value="08" >08</option>
+				<option value="09" >09</option>
+				<option value="10" >10</option>
+				<option value="11" >11</option>
+				<option value="12" >12</option>
+				<option value="13" >13</option>
+				<option value="14" >14</option>
+				<option value="15" >15</option>
+				<option value="16" >16</option>
+				<option value="17" >17</option>
+				<option value="18" >18</option>
+				<option value="19" >19</option>
+				<option value="20" >20</option>
+				<option value="21" >21</option>
+				<option value="22" >22</option>
+				<option value="23" >23</option>
+								</select>
+				
+				<label for="event-emin">min : </label>
+				<select id="event-emin" name="event-emin">
+				<option value="00" >00</option>
+				<option value="05" >05</option>
+				<option value="10" >10</option>
+				<option value="15" >15</option>
+				<option value="20" >20</option>
+				<option value="25" >25</option>
+				<option value="30" >30</option>
+				<option value="35" >35</option>
+				<option value="40" >40</option>
+				<option value="45" >45</option>
+				<option value="50" >50</option>
+				<option value="55" >55</option>
+								</select>
+				</p>
+				</fieldset>
+				
+				
+								
+				<p>
+				<label for="cal-loc"><span class="c_fr">Lieu : </span><span class="c_en" lang="en" >Location : </span></label>
+				<input type="text" name="cal-loc" id="cal-loc" value="" />
+				</p>
+				<p>
+				<label for="cal-desc">Description : </label>
+				<textarea name="cal-desc" id="cal-desc" cols="50" rows="5" ></textarea>
+				</p>
+				<p>
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				<input type="submit" name="sub" value="QRCodeEvent" />
+				</p>
+				
+			</form>
+		</div>
+		
+		
+		<div class="toggler-1" title="Short Texting Message - SMS">
+				
+				<h3>
+				<span class="c_fr" >QR code permettant d'envoyer un SMS pré-rempli</span>
+				<span class="c_en" lang="en"  > Texting message to send (SMS)</span>
+				</h3>
+				<form method="post" action="createur-qr-code.php">
+				<p>
+				<label for="sms-text">
+				<span class="c_fr" >Texte du message : </span>
+				<span class="c_en" lang="en"  >Message Content : </span>
+				</label>
+				<textarea name="sms-text" id="sms-text" cols="50" rows="2"></textarea>
+				</p>
+				
+				<p>
+				<label for="sms-num">
+				<span class="c_fr" >Numéro de téléphone : </span>
+				<span class="c_en" lang="en"  >Phone number : </span>
+				</label>
+				<input type="text" name="sms-num" id="sms-num" />
+				</p>
+				<p>
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				<input type="submit" name="sub" value="QRCodeMessage" /></p>
+				</form>
+			</div>
+		
+			<div class="toggler-1" title="Phone Call - Appel">
+				
+				<h3>
+				<span class="c_fr" >QR code permettant de lancer un appel</span>
+				<span class="c_en" lang="en"  >QR code : make a phone call</span>
+				</h3>
+				
+				<form method="post" action="createur-qr-code.php">
+				<p>
+				<label for="tel-num">
+				<span class="c_fr" >Numéro de téléphone : </span>
+				<span class="c_en" lang="en"  >Phone number : </span></label>
+				<input type="text" name="tel-num" id="tel-num" />
+				</p>
+				<p>
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				<input type="submit" name="sub" value="QRCodeCall" />
+				</p>
+				</form>
+			</div>
+		
+			<div class="toggler-1" title="E-mail">
+				<h3>
+				<span class="c_fr" >QR code permettant d'envoyer un e-mail pré-rempli</span>
+				<span class="c_en" lang="en"  > Send an e-mail </span>
+				</h3>
+				<form method="post" action="createur-qr-code.php">
+				<p>
+				<label for="email-mail">E-Mail </label>
+				<input type="text" name="email-mail" id="email-mail" />
+				</p>
+				<p>
+				<label for="email-sub"><span class="c_fr">Sujet : </span><span class="c_en" lang="en" >Subject : </span> </label>
+				<input type="text" name="email-sub" id="email-sub" />
+				</p>
+				<p>
+				<label for="email-body"><span class="c_fr">Contenu : </span><span class="c_en" lang="en" >Body : </span></label>
+				<textarea name="email-body" id="email-body" cols="50" rows="3" ></textarea>
+				</p>
+				<p>
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				<input type="submit" name="sub" value="QRCodeEmail" />
+				</p>
+			</form>
+		</div>
+		<div class="toggler-1" title="Bookmark - Favori">
+				<h3>
+				<span class="c_fr" >QR code permettant d'enregistrer un site dans les favoris</span>
+				<span class="c_en" lang="en"  > Bookmark a website</span>
+				</h3>
+				<p class="c_fr" >Attention : ne marche pas avec tous les lecteurs, il semble plus prudent d'utiliser une URL simple et de laisser l'utilisateur mettre le site en favori !</p>
+				<p class="c_en" lang="en"  >Do not work with all readers, you should use URL encoding and let the user bookmark the site.</p>
+			<form method="post" action="createur-qr-code.php">
+				<p>
+				<label for="url-title">
+				<span class="c_fr">Titre : </span>
+				<span class="c_en" lang="en" >Title : </span>
+				</label>
+				<input type="text" name="url-title" id="url-title" value="" size="50" />
+				</p>
+				<p>
+				<label for="url-uri">URL : </label><input type="text" name="url-uri" id="url-uri" value="" size="50" />
+				</p>		
+				<p>
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				<input type="submit" name="sub" value="QRCodeBookmark" />
+				</p>
+			</form>
+		</div>
+		
+		<div class="toggler-1" title="Tweet">
+			<h3>
+			<span class="c_fr" >Un tweet sur Twitter dans un QR code</span>
+			<span class="c_en" lang="en"  >QR code : A tweet on twitter</span>
+			</h3>
+			<form method="post" action="createur-qr-code.php">
+				<p>
+				<label for="tweet"><span class="c_fr">Message : </span><span class="c_en" lang="en" >Message : </span></label>
+				<input type="text" name="tweet" id="tweet" value="" maxlength="140" size="50"  />
+				</p>
+				
+				<p>
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				<input type="submit" name="sub" value="QRCodeTweet" />
+				</p>
+			</form>
+		</div>
+		
+		<div class="toggler-1" title="Simple Text Message">
+			<h3>
+			<span class="c_fr" >Un simple message texte (4096 caractères maximum !)</span>
+			<span class="c_en" lang="en"  >A free text message (maxlenght : 4096)</span>
+			</h3>
+			<form method="post" action="createur-qr-code.php">
+				<p>
+				<label for="texte">Message : </label> 
+				<textarea name="texte" id="texte" cols="50" rows="5" ></textarea>
+				</p>
+				
+				<p>
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				<input type="submit" name="sub" value="QRCodeText" />
+				</p>
+			</form>
+		</div>
+		
+		<div class="toggler-1" title="WIFI">
+			<h3><span class="c_fr" >Informations de connexion WIFI</span><span class="c_en" lang="en"  >WIFI connecting</span></h3>
+			<form method="post" action="createur-qr-code.php">
+				<p>
+				<label for="ssid">SSID : </label>
+				<input type="text" name="ssid" id="ssid" value="" size="50"  />
+				</p>
+				<p>
+				<label for="password">Password : </label>
+				<input type="text" name="password" id="password" value="" size="50"  />
+				</p>
+				<p>
+				<select name="encryption" >
+				<option value="WEP">WEP</option>
+				<option value="WPA" selected="selected">WPA/WPA2</option>
+				<option value="WEP">No encryption</option>
+				</select>
+				</p>
+				<p>
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				<input type="submit" name="sub" value="QRCodeWifi" />
+				</p>
+			</form>
+		</div>
+		<hr />
+		<hr />
+		<div id="footer">
+		<h2><a href="http://twitter.com/eqroeil"><img src="twitter-logo.png" alt="Twitter : @eQRoeil" />Twitter @eQRoeil</a></h2>
+		<h2><span class="c_fr">Laissez-moi un commentaire</span> <span class="c_en" lang="en" >Send me your comments !</span></h2>
+			<form id="iwwwit-contact" method="post" action="qr-code-contact.php">
+			<p>
+			<span class="c_fr">Tous les champs doivent être remplis.</span><br />
+			<input type="hidden" name="email" value="" />
+			<label for="courriel"><span class="c_fr">Adresse électronique* : </span><span class="c_en" lang="en" >e-mail adress* : </span></label> <input type="text" id="courriel" name="courriel" size="60"/>			</p>
+			<p>
+			<label for="Message"><span class="c_fr">Votre message* : </span><span class="c_en" lang="en" >Your message* : </span></label> <textarea  id="Message" name="message" rows="4" cols="50"></textarea></p>
+			<p><input type="submit" name="Send" value="Send" /></p>
+			</form>
+		<a href="#header" class="top" ><span class="c_en" lang="en" > TOP </span><span class="c_fr">Haut de page</span> </a>
+		</div>
+		<hr />
+		<hr />
+		<div id="WhatAreQRCodes">
+		<div class="c_fr" >
+		<h4>QR Code ? Datamatrix ? Codes à barres 2D ? C'est quoi ? A quoi ça sert ?</h4>
+		<p>
+		Les <strong>QR Codes</strong> sont des codes à barres à deux dimensions qui permettent de stocker plus d'informations que de simples codes à barres.</p><p>
+		Ces images permettent de stocker diverses informations comme <strong>un lien vers un site web</strong> ; une <strong>carte de visite virtuelle (MECARD)</strong> ; des <strong>dates ou événements au format vCalendar</strong> ; des <strong>numéros de téléphone</strong> ; des <strong>SMS pré-remplis</strong> ; des <strong>emails prêts à envoyer</strong> ; de simples <strong>messages texte...</strong></p><p>
+		Les informations contenues dans les QR Codes sont lues (scannées) par les téléphones portables équipés d'un <strong>lecteur de codes à barres 2D</strong> comme <em>BarcodeScanner</em>, <em>BeeTagg</em>, <em>QuickMark</em> etc. (il existe un grand nombre de lecteurs de Mobile Tag à tester avec son modèle de téléphone portable ou son OS).</p><p> Les QR Codes peuvent également être lus par certaines "douchettes" (les lecteurs de codes à barres des supermarchés), des logiciels sur ordinateur (grâce à la webcam ou via une "fenêtre" qui survole le QR Code ex: QuickMark) </p><p>
+		La variété des informations qu'elles contiennent multiplie les usages possibles pour ces "images intelligentes" : marketing ; diffusion d'information dans des salons, des expositions, des lieux touristiques... </p><p>
+		Les QR Codes sont partout au Japon : sur des emballages de produits, directement sur des produits frais, des affiches commerciales et leur utilisation se développe rapidement dans le monde occidental. Avec le nombre croissant d'utilisateurs de <strong>smartphones (android, iphone, windowsphone, palm, ...)</strong> on peut s'attendre à voir de plus en plus de QR Codes autour de nous !
+		</p>
+		<p>
+		<a href="#header" class="top" > Haut de Page </a>
+		</p>
+		</div>
+		<div  class="c_en" lang="en" >
+		<h4>QR Code ? Datamatrix ? 2Dbarcodes ? What are these images ?</h4>
+		<p>
+		<strong>QR Codes</strong> are 2D barcodes.  They can content more informations than 1D barcodes.</p><p>
+		The content of QR codes can be : <strong>a website link (URL)</strong> ; une <strong>business card (MECARD)</strong> ; <strong>events vCalendar</strong> ; <strong>phone numbers</strong> ; <strong>Texting messages (SMS) or e-mails ready to send </strong> ;  simple <strong>text message</strong></p><p>
+		Informations into QR Codes are scanned by QR codes readers on smartphones <em>BarcodeScanner</em>, <em>QuickMark</em>, <em>i-nigma </em> ... (There are a lot of readers, you should test several ones with your phone or OS).</p><p><em> QR Codes can be read by softwares on PC with webcam or directly on the screen (ex: QuickMark)</em> </p>
+		<p>
+		<a href="#header" class="top" > TOP </a>
+		</p>
+		</div>
+		</div>
+</div>
+	<p class="iwwwit-creation-web">
+	Une création <a href="http://www.iwwwit.com">IwWwiT Création de Sites Internet</a>
+	</p>
+	
+	<p id="w3c">
+    <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml10-blue"
+        alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>  
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS Valide !" />
+</a>
+</p>
+
+
+</body>
+</html>

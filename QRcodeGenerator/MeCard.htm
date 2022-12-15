@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<center>
+			<div class="toggler-1" title="MECARD">
+			<h2>
+			<span class="c_fr">Générez votre QRCode contenant vos coordonnées : Carte de visite virtuelle</span>
+			<span class="c_en" lang="en" >Contact Informations</span> - MeCard
+			</h2>
+			<p><span class="c_fr">Ce QR Code permettra d'enregistrer le contact, de lui envoyer un e-mail ou de composer son numéro contenu dans le code barre 2D</span></p>
+			<p>
+			<span class="c_en" lang="en" >Record Mecard, send e-mail, make a call...</span>
+			</p>
+			<form method="post" action="http://qr-code-generator.iwwwit.com/createur-qr-code.php"> 
+				<p>
+				<label for="mecard-name">
+				<span class="c_fr">Nom et prénom : </span>
+				<span class="c_en" lang="en" >Last Name and First Name : </span></label>
+				<input type="text" name="mecard-name" id="mecard-name" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-nump">
+				<span class="c_fr">Numéro de téléphone : </span>
+				<span class="c_en" lang="en" >Phone Number : </span></label>
+				<input type="text" name="mecard-nump" id="mecard-nump" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-numf">
+				<span class="c_fr">Numéro de téléphone : </span>
+				<span class="c_en" lang="en" >Phone Number : </span></label>
+				<input type="text" name="mecard-numf" id="mecard-numf" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-mail1">E-mail : </label>
+				<input type="text" name="mecard-mail1" id="mecard-mail1" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-adr">
+				<span class="c_fr">Adresse : Séparez les champs (numéro, rue, code postal, ville) par des virgules "<strong> , </strong>"</span>
+				<span class="c_en" lang="en" >Adress : use commas "<strong> , </strong>" between items (city, country, ...)</span></label>
+				<input type="text" name="mecard-adr" id="mecard-adr" value="" size="50" />
+				</p>
+				<p>
+				<label for="mecard-uri">
+				<span class="c_fr">Site internet : </span>
+				<span class="c_en" lang="en" >Web adress : </span></label>
+				<input type="text" name="mecard-uri" id="mecard-uri" value="http://" size="50" />
+				<input type="hidden" name="couleurf" class="couleurf" value="#ffffff" />
+				<input type="hidden" name="couleurp" class="couleurp" value="#000000" />
+				<input type="hidden" name="err" class="err-l" value="L" />
+				<input type="hidden" name="qrsize" class="qrsize" value="300" />
+				</p>
+				<p><input type="submit" name="sub" value="QRCodeMecard" /></p>
+			</form>
+			</div>
+</center>
+</body>
+</html>

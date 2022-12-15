@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title></title>
+	<script type="text/javascript">
+		/* Fonction genererQRCode */
+		function genererQRCode()
+		{
+			/* Préparation de l'URL de création du code QR */
+			/* Example URL :
+			https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=Hello%20world&choe=UTF-8 */
+			var urlQRCode="https://chart.googleapis.com/chart?";
+			urlQRCode=urlQRCode+"&chs="
+			+document.getElementById('tailleQRCode').value+"x"
+			+document.getElementById('tailleQRCode').value;
+			urlQRCode=urlQRCode+"&cht=qr";
+			urlQRCode=urlQRCode+"&chl="
+			+document.getElementById('texteQRCode').value;
+			urlQRCode=urlQRCode+"&choe=UTF-8";
+
+			/* Affichage de contrôle de l'URL */
+			// alert("URL du génération du code QR : " + urlQRCode);
+
+			/* Affichage du code QR */
+			document.getElementById('imageQRCode').src=urlQRCode;
+		}
+	</script>
+</head>
+<body><center>
+<!-- Formulaire de saisie des paramètres de code QR -->
+<form>
+	<table>
+		<tr>
+			<td>
+				<!-- Texte QR Code -->
+				Code QR Pour accédez à un site Web (URL):
+			</td>
+			<td>
+				<input type="text" id="texteQRCode" size="50" value="http://mccormier.github.io/index">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Taille QR Code (Hauteur-Largeur)
+			</td>
+			<td>
+<!--
+				<input type="text" id="tailleQRCode" size="5" value="150">
+-->
+		<select id="tailleQRCode" style="width:150px; height:20px; ">
+            <option value="37">Minimum (37 pixel)</option>
+            <option value="75">Petit (75 pixel)</option>
+            <option value="150" selected="selected">Moyen (150 pixel)</option>
+            <option value="300">Large (300 pixel)</option>
+            <option value="400">XL (400 pixel)</option>
+            <option value="500">XXL (500 pixel)</option>
+            <option value="547">Maximum (547 pixel)</option>
+        </select>
+			</td>
+		</tr>
+	</table>
+	<br />
+	<input type="button" id="boutonGenerationQRCode" value="Créer le QR Code" onclick="genererQRCode()">
+</form>
+<!-- Image QR Code -->
+<img id="imageQRCode" alt="QR Code" />
+</center>
+</body>
+</html>
