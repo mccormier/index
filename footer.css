@@ -1,0 +1,7 @@
+.teamViewerImgLink{width:120px;height:auto;position:fixed;left:152px;
+  margin:0px;padding:1px;}
+.teamViewerImgLink:hover{cursor:pointer;}
+.mailto{width:20px;height:20px; cursor:pointer;}
+footer{padding-top:12px;border-top:1px solid black;text-align:center;}
+footer a{text-decoration:none;color:black;}
+#obj:hover{cursor:pointer;color:white;}
