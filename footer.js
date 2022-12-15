@@ -12,7 +12,7 @@ footer.appendChild(img);
 */
 /* MailTo */
 img=document.createElement('img');
-img.src='/index/IMG/mailto.png';
+img.src='/index/img/mailto.png';
 img.alt='mailto'
 img.setAttribute('onclick', "location.href='mailto:marccormierpro@gmail.com'");
 img.setAttribute('class', 'mailto');
