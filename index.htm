@@ -37,8 +37,8 @@ $('html').mousedown(function(event){
 <!-- <a id="Back" onClick="window.history.go(-1)"> Back </a> -->
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<header> <center> <h1>McCormier</h1> </center> <img src="/index/img/logo.png" alt="McCormier" style="margin-left:60px;width:75px;height:75px;position:relative;top:-15px;" onclick="location.href='https://mccormier.github.io/index/'"> 
-<img src="/index/img/site-en-maintenance.jpg" alt="En Construction" style="margin-left:900px;width:200px;height:auto;position:relative;top:10px;" onclick="navProperties()"></header>
+<header> <center> <img src="/index/img/logo.png" alt="McCormier" style="margin-left:60px;width:75px;height:75px;position:relative;top:-15px;" onclick="location.href='https://mccormier.github.io/index/'"> </center>
+<img src="/index/img/site-en-maintenance.jpg" alt="En Construction" style="margin-left:900px;width:200px;height:auto;position:relative;top:-20px;" onclick="navProperties()"></header>
     <div class="wrap">
         <p> <b>♻️ RECYCLAGE, ACHAT & DÉPANNAGE INFORMATIQUE.</b><br/><br/>
             <b>ENTRETIEN & RÉPARATION D'ORDINATEUR</b><br/> 
@@ -83,23 +83,23 @@ $('html').mousedown(function(event){
 <script type="text/javascript">
     function navProperties() {
     var caracteristiquesNavigateur = "";
-    caracteristiquesNavigateur = "Code du navigateur : "
+    caracteristiquesNavigateur = "<b>Code du navigateur :</b> "
     + navigator.appCodeName + "<br>";
-    caracteristiquesNavigateur += "Nom du navigateur : "
+    caracteristiquesNavigateur += "<b>Nom du navigateur :</b> "
     + navigator.appName + "<br>";
-    caracteristiquesNavigateur += "Version : "
+    caracteristiquesNavigateur += "<b>Version :</b> "
     + navigator.appVersion + "<br>";
-    caracteristiquesNavigateur += "Support des cookies : "
+    caracteristiquesNavigateur += "<b>Support des cookies :</b> "
     + navigator.cookieEnabled + "</p>";
-    caracteristiquesNavigateur += "Systeme d'exploitation : "
+    caracteristiquesNavigateur += "<b>Systeme d'exploitation :</b> "
     + navigator.platform + "<br>";
-    caracteristiquesNavigateur += "User-agent header: "
+    caracteristiquesNavigateur += "<b>User-agent header :</b> "
     + navigator.userAgent + "<br>";
-    caracteristiquesNavigateur += "User-agent language: "
+    caracteristiquesNavigateur += "<b>User-agent language :</b> "
     + navigator.systemLanguage + "<br>";
     //document.getElementById("navInfo").innerHTML = caracteristiquesNavigateur;
-    var myWindow = window.open("", "MsgWindow", "width=512,height=300");
-  myWindow.document.write(caracteristiquesNavigateur);
+    var myWindow = window.open("", "MsgWindow", "width=1024,height=300");
+  myWindow.document.write("<h1>Un exemple d'API simple</h1>"+"<h2>Ceci est un simple exemple d'API :</h2>"+caracteristiquesNavigateur);
 }
 </script>
 <script type="text/javascript" src="footer.js"></script>
