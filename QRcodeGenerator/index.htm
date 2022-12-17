@@ -4,18 +4,42 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>QR Code Gen. | McCormier</title>
-	<style type="text/css"> a{text-decoration:none;color:black;}a:hover{cursor:pointer;} img:hover{cursor:help;} </style>
+	<link rel="stylesheet" type="text/css" href="../docStyle.css">
+	<link rel="stylesheet" type="text/css" href="../OverlayMenu.css">
+	<link rel="stylesheet" type="text/css" href="../footer.css">
+	<script type="text/javascript" src="../OverlayMenu.js"></script>
+	<style type="text/css"> 
+a{text-decoration:none;color:black;}a:hover{cursor:pointer;}
+#wrap{width:auto;height:auto;}
+#qrCode{width:125px;height:125px;margin-bottom:30px;}
+#qrCode:hover{cursor:help;} 
+#link{font-size:21px;width:300px;height:auto;overflow:hidden;}
+#link a{text-align:center;padding:7px;}
+</style>
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a id="Accueil" href="#"> Accueil </a>
+<a id="À Propos" href="/index/LinkTr.ee/linkTr.ee.htm"> À Propos </a>
+<!-- <a id="Back" onClick="window.history.go(-1)"> Back </a> -->
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<header> <center> <h1 style="font-size:2em;">Créer un Code QR</h1><br /><hr> </center> <img src="/index/img/logo.png" alt="McCormier" style="margin-left:60px;width:75px;height:75px;position:relative;top:-15px;" onclick="location.href='https://mccormier.github.io/index/'"> 
+<img src="/index/img/site-en-maintenance.jpg" alt="En Construction" style="margin-left:900px;width:200px;height:auto;position:relative;top:10px;" onclick="navProperties()"></header>
 <center>
-	<h1 style="font-size:3em;">Créer un Code QR</h1><hr>
-	<a href="telQRcodeGen.htm" style="font-size:2em;">1(234)567-8910</a><br />
-	<a href="eMail.htm" style="font-size:2em;">marccormierpro@gmail.com</a><br />
-	<a href="urlQRcodeGenerator.htm" style="font-size:2em;">https://mccormier.github.io/index</a><br />
-	<a href="WIFI.htm" style="font-size:2em;">WIFI</a><br />
-	<a href="sms.htm" style="font-size:2em;">SMS</a><br />
-	<a href="MeCard.htm" style="font-size:2em;">MeCard</a>
-	<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Qrcode_wikipedia_fr_v2clean.png" style="width:150px;height:150px;position:absolute;left:50px;top:150px;">
- </center>
+<div id="wrap">
+	<img id="qrCode" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Qrcode_wikipedia_fr_v2clean.png" onclick="window.location.href='https://upload.wikimedia.org/wikipedia/commons/7/78/Qrcode_wikipedia_fr_v2clean.png';">
+<div id="link">
+    <a href="telQRcodeGen.htm">1(234)567-8910</a><br />
+	<a href="eMail.htm">marccormierpro@gmail.com</a><br />
+	<a href="urlQRcodeGenerator.htm">https://mccormier.github.io/index</a><br />
+	<a href="WIFI.htm">WIFI</a><br />
+	<a href="sms.htm">SMS</a><br />
+	<a href="MeCard.htm">MeCard</a>
+</div></div>
+</center>
+<footer></footer>
+<script type="text/javascript" src="../footer.js"></script>
 </body>
 </html>
