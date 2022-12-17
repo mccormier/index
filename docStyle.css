@@ -11,3 +11,5 @@ body{
   margin:0px;padding:0px;
 }
 h1{margin:0px;padding:0px;line-height:.1;}
+.logo{width:75px;height:75px;position:relative;top:-15px;}
+.buildImg{width:200px;height:auto;position:relative;left:175px;top:-45px;}
