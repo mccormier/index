@@ -26,6 +26,7 @@ rCopy.innerHTML='Créer avec<br/>'+
 '<a href="https://www.json.org/json-en.html">JSON</a>, '+
 '<a href="https://jquery.com/">jQuery</a>, '+
 '<a href="http://www.bootstrap.com/">BootStrap</a>, '+
+'<a href="http://www.bootstrap.com/">BootStrap</a>, '+
 '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
 'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
 '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
