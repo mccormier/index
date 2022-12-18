@@ -16,7 +16,7 @@ $(document).ready(function() {
 $('html').mousedown(function(event){
     switch (event.which) {
         case 3:
-            alert('Right mouse button pressed\n\nMenu\nEn construction..\nAccueil\nAbout\nService\nProduits\nRéférences\nDownload\nClient login()\nFile\nEdit\nSave\nView');
+            alert('Right mouse button pressed\n\nMenu\nEn construction..\nAccueil\nAbout\nService\nProduits\nTemplate (PortFolio)\nRéférences\nDownload\nClient login()\nFile\nEdit\nSave\nView');
             break;
         default:
            break;
@@ -34,7 +34,13 @@ $('html').mousedown(function(event){
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <a id="Accueil" href="/index/"> Accueil </a>
 <a id="À Propos" href="/index/LinkTr.ee/linkTr.ee.htm"> À Propos </a>
-<!-- <a id="Back" onClick="window.history.go(-1)"> Back </a> -->
+<!--
+<a id="Références" href="#"> Références </a>
+<a id="Template" href="#"> Template (PortFolio) </a>
+<a id="Produits" href="#"> Produits </a>
+<a id="Service" href="#"> Service </a>
+<a id="Back" onClick="window.history.go(-1)"> Back </a>
+-->
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 <header> 
