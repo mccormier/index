@@ -21,3 +21,8 @@ h1{margin:0px;padding:0px;line-height:.1;}
   left:105px;
   top:-95px;
 }
+@media only screen and (max-width: 576px) {
+  .buildingImg {
+    display: none;
+  }
+}
