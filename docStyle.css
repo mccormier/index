@@ -27,13 +27,6 @@ header{
 }
 @media only screen and (max-width: 576px) {
   .buildImg {
-/* display: none; */
-  width:100px;
-  height:auto;
-  margin:0px;
-  padding:0px;
-  position:absolute;
-  left:65px;
-  top:-15px;
-  }
+    display: none;
+}
 }
