@@ -11,7 +11,7 @@ body{
   margin:0px;padding:0px;
 }
 h1{margin:0px;padding:0px;line-height:.1;}
-.logo{width:75px;height:75px;position:relative;top:-15px;}
+.logo{width:75px;height:75px;margin:auto;}
 .buildImg{
   width:200px;
   height:auto;
