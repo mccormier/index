@@ -28,12 +28,12 @@ header{
 @media only screen and (max-width: 576px) {
   .buildImg {
 /* display: none; */
-  width:200px;
+  width:100px;
   height:auto;
   margin:0px;
   padding:0px;
   position:absolute;
-  left:265px;
-  top:-50px;
+  left:65px;
+  top:-15px;
   }
 }
