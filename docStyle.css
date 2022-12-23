@@ -32,8 +32,8 @@ header{
   height:auto;
   margin:0px;
   padding:0px;
-  position:relative;
-  left:-165px;
-  top:95px;
+  position:absolute;
+  left:165px;
+  top:15px;
   }
 }
