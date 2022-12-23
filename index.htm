@@ -16,7 +16,7 @@ $(document).ready(function() {
 $('html').mousedown(function(event){
     switch (event.which) {
         case 3:
-            alert('Right mouse button pressed\n\nMenu\nEn construction..\nAccueil\nAbout\nService\nProduits\nTemplate (PortFolio)\nRéférences\nDownload\nClient login()\nFile\nEdit\nSave\nView');
+            alert('Right mouse button pressed\n\nMenu\nEn construction..\nAccueil\nAbout\nService\nProduits\nTemplate (PortFolio)\nRéférences\nDownload\nClient login()\nFile\nEdit\nSave\nView\nParam\nConfig');
             break;
         default:
            break;
@@ -30,23 +30,9 @@ $('html').mousedown(function(event){
 </style>
 </head>
 <body>
-<div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<a id="Accueil" href="/index/"> Accueil </a>
-<a id="À Propos" href="/index/LinkTr.ee/linkTr.ee.htm"> À Propos </a>
-<!--
-<a id="Références" href="#"> Références </a>
-<a id="Template" href="#"> Template (PortFolio) </a>
-<a id="Produits" href="#"> Produits </a>
-<a id="Service" href="#"> Service </a>
-<a id="Back" onClick="window.history.go(-1)"> Back </a>
--->
-</div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 <header> 
-<center> 
-    <img class="logo" src="/index/img/logo.png" alt="McCormier" onclick="location.href='https://mccormier.github.io/index/'"> 
-</center> 
+<img class="logo" src="/index/img/logo.png" alt="McCormier" onclick="location.href='https://mccormier.github.io/index/'"> 
 <img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="En Construction" onclick="navProperties()">
 </header>
     <div class="wrap">
@@ -89,6 +75,18 @@ $('html').mousedown(function(event){
         </p>
 <footer> </footer>
     </div>
+    <div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a id="Accueil" href="/index/"> Accueil </a>
+<a id="À Propos" href="/index/LinkTr.ee/linkTr.ee.htm"> À Propos </a>
+<!--
+<a id="Références" href="#"> Références </a>
+<a id="Template" href="#"> Template (PortFolio) </a>
+<a id="Produits" href="#"> Produits </a>
+<a id="Service" href="#"> Service </a>
+<a id="Back" onClick="window.history.go(-1)"> Back </a>
+-->
+</div>
     <script type="text/javascript"> var data = JSON.parse(data); </script>
 <script type="text/javascript">
     function navProperties() {
