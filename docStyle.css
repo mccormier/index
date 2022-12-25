@@ -12,12 +12,12 @@ main{margin:1px;padding:0px;}
 .wrapper{margin:1px;padding:0px;}
 h1{margin:0px;padding:0px;}
 header{display: grid; place-items: center; }
-.logo{width:75px;height:75px;margin:0px;padding:0px;}
+.logo{width:50px;height:50px;margin:0px;padding:0px;position:relative;right:35vw;}
 .buildImg{
-  width:200px;
+  width:125px;
   height:auto;
   margin:0px;
-  padding:0px;
+  padding:1px;
 }
 @media only screen and (max-width: 576px) {
   .buildImg {display: none; }
