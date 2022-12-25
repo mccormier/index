@@ -29,6 +29,6 @@ rCopy.innerHTML='Créer avec<br/>'+
 '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
 'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
 '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
-'<a id="obj" href="/">&#xFFFC; </a>'+
+'<a id="obj" onclick="navProperties()"><b>&#xFFFC; </b></a>'+
 '<br/>&#169 '+year+'&nbsp par Marc Cormier.'+
 '<br/><i style="font-size:9px;">'+lastModif+"</i>";
