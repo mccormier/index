@@ -20,4 +20,4 @@ header{display: grid; place-items: center; }
     width:400px;margin:auto;
   }
 }
-.txtLink{text-decoration:none;color:black;}
+.txtLink{text-decoration:none;color:black;font-size:22px;margin-left:13px;}
