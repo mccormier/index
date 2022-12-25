@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8" />
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
-  <title>McCormier</title>
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
+	<title>McCormier</title>
     <link rel="stylesheet" type="text/css" href="docStyle.css">
-    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="OverlayMenu.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
       <script type="text/javascript" src="header.js"></script>
+      <script type="text/javascript" src="OverlayMenu.js"></script>
       <script type="text/javascript"> function getIP(json) {return json.ip;} </script> 
       <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
       <script type="text/javascript" src="data.json"></script>
@@ -27,63 +28,12 @@ $('html').mousedown(function(event){
 </script>
 </head>
 <body>
-<main>
-<div class="wrapper">
-<div class="wrap">
-<img class="logo" src="/index/img/logo.png" alt="McCormier" onclick="location.href='https://mccormier.github.io/index/'"> 
-<img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="Site en Maintenance" onclick="navProperties()"> 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 <header> 
-<h1>McCormier</h1>
+<img class="logo" src="/index/img/logo.png" alt="McCormier" onclick="location.href='https://mccormier.github.io/index/'"> 
+<img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="En Construction" onclick="navProperties()">
 </header>
-<div class="navbar">
-  <a href="#home">Accueil</a>
-  <a href="#About">À Propos</a>
-  <a href="#Reference">Références</a>
-  <div class="subnav">
-    <button class="subnavbtn">Services</button>
-    <div class="subnav-content">
-      <a href="#Products">Produits</a>
-      <a href="#Templates">PortFolio</a>
-      <a href="#Snips">Snippets</a>
-      <a href="#Express">Express</a>
-    </div>
-  </div> 
-<!--
-  <div class="subnav">
-    <button class="subnavbtn">Languages</button>
-    <div class="subnav-content">
-      <a href="#company">WEB</a>
-      <a href="#team">Machine</a>
-      <a href="#careers">Programmation</a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Services</button>
-    <div class="subnav-content">
-      <a href="#bring">Bring</a>
-      <a href="#deliver">Deliver</a>
-      <a href="#package">Package</a>
-      <a href="#express">Express</a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Partners</button>
-    <div class="subnav-content">
-      <a href="#link1">Link 1</a>
-      <a href="#link2">Link 2</a>
-      <a href="#link3">Link 3</a>
-      <a href="#link4">Link 4</a>
-    </div>
-  </div>
--->
-  <a href="#contact">Contact</a>
-  <div class="subnav" style="float:right;">
-    <button class="subnavbtn">Client(s)</button>
-    <div class="subnav-content">
-      <a href="#login" style="float:right;">Connexion</a>
-    </div>
-  </div> 
-</div>
+    <div class="wrap">
         <p> <b>♻️ RECYCLAGE, ACHAT & DÉPANNAGE INFORMATIQUE.</b><br/><br/>
             <b>ENTRETIEN & RÉPARATION D'ORDINATEUR</b><br/> 
             Diagnostique des problèmes matériel ou logiciel, Récupération de mots de passe, Récupération et sauvegarde de données, Nettoyage à l'air de vos équipements électroniques et ordinateurs, Remplacement de disque dur, Installation et configuration d’imprimante, Élimination de virus, nettoyage d’ordinateur Formatage, installation de Windows<br/><br/> 
@@ -121,10 +71,20 @@ $('html').mousedown(function(event){
             * <i>peut varier en fonction des certifications et/ou compétences du technicien ou administrateur réseaux. des frais de 1,88$ du Km. s'appliquent.</i> *<br/><br/> 
             *** <i>prix sujet à changement sans préavis. pour plus de détails visitez mon site web régulièrement.</i> ***</center>
         </p>
-        <footer> </footer>
+<footer> </footer>
     </div>
+    <div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a id="Accueil" href="/index/"> Accueil </a>
+<a id="À Propos" href="/index/LinkTr.ee/linkTr.ee.htm"> À Propos </a>
+<!--
+<a id="Références" href="#"> Références </a>
+<a id="Template" href="#"> Template (PortFolio) </a>
+<a id="Produits" href="#"> Produits </a>
+<a id="Service" href="#"> Service </a>
+<a id="Back" onClick="window.history.go(-1)"> Back </a>
+-->
 </div>
-</main>
 <script type="text/javascript"> var data = JSON.parse(data); </script>
 <script>
     var xIp='';
