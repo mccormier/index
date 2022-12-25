@@ -30,15 +30,25 @@ $('html').mousedown(function(event){
 <main>
 <div class="wrapper">
 <div class="wrap">
-  <!--
 <img class="logo" src="/index/img/logo.png" alt="McCormier" onclick="location.href='https://mccormier.github.io/index/'"> 
--->
 <img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="Site en Maintenance" onclick="navProperties()"> 
 <header> 
 <h1>McCormier</h1>
 </header>
 <div class="navbar">
-  <a href="#home">Home</a>
+  <a href="#home">Accueil</a>
+  <a href="#About">À Propos</a>
+  <a href="#Reference">Références</a>
+  <div class="subnav">
+    <button class="subnavbtn">Services</button>
+    <div class="subnav-content">
+      <a href="#Products">Produits</a>
+      <a href="#Templates">PortFolio</a>
+      <a href="#Snips">Snippets</a>
+      <a href="#Express">Express</a>
+    </div>
+  </div> 
+<!--
   <div class="subnav">
     <button class="subnavbtn">Languages</button>
     <div class="subnav-content">
@@ -65,7 +75,14 @@ $('html').mousedown(function(event){
       <a href="#link4">Link 4</a>
     </div>
   </div>
+-->
   <a href="#contact">Contact</a>
+  <div class="subnav" style="float:right;">
+    <button class="subnavbtn">Client(s)</button>
+    <div class="subnav-content">
+      <a href="#login" style="float:right;">Connexion</a>
+    </div>
+  </div> 
 </div>
         <p> <b>♻️ RECYCLAGE, ACHAT & DÉPANNAGE INFORMATIQUE.</b><br/><br/>
             <b>ENTRETIEN & RÉPARATION D'ORDINATEUR</b><br/> 
