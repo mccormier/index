@@ -8,6 +8,8 @@ html{
   user-select: none; 
 }
 body{margin:0px;padding:0px; }
+main{margin:1px;padding:0px;}
+.wrapper{margin:1px;padding:0px;}
 h1{margin:0px;padding:0px;}
 header{display: grid; place-items: center; }
 .logo{width:75px;height:75px;margin:0px;padding:0px;position:relative;right:195%;}
