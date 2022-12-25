@@ -5,44 +5,69 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>QR Code Generator | McCormier</title>
 	<link rel="stylesheet" type="text/css" href="../docStyle.css">
-	<link rel="stylesheet" type="text/css" href="../OverlayMenu.css">
+	<link rel="stylesheet" type="text/css" href="../menu.css">
 	<link rel="stylesheet" type="text/css" href="../footer.css">
-	<script type="text/javascript" src="../OverlayMenu.js"></script>
 	<style type="text/css"> 
 a{text-decoration:none;color:black;}a:hover{cursor:pointer;}
-#wrap{width:auto;height:auto;}
-#qrCode{width:125px;height:125px;margin-bottom:30px;}
+#wrap{width:auto;margin:auto;display:grid;place-items:center;}
+#qrCode{width:125px;height:125px;margin-top:30px;margin-bottom:30px;}
 #qrCode:hover{cursor:help;} 
 #link{font-size:21px;width:300px;height:auto;overflow:hidden;}
 #link a{text-align:center;padding:7px;}
 </style>
 </head>
 <body>
-<div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<a id="Accueil" href="/index/"> Accueil </a>
-<a id="À Propos" href="/index/LinkTr.ee/linkTr.ee.htm"> À Propos </a>
-<!-- <a id="Back" onClick="window.history.go(-1)"> Back </a> -->
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="wrapper">
+<img class="logo" src="/index/img/logo.png" alt="McCormier" onclick="location.href='https://mccormier.github.io/index/'"> 
+<img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="Site en Maintenance" onclick="navProperties()"> 
 <header> 
-<center> 
-    <img class="logo" src="/index/img/logo.png" alt="McCormier" onclick="location.href='https://mccormier.github.io/index/'"> 
-</center> 
+<h1>McCormier</h1>
 </header>
-<center>
+<div class="navbar">
+  <a href="/index/">Accueil</a>
+  <a href="/index/LinkTr.ee/linkTr.ee.htm">À Propos</a>
+  <a href="/index/MCBrady">#MCBrady</a>
+  <div class="subnav">
+    <button class="subnavbtn">Services</button>
+    <div class="subnav-content">
+      <a href="/index/C/inetpub/wwwroot">Internet Information Services Manager (IIS)</a>
+      <a href="#Products">Produits</a>
+      <a href="#Templates">PortFolio</a>
+      <a href="#Express">Express</a>
+      <a href="#Snips">Snippets</a>
+      <a href="#modules">Modules</a>
+      <a href="#package">Package</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Références</button>
+    <div class="subnav-content">
+      <a href="#lang">Languages</a>
+      <a href="#company">WEB</a>
+      <a href="#team">Machine</a>
+      <a href="#careers">Programmation</a>
+    </div>
+  </div> 
+  <div class="subnav" style="float:right;">
+    <button class="subnavbtn">Client(s)</button>
+    <div class="subnav-content">
+      <a href="#sign-up" style="float:right;">Inscription</a>
+      <a href="#login" style="float:right;">Connexion</a>
+      <a href="#client-form" style="float:right;">Formulaire</a>
+      <a href="#footer" style="float:right;">Contact</a>
+    </div>
+  </div> </div>
 <div id="wrap">
-	<img id="qrCode" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Qrcode_wikipedia_fr_v2clean.png" onclick="window.location.href='https://upload.wikimedia.org/wikipedia/commons/7/78/Qrcode_wikipedia_fr_v2clean.png';">
-<div id="link">
+	<img id="qrCode" src="/index/img/htmQRcode.png" onclick="window.location.href='https://mccormier.github.io/index';">
+<div id="link"><center>
     <a href="telQRcodeGen.htm">1(234)567-8910</a><br />
 	<a href="eMail.htm">marccormierpro@gmail.com</a><br />
 	<a href="urlQRcodeGenerator.htm">https://mccormier.github.io/index</a><br />
 	<a href="WIFI.htm">WIFI</a><br />
 	<a href="sms.htm">SMS</a><br />
 	<a href="MeCard.htm">MeCard</a>
-</div></div>
-</center>
-<footer></footer>
+</center></div></div>
+<footer id="footer"></footer>
 <script type="text/javascript" src="../footer.js"></script>
 </body>
 </html>
