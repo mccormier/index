@@ -1,0 +1,69 @@
+<!--
+:: ########################
+:: ##### File Sorting #####
+:: ########################
+::
+:: #########################
+:: ##### MISE EN GARDE #####
+:: #########################
+:: Ce fichier triera tous les fichiers du dossiers
+:: Ou il est sauvegardé dans des dossiers nommées
+:: Par Extentions (.txt .jpg .png .mp3 .mp4 etc..).
+::
+:: Copy / Paste / Save As
+:: fileSorting .cmd OU .bat (fileSorting.cmd)
+:: Sauvegarder ce fichier dans le dossier
+:: ou vous voulez executer le tri des fichiers
+::
+:: Enjoy!!
+for %%a in (".\*") do (
+if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (
+if not exist "%%~xa" mkdir "%%~xa"
+move "%%a" "%%~dpa%%~xa\"
+));
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Files Sorting | McCormier</title>
+	<style type="text/css">body{margin:0px;padding:0px;}div{margin-left:175px;}input{float:right;margin-right:600px;}</style>
+</head>
+<body>
+<main>
+	<header><center><h1>File Sorting</h1><h2>############### MISE EN GARDE ###############</h2></center></header>
+	<div id="content"> <p>
+			:: Ceci est un commentaire d'une ligne dans un fichier.bat  (.cmd)<br />
+			:: Ce fichier Réorganise les fichiers du dossiers<br />
+			:: Dans des dossiers nommées par extentions (type) de fichiers Example.(.txt .jpg .png .mp3 .mp4 etc.).<br />
+			:: ##############################################<br />
+			:: <b>***** NE PAS EXECUTÉ CE FICHIER DANS *****</b><br />
+			:: ##############################################<br />
+			:: " <u><b>C:\Windows\system32\</b></u>"<br />
+			:: Copy / Paste / Save As<br />
+			:: ENJOY!!<br />
+			:: Référence <a href="https://www.ss64.com" style="text-decoration:none;color:black;">: https://www.ss64.com</a><br />
+			:: Bash Code Start Here... q;-)</p>
+<textarea style="width:400px;height:100px;">
+for %%a in (".\*") do (
+if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (
+if not exist "%%~xa" mkdir "%%~xa"
+move "%%a" "%%~dpa%%~xa\"
+));</textarea><br />
+		<input type="button" name="btn" onclick="downloadFile()" value="Télécharger">
+	 </div> <footer></footer> </main>
+<script type="text/javascript">
+	   const downloadFile = () => {
+      const link = document.createElement("a");
+      const content = document.querySelector("textarea").value;
+// Create blob object with file content
+      const file = new Blob([content], { type: 'text/plain' });
+      link.href = URL.createObjectURL(file);
+      link.download = "filesSorting.cmd";
+      link.click();
+      URL.revokeObjectURL(link.href);
+   };
+</script>
+</body>
+</html>
