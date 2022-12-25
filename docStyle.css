@@ -13,14 +13,6 @@ main{margin:1px;padding:0px;}
 h1{margin:0px;padding:0px;}
 header{display: grid; place-items: center; }
 .logo{width:50px;height:50px;margin:0px;padding:0px;}
-.buildImg{
-  width:125px;
-  height:auto;
-  margin:0px;
-  padding:1px;
-}
-@media only screen and (max-width: 576px) {
-  .buildImg {display: none; }
-}
+.buildImg{width:175px; height:auto; margin:0px; padding:0px;}
 .wrap{width:850px;margin:auto;}
 .txtLink{text-decoration:none;color:black;}
