@@ -1,0 +1,4 @@
+a{text-decoration:none;color:black;}a:hover{cursor:pointer;}
+#wrap{width:auto;margin:auto;display:grid;place-items:center;}
+#link{font-size:21px;width:300px;height:auto;margin:15px;}
+#link a{text-align:center;padding:7px;line-height:1.4;}
