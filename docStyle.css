@@ -12,7 +12,7 @@ main{margin:1px;padding:0px;}
 .wrapper{margin:1px;padding:0px;}
 h1{margin:0px;padding:0px;}
 header{display: grid; place-items: center; }
-.logo{width:25px;height:25px;margin:0px;padding:0px;}
+.logo{width:35px;height:35px;margin:0px;padding:0px;}
 .buildImg{width:175px; height:auto; margin:0px; padding:0px;float:right;}
 .wrap{width:90%;margin:auto;}
 @media only screen and (max-width: 576px) {
