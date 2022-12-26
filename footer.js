@@ -10,7 +10,8 @@ img.setAttribute('class', 'teamViewerImgLink');
 img.setAttribute('onclick', "window.location.href='https://www.teamviewer.com/fr-ca/telecharger/windows/'");
 footer.appendChild(img);
 */
-/* MailTo */
+var time=new Date();
+/* time.toLocaleString(); //returns date and time (e.g. "9/12/2015, 6:08:25 PM") */
 img=document.createElement('img');
 img.src='/index/img/mailto.png';
 img.alt='mailto'
@@ -31,4 +32,5 @@ rCopy.innerHTML='Créer avec<br/>'+
 '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
 '<a id="obj" onclick="navProperties()"><b>&#xFFFC; </b></a>'+
 '<br/>&#169 '+year+'&nbsp réalisation <a href="#">McCormier.</a>'+
-'<br/><i style="font-size:9px;">'+lastModif+"</i>";
+/* '<br/><i style="font-size:9px;">'+lastModif+"</i>"; */
+'<br/><i style="font-size:9px;">'+time.toLocaleString()+"</i>";
