@@ -16,6 +16,7 @@ h1{margin:0px;padding:0px;}
 .wrap{width:90%;margin:auto;}
 @media only screen and (max-width: 576px) {
   .wrap {width:350px;margin:auto;}
+  .logo{width:37px;margin:10px;margin-bottom:-5px;}
   .buildImg{width:85px;height:auto;margin-left:225px;}
 }
 .txtLink{text-decoration:none;color:black;font-size:22px;margin-left:13px;}
