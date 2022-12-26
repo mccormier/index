@@ -11,7 +11,6 @@ body{margin:0px;padding:0px;}
 main{margin:1px;padding:0px;}
 .wrapper{margin:1px;padding:0px;}
 h1{margin:0px;padding:0px;}
-header{display:grid;place-items:center;}
 .logo{width:75px;margin:20px;margin-bottom:-10px;}
 .buildImg{width:175px;height:auto;margin-left:675px;}
 .wrap{width:90%;margin:auto;}
