@@ -12,13 +12,14 @@ a{text-decoration:none;color:black;}a:hover{cursor:pointer;}
 #wrap{width:auto;margin:auto;display:grid;place-items:center;}
 #qrCode{width:125px;height:125px;margin-top:30px;margin-bottom:30px;}
 #qrCode:hover{cursor:help;} 
-#link{font-size:21px;width:300px;height:auto;}
-#link a{text-align:center;padding:7px;}
+#link{font-size:21px;width:300px;height:auto;margin:15px;}
+#link a{text-align:center;padding:7px;line-height:1.4;}
 </style>
 </head>
 <body>
 <div class="wrapper">
-<img class="logo" src="/index/img/logo.png" alt="QR Code"> 
+<!-- <img class="logo" src="/index/img/logo.png" alt="QR Code"> -->
+<img id="logo" src="/index/img/htmQRcode.png" alt="McCormier" onclick="window.location.href='https://mccormier.github.io/index';">
 <img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="Site en Maintenance" onclick="navProperties()"> 
 <header> 
 <h1>McCormier</h1>
@@ -66,7 +67,6 @@ a{text-decoration:none;color:black;}a:hover{cursor:pointer;}
     </div>
   </div> </div>
 <div id="wrap">
-	<img id="qrCode" src="/index/img/htmQRcode.png" onclick="window.location.href='https://mccormier.github.io/index';">
 <div id="link"><center>
     <a href="telQRcodeGen.htm">1(234)567-8910</a><br />
 	<a href="eMail.htm">marccormierpro@gmail.com</a><br />
