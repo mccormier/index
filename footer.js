@@ -10,7 +10,7 @@ img.setAttribute('class', 'teamViewerImgLink');
 img.setAttribute('onclick', "window.location.href='https://www.teamviewer.com/fr-ca/telecharger/windows/'");
 footer.appendChild(img);
 */
-var time=new Date();
+time=new Date();
 /* time.toLocaleString(); //returns date and time (e.g. "9/12/2015, 6:08:25 PM") */
 img=document.createElement('img');
 img.src='/index/img/mailto.png';
