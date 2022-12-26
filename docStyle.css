@@ -16,6 +16,8 @@ h1{margin:0px;padding:0px;}
 .wrap{width:90%;margin:auto;}
 #tarif{font-size:2em; margin-left:155px;}
 #tarif-desc{margin-left:150px;line-height:1.9;}
+.coupon{width:150px;padding:1px;border: 3px dashed black;margin-left:655px;}
+#couponCode{font-size:11px;font-style:italic;font-family:Comic Sans MS;}
 @media only screen and (max-width: 576px) {
   .wrap {width:350px;margin:auto;}
   .logo{width:37px;margin:10px;margin-bottom:-5px;}
