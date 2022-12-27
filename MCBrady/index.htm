@@ -35,6 +35,9 @@
     <!-- CSS @media screen width ... -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <!-- <meta http-equiv="refresh" content="60"> -->
+  <link rel="stylesheet" type="text/css" href="../menu.css">
+  <link rel="stylesheet" type="text/css" href="../footer.css">
+
   <style type="text/css">
     .logo{width:50px;height:50px;margin:0px;padding:0px;}
   </style>
@@ -136,7 +139,71 @@ $(document).ready(function(){
 </head>
 <body>
   <img class="logo" src="/index/img/htmQRcode.png" onclick='location.href="https://mccormier.github.io/index"'>
-    <div id="mySidenav" class="sidenav"> </div>
+  <div class="navbar">
+  <a href="/index/">Accueil</a>
+  <a href="https://linktr.ee/mcormier">À Propos</a>
+  <a href="/index/MCBrady">#MCBrady</a>
+<!--
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+-->
+<!--
+  <div class="subnav">
+    <button class="subnavbtn">Produits</button>
+    <div class="subnav-content">
+      <a href="/index/"></a>
+    </div>
+  </div>
+-->
+  <div class="subnav">
+    <button class="subnavbtn">Produits</button>
+    <div class="subnav-content">
+      <a href="/index/QRcodeGenerator">QR Code Generator</a>
+      <a href="#"></a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Services</button>
+    <div class="subnav-content">
+      <a href="/index/C/inetpub/wwwroot">Internet Information Services Manager (IISS) - (WEB)</a>
+      <a href="#recycle">Recyclage</a>
+      <a href="#maintenance">Réparation - Maintenance - Entretien</a>
+      <a href="#progiciel">Programmation</a>
+      <a href="#formations">Formation Personalisée</a>
+      <a href="https://goulet.ca/produits-numeriques/webformation/">Formation WEB Et Téléchargement de fichiers</a>
+      <a href="https://www.teamviewer.com/fr-ca/telecharger/windows/">Express (TeamViewer)</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Références</button>
+    <div class="subnav-content">
+      <a href="#lang">Languages</a>
+<!--
+      <a href="#lang" class="Dsubnav">Languages</a>
+      <a href="#company" class="Dsubnav-content">WEB</a>
+      <a href="#team">Machine</a>
+      <a href="#careers">Programmation</a>
+-->
+<!-- -->
+<a href="https://tools.pdf24.org/fr/">Production de document PDF</a>
+      <a href="#Snips">Snippets</a>
+      <a href="#Templates">PortFolio</a>
+      <a href="#modules">Modules</a>
+      <a href="#package">Package</a>
+    </div>
+  </div>
+    <a href="/index/pageEnConstruction.htm">SandBox</a>
+  <div class="subnav" style="float:right;">
+    <button class="subnavbtn">Client(s)</button>
+    <div class="subnav-content">
+      <a href="#sign-up" style="float:right;">Inscription</a>
+      <a href="#login" style="float:right;">Connexion</a>
+      <a href="#client-form" style="float:right;">Formulaire</a>
+      <a href="#footer" style="float:right;">Contact</a>
+    </div>
+  </div> 
+</div>
   <center> <h1>TCP://</h1><h2>IRC.Undernet.org:6667</h2><h3>#MCBrady Channels Bot</h3> 
 <h3> IRC is one of the oldest and largest IRC networks.</h3><br/>
   <h3 id="subNav" class="parent_1">Example</h3> 
@@ -219,7 +286,8 @@ Recyclage et Réferences<br/><br/>
 -->
 </center>
 <!-- <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button> -->
-<a href="#" style="color:black;text-decoration:none;padding:4px;background-color:lightgrey;font-weight:bold;border:2px solid black;">Top</a><br/>
-<center><a href="https://mccormier.github.io/index/LinkTr.ee/linkTr.ee.htm" style="color:black;text-decoration:none;">LinkTr.ee</a></center>
+<a href="#" style="color:black;text-decoration:none;padding:4px;background-color:lightgrey;font-weight:bold;border:2px solid black;">Top</a><br/><br />
+<footer id="footer"></footer>
+<script type="text/javascript" src="../footer.js"></script>
 </body>
 </html>
