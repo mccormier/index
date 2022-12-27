@@ -33,4 +33,5 @@ rCopy.innerHTML='Créer avec<br/>'+
 '<a id="obj" onclick="navProperties()"><b>&#xFFFC; </b></a>'+
 '<br/>&#169 '+year+'&nbsp réalisation <a href="#">McCormier.</a>'+
 '<br/><i style="font-size:9px;">'+lastModif+"</i>";
-/* '<br/><i style="font-size:9px;">'+time.toLocaleString()+"</i>"; */
+//
+// '<br/><i style="font-size:9px;">'+time.toLocaleString()+"</i>";
