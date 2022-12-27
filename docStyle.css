@@ -25,5 +25,6 @@ h1{margin:0px;padding:0px;}
   #tarif{font-size:2em; margin-left:55px;}
   #tarif-desc{margin-left:50px;line-height:1.8;}
   .couponDiv{display:none;}
+  #buildingPage{width:250px;}
 }
 .txtLink{text-decoration:none;color:black;font-size:22px;margin-left:13px;}
