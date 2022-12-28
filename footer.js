@@ -29,8 +29,8 @@ rCopy.innerHTML='<a href="https://www.javascript.com/">JavaScript</a>, '+
 '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
 'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
 '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
-'<a id="obj" onclick="showLS(), navProperties()"><b>&#xFFFC; </b></a>'+
-'<br/>&#169 '+year+'&nbsp réalisation <a href="#">McCormier.</a>'+
-/* '<br/><i style="font-size:9px;">'+lastModif+"</i>"; */
-//
-'<br/><i style="font-size:9px;">'+time.toLocaleString()+"</i>";
+'<a id="obj" onclick="navProperties()"><b>&#xFFFC; </b></a>'+
+'<br/>&#169 '+year+'&nbsp réalisation <a href="#">McCormier.</a><br />'+
+/* '<i style="font-size:9px;">'+lastModif+"</i>"; */
+/* '<i style="font-size:9px;">'+time.toLocaleString()+"</i>"; */
+'<a onclick="showLS()" style="font-size:9px;">'+time.toLocaleString()+"</a>";
