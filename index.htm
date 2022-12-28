@@ -170,6 +170,23 @@ $('html').mousedown(function(event){
   myWindow.document.write("<h1>Un exemple d'API simple</h1>"+"<h2>Ceci est un simple exemple d'API :</h2>"+caracteristiquesNavigateur+xIp);
 }
 </script>
+<script type="text/javascript">
+  if (localStorage.visitor) {
+    localStorage.visitor = Number(localStorage.visitor)+1;
+
+    const myObj = {ip: xIp};
+    const myJSON = JSON.stringify(myObj);
+    localStorage.setItem("visitor-"visitor, myJSON);
+  } else {
+    localStorage.visitor = 1; 
+  } 
+  visitor = localStorage.visitor;
+function showLS() {
+    for (const [key, value] of Object.entries(localStorage)) {
+  console.log(`${key}: ${value}`);
+}
+}
+</script>
 <script type="text/javascript" src="footer.js"></script>
 <script type="text/javascript" src="coupon.js"> </script>
 </body>
