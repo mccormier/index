@@ -1,8 +1,17 @@
-var navBar = '';
-navBar += '<div class="navbar">';
-navBar += '<a href="/index/">Accueil</a>';
-navBar += '<a href="https://linktr.ee/mcormier">À Propos</a>';
-navBar += '<a href="/index/MCBrady">#MCBrady</a>';
+//var navBar = '';
+//navBar += '<div class="navbar">';
+//
+//var navBar=document.getElementsByClassName('navBar');
+//
+// search w3 innerHTML +=
+var wrapper=document.getElementsByClassName('wrapper');
+var navBar=document.createElement('div');
+navBar.setAttribute('class', "navBar");
+wrapper.appendChild(navBar);
+//
+navBar.innerHTML += '<a href="/index/">Accueil</a>';
+navBar.innerHTML += '<a href="https://linktr.ee/mcormier">À Propos</a>';
+navBar.innerHTML += '<a href="/index/MCBrady">#MCBrady</a>';
 /*
   <div class="subnav">
     <button class="subnavbtn">Produits</button>
@@ -11,51 +20,51 @@ navBar += '<a href="/index/MCBrady">#MCBrady</a>';
     </div>
   </div>
 */
-navBar += '<div class="subnav">';
-navBar += '<button class="subnavbtn">Produits</button>';
-navBar += '<div class="subnav-content">';
-navBar += '<a href="/index/QRcodeGenerator">QR Code Generator</a>';
-navBar += '<a href="#"></a>';
-navBar += '</div>';
-navBar += '</div>';
-navBar += '<div class="subnav">';
-navBar += '<button class="subnavbtn">Services</button>';
-navBar += '<div class="subnav-content">';
-navBar += '<a href="/index/C/inetpub/wwwroot">Internet Information Services Manager (IISS) - (WEB)</a>';
-navBar += '<a href="#recycle">Recyclage</a>';
-navBar += '<a href="#maintenance">Réparation - Maintenance - Entretien</a>';
-navBar += '<a href="#progiciel">Programmation</a>';
-navBar += '<a href="#formations">Formation Personalisée</a>';
-navBar += '<a href="https://goulet.ca/produits-numeriques/webformation/">Formation WEB Et Téléchargement de fichiers</a>';
-navBar += '<a href="https://www.teamviewer.com/fr-ca/telecharger/windows/">Express (TeamViewer)</a>';
-navBar += '</div>';
-navBar += '</div>';
-navBar += '<div class="subnav">';
-navBar += '<button class="subnavbtn">Références</button>';
-navBar += '<div class="subnav-content">';
-navBar += '<a href="#lang">Languages</a>';
-navBar += '<a href="#Snips">Snippets</a>';
-navBar += '<a href="#Templates">PortFolio</a>';
-navBar += '<a href="#modules">Modules</a>';
-navBar += '<a href="#package">Package</a>';
-navBar += '</div>';
-navBar += '</div>';
-navBar += '<div class="subnav">';
-navBar += '<button class="subnavbtn">Tools</button>';
-navBar += '<div class="subnav-content">';
-navBar += '<a href="https://tools.pdf24.org/fr/">Production de document PDF</a>';
-navBar += '</div>';
-navBar += '</div>';
-navBar += '<a href="/index/pageEnConstruction.htm">SandBox</a>';
-navBar += '<div class="subnav" style="float:right;">';
-navBar += '<button class="subnavbtn">Client(s)</button>';
-navBar += '<div class="subnav-content">';
-navBar += '<a href="#login" style="float:right;">Inscription / Connexion</a>';
-navBar += '<a href="#client-form" style="float:right;">Formulaire</a>';
-navBar += '<a href="#footer" style="float:right;">Contact</a>';
-navBar += '</div>';
-navBar += '</div>';
-navBar += '</div>';
+navBar.innerHTML += '<div class="subnav">';
+navBar.innerHTML += '<button class="subnavbtn">Produits</button>';
+navBar.innerHTML += '<div class="subnav-content">';
+navBar.innerHTML += '<a href="/index/QRcodeGenerator">QR Code Generator</a>';
+navBar.innerHTML += '<a href="#"></a>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '<div class="subnav">';
+navBar.innerHTML += '<button class="subnavbtn">Services</button>';
+navBar.innerHTML += '<div class="subnav-content">';
+navBar.innerHTML += '<a href="/index/C/inetpub/wwwroot">Internet Information Services Manager (IISS) - (WEB)</a>';
+navBar.innerHTML += '<a href="#recycle">Recyclage</a>';
+navBar.innerHTML += '<a href="#maintenance">Réparation - Maintenance - Entretien</a>';
+navBar.innerHTML += '<a href="#progiciel">Programmation</a>';
+navBar.innerHTML += '<a href="#formations">Formation Personalisée</a>';
+navBar.innerHTML += '<a href="https://goulet.ca/produits-numeriques/webformation/">Formation WEB Et Téléchargement de fichiers</a>';
+navBar.innerHTML += '<a href="https://www.teamviewer.com/fr-ca/telecharger/windows/">Express (TeamViewer)</a>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '<div class="subnav">';
+navBar.innerHTML += '<button class="subnavbtn">Références</button>';
+navBar.innerHTML += '<div class="subnav-content">';
+navBar.innerHTML += '<a href="#lang">Languages</a>';
+navBar.innerHTML += '<a href="#Snips">Snippets</a>';
+navBar.innerHTML += '<a href="#Templates">PortFolio</a>';
+navBar.innerHTML += '<a href="#modules">Modules</a>';
+navBar.innerHTML += '<a href="#package">Package</a>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '<div class="subnav">';
+navBar.innerHTML += '<button class="subnavbtn">Tools</button>';
+navBar.innerHTML += '<div class="subnav-content">';
+navBar.innerHTML += '<a href="https://tools.pdf24.org/fr/">Production de document PDF</a>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '<a href="/index/pageEnConstruction.htm">SandBox</a>';
+navBar.innerHTML += '<div class="subnav" style="float:right;">';
+navBar.innerHTML += '<button class="subnavbtn">Client(s)</button>';
+navBar.innerHTML += '<div class="subnav-content">';
+navBar.innerHTML += '<a href="#login" style="float:right;">Inscription / Connexion</a>';
+navBar.innerHTML += '<a href="#client-form" style="float:right;">Formulaire</a>';
+navBar.innerHTML += '<a href="#footer" style="float:right;">Contact</a>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '</div>';
+navBar.innerHTML += '</div>';
 /*
 https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages
 */

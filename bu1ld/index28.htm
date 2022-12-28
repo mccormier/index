@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
+  <title>McCormier</title>
+    <link rel="stylesheet" type="text/css" href="docStyle.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+      <script type="text/javascript"> function getIP(json) {return json.ip;} </script> 
+      <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+      <script type="text/javascript" src="data.json"></script>
+      <script src="jQuery3.6.1.min.js"></script> 
+<script type="text/javascript" language="jQuery">
+$(document).ready(function() {
+$('html').mousedown(function(event){
+    switch (event.which) {
+        case 3:
+            alert('Right mouse button pressed\n\nEn construction..\nMenu\nAccueil\nAbout\nService\nProduits\nTemplate (PortFolio)\nSnippets\nRéférences\nDownload\nClient login()\nFile\nEdit\nSave\nView\nParam\nConfig');
+            break;
+        default:
+           break;
+    }
+});
+});
+</script>
+</head>
+<body>
+<main>
+<div class="wrapper">
+  <!-- <img class="logo" src="/index/img/logo.png" alt="QR Code"> -->
+  <img class="logo" src="/index/img/htmQRcode.png">
+  <img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="Site en Maintenance" onclick="navProperties()"> 
+<header> <center> <h1>McCormier</h1> 
+<h2>RÉPARATION & ENTRETIEN D'ORDINATEUR,</h2>
+<h2>♻️ RECYCLAGE, ACHAT, DÉPANNAGE INFORMATIQUE.</h2>
+<h2>MAINTENANCE & DÉPANNAGE RÉSEAUX</h2>
+<h3>CONCEPTION GRAPHIQUE & WEBDESIGN</h3>
+<h3>GESTION DE PROJETS WEB</h3>
+<h4>APPLICATIONS SPÉCIFIQUES ET INTERFACE D'ADMINISTRATION</h4>
+<h4>Structure De Base De Données Et Requêtes</h4>
+<h4>DYNAMISE DES PAGES PAR JAVASCRIPT</h4>
+<h5>VALIDATION W3C, WAI & RÉFÉRENCEMENT NATUREL SEO</h5>
+<h6>CONCEPTION MULTI-PLATEFORMES</h6>
+<p><b>FORMATION PERSONALISÉE</b></p>
+</center> </header>
+<script type="text/javascript" src="navBar.js"></script>
+        <center><div class="wrapped"><p style="font-size:1em;">
+            Le service informatique à domicile est disponible pour les particuliers,<br />les travailleurs autonomes et les petites entreprises. (TPE)<br/><br/>
+        </p></div></center>
+            <a href="mailto:marccormierpro@gmail.com" style="margin-left:0px;text-decoration:none;color:black;margin-left:35px;"><u>Service à domicile sur rendez-vous.</u></a><br/><br/><hr>
+            <p id="tarif"><b>Tarif :</b></p>
+<div id="couponDiv" class="couponDiv">
+  <center>
+    <p id="coupon"></p>
+    <p id="couponCode"></p>
+  </center>
+</div>
+            <div id="tarif-desc"><p><b>-</b> Estimation à partir de 20$ *<br/>
+            <b>-</b> Tarif à partir de 40$ de l'heure<br/>
+            <b>-</b> Service d'assistance en ligne pour 15$ jusqu'à 30 minutes!<br/>
+            <b>-</b> Service rapide à partir de $85<br/><br/></p></div>
+            <center> <p>*** <i>Service commercial: a partir de 60$ de l'heure</i> ***<br/>
+            ** <i>prix minimum pour un déplacement: 1 heure selon tarif. Minimum 1 heure  **</i><br/>
+            * <i>peut varier en fonction des certifications et/ou compétences du technicien ou administrateur réseaux. des frais de 1,88$ du Km. s'appliquent.</i> *<br/><br/> 
+            *** <i>prix sujet à changement sans préavis. pour plus de détails visitez mon site web régulièrement.</i> ***</center>
+        </p><hr>
+<div><center>
+  <img src="/index/img/enConstruction.jpg" alt="Page En Construction" id="buildingPage"> 
+</center></div>
+<footer id="footer"> </footer>
+    </div>
+</div>
+</main>
+<script type="text/javascript"> var data = JSON.parse(data); </script>
+<script>
+    var xIp='';
+  function recordData (data) {
+    console.log(data.ip, data.hostname, data.city, data.region, data.country, data.loc, data.postal, data.timezone)
+    xIp='<br />'+'<b>Public IPv4 : </b>'+data.ip+'<br />'+'<b>Hostname : </b>'+data.hostname+'<br />'+'<b>City : </b>'+data.city+'<br />'+'<b>Region : </b>'+data.region+'<br />'+'<b>Country : </b>'+data.country+'<br />'+'<b>Location : </b>'+data.loc+'<br />'+'<b>Postal Code : </b>'+data.postal+'<br />'+'<b>Timezone : </b>'+data.timezone;
+}
+</script>
+<script src="https://ipinfo.io/json?callback=recordData"></script>
+<script type="text/javascript">
+    function navProperties() {
+    var caracteristiquesNavigateur = "";
+    caracteristiquesNavigateur = "<b>Code du navigateur :</b> "
+    + navigator.appCodeName + "<br>";
+    caracteristiquesNavigateur += "<b>Nom du navigateur :</b> "
+    + navigator.appName + "<br>";
+    caracteristiquesNavigateur += "<b>Version :</b> "
+    + navigator.appVersion + "<br>";
+    caracteristiquesNavigateur += "<b>Support des cookies :</b> "
+    + navigator.cookieEnabled + "</p>";
+    caracteristiquesNavigateur += "<b>Systeme d'exploitation :</b> "
+    + navigator.platform + "<br>";
+    caracteristiquesNavigateur += "<b>User-agent header :</b> "
+    + navigator.userAgent + "<br>";
+    caracteristiquesNavigateur += "<b>User-agent language :</b> "
+    + navigator.systemLanguage + "<br>";
+    var myWindow = window.open("", "MsgWindow", "width=1111,height=250");
+  myWindow.document.write("<h1>Un exemple d'API simple</h1>"+"<h2>Ceci est un simple exemple d'API :</h2>"+caracteristiquesNavigateur+xIp);
+}
+</script>
+<script type="text/javascript">
+  if (localStorage.visitor) {
+    localStorage.visitor = Number(localStorage.visitor)+1;
+
+    const myObj = {ip: xIp};
+    const myJSON = JSON.stringify(myObj);
+    localStorage.setItem("visitor-"visitor, myJSON);
+  } else {
+    localStorage.visitor = 1; 
+  } 
+  visitor = localStorage.visitor;
+function showLS() {
+    for (const [key, value] of Object.entries(localStorage)) {
+  console.log(`${key}: ${value}`);
+}
+}
+//try writting cookies
+</script>
+<script type="text/javascript" src="footer.js"></script>
+<script type="text/javascript" src="coupon.js"> </script>
+</body>
+</html>

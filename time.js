@@ -13,8 +13,6 @@ var second=time.getSeconds();
 if(hour <10 ){hour='0'+hour;}
 if(minute <10 ) {minute='0' + minute; }
 var x3 = x3 + ' ' +  hour+':'+minute+':'+second
-//
-//
 // these are the most useful ones IMO
 time.getDate(); // returns value 1-31 for day of the month
 time.getDay(); //returns value 0-6 for day of the week
