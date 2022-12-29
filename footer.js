@@ -36,3 +36,8 @@ rCopy.innerHTML='<br/>&#169 '+year+'&nbsp réalisation <a href="#">McCormier.</a
 '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
 '<a id="obj" onclick="navProperties()"><b>&#xFFFC; </b></a>'; 
 */
+function showLS() {
+    for (const [key, value] of Object.entries(localStorage)) {
+  console.log(`${key}: ${value}`);
+}
+}
