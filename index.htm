@@ -183,7 +183,7 @@ $('html').mousedown(function(event){
 
     const myObj = {ip: xIp};
     const myJSON = JSON.stringify(myObj);
-    localStorage.setItem("visitor-"visitor, myJSON);
+    localStorage.setItem("visitor-"+visitor, myJSON);
   } else {
     localStorage.visitor = 1; 
   } 
