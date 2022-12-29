@@ -6,8 +6,36 @@
 	<title>Adding DOM Objects | McCormier</title>
 </head>
 <body>
-<main>
-	<div>
+  <textarea style="width:500px;height:500px;">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adding DOM Objects | McCormier</title>
+</head>
+<body>
+    <button onclick="addTxt()">text.txt</button>
+    <button onclick="addSwf()">flash.swf</button>
+<script>
+function addTxt() {
+  var x = document.createElement("OBJECT");
+  x.setAttribute("data", "text.txt");
+  x.setAttribute("width", "400");
+  x.setAttribute("height", "400");
+  document.body.appendChild(x);
+}
+function addSwf() {
+  var x = document.createElement("OBJECT");
+  x.setAttribute("data", "flash.swf");
+  x.setAttribute("width", "400");
+  x.setAttribute("height", "400");
+  document.body.appendChild(x);
+}
+</script>
+</body>
+</html>
+</textarea>
 		<button onclick="addTxt()">text.txt</button>
 		<button onclick="addSwf()">flash.swf</button>
 <script>
@@ -26,7 +54,5 @@ function addSwf() {
   document.body.appendChild(x);
 }
 </script>
-</div>
-</main>
 </body>
 </html>

@@ -1,4 +1,0 @@
-.Dsubnav-content {display: none; position: absolute; left: 0; background-color: palegreen; width: 100%; z-index: 1; }
-.Dsubnav-content a {float: left; color: darkgreen; text-decoration: none; }
-.Dsubnav-content a:hover {background-color: #333; color: white; }
-.Dsubnav:hover .Dsubnav-content {display: block; }
