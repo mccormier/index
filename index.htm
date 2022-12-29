@@ -178,6 +178,7 @@ $('html').mousedown(function(event){
 }
 </script>
 <script type="text/javascript">
+  var visitor;
   if (localStorage.visitor) {
     localStorage.visitor = Number(localStorage.visitor)+1;
 
@@ -193,3 +194,13 @@ $('html').mousedown(function(event){
 <script type="text/javascript" src="coupon.js"> </script>
 </body>
 </html>
+<!--
+Failed to load resource: the server responded with a status of 404 () /favicon.ico:1
+might have to use HTTP Request()
+
+DevTools failed to load source map: Could not load content for chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/editor/config.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+config.js.map
+
+DevTools failed to load source map: Could not load content for chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/editor/content.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+content.js.map
+-->
