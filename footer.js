@@ -21,7 +21,12 @@ footer.appendChild(img);
 rCopy=document.createElement('p');
 rCopy.setAttribute('style', 'font-size:13px;');
 footer.appendChild(rCopy);
-rCopy.innerHTML='<a href="https://www.javascript.com/">JavaScript</a>, '+
+rCopy.innerHTML='<br/>&#169 '+year+'&nbsp réalisation <a href="#">McCormier.</a><br />'+
+/* '<i style="font-size:9px;">'+lastModif+"</i>"; */
+/* '<i style="font-size:9px;">'+time.toLocaleString()+"</i>"; */
+'<a onclick="showLS()" style="font-size:9px;">'+time.toLocaleString()+"</a>";
+/*
+'<a href="https://www.javascript.com/">JavaScript</a>, '+
 '<a href="https://www.w3.org/TR/WD-DOM/introduction.html">DOM</a>, '+
 '<a href="https://www.json.org/json-en.html">JSON</a>, '+
 '<a href="https://jquery.com/">jQuery</a>, '+
@@ -29,8 +34,5 @@ rCopy.innerHTML='<a href="https://www.javascript.com/">JavaScript</a>, '+
 '<a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, '+
 'et <a href="https://html.spec.whatwg.org/multipage/">HTML</a> '+
 '<a href="https://dev.w3.org/html5/spec-LC/">5</a>. '+
-'<a id="obj" onclick="navProperties()"><b>&#xFFFC; </b></a>'+
-'<br/>&#169 '+year+'&nbsp réalisation <a href="#">McCormier.</a><br />'+
-/* '<i style="font-size:9px;">'+lastModif+"</i>"; */
-/* '<i style="font-size:9px;">'+time.toLocaleString()+"</i>"; */
-'<a onclick="showLS()" style="font-size:9px;">'+time.toLocaleString()+"</a>";
+'<a id="obj" onclick="navProperties()"><b>&#xFFFC; </b></a>'; 
+*/
