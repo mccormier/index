@@ -44,19 +44,14 @@ $('html').mousedown(function(event){
 <h6>CONCEPTION MULTI-PLATEFORMES</h6>
 <p><b>FORMATION PERSONALISÉE</b></p>
 </center> </header>
+<div class="navbar" id="navDiv"></div>
 <script type="text/javascript" src="navBar.js"></script>
-<!-- <div class="navbar"></div> -->
         <center><div class="wrapped"><p style="font-size:1em;">
             Le service informatique à domicile est disponible pour les particuliers,<br />les travailleurs autonomes et les petites entreprises. (TPE)<br/><br/>
         </p></div></center>
             <a href="mailto:marccormierpro@gmail.com" style="margin-left:0px;text-decoration:none;color:black;margin-left:35px;"><u>Service à domicile sur rendez-vous.</u></a><br/><br/><hr>
             <p id="tarif"><b>Tarif :</b></p>
-<div id="couponDiv" class="couponDiv">
-  <center>
-    <p id="coupon"></p>
-    <p id="couponCode"></p>
-  </center>
-</div>
+<div id="couponDiv" class="couponDiv"> <center> <p id="coupon"></p> <p id="couponCode"></p> </center> </div>
             <div id="tarif-desc"><p><b>-</b> Estimation à partir de 20$ *<br/>
             <b>-</b> Tarif à partir de 40$ de l'heure<br/>
             <b>-</b> Service d'assistance en ligne pour 15$ jusqu'à 30 minutes!<br/>
@@ -92,13 +87,23 @@ $('html').mousedown(function(event){
     caracteristiquesNavigateur += "<b>Version :</b> "
     + navigator.appVersion + "<br>";
     caracteristiquesNavigateur += "<b>Support des cookies :</b> "
-    + navigator.cookieEnabled + "</p>";
+    + navigator.cookieEnabled + "<br><br>";
+    caracteristiquesNavigateur += "<b>Browser language :</b> "
+    + navigator.language + "<br>";    
+    caracteristiquesNavigateur += "<b>Browser online :</b> "
+    + navigator.onLine + "<br>";    
+    caracteristiquesNavigateur += "<b>Browser engine name :</b> "
+    + navigator.product + "<br>";    
     caracteristiquesNavigateur += "<b>Systeme d'exploitation :</b> "
-    + navigator.platform + "<br>";
+    + navigator.platform + "<br><br>";
     caracteristiquesNavigateur += "<b>User-agent header :</b> "
     + navigator.userAgent + "<br>";
     caracteristiquesNavigateur += "<b>User-agent language :</b> "
     + navigator.systemLanguage + "<br>";
+    caracteristiquesNavigateur += "<b>User location :</b> "
+    + navigator.geolocation + "<br>";
+    caracteristiquesNavigateur += "<b>Java enabled :</b> "
+    + navigator.javaEnabled() + "<br>";
     var myWindow = window.open("", "MsgWindow", "width=1111,height=250");
   myWindow.document.write("<h1>Un exemple d'API simple</h1>"+"<h2>Ceci est un simple exemple d'API :</h2>"+caracteristiquesNavigateur+xIp);
 }

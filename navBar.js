@@ -1,18 +1,5 @@
-//var navBar = '';
-//navBar += '<div class="navbar">';
-//
-//var navBar=document.getElementsByClassName('navBar');
-//
-// search w3 innerHTML +=
-var wrapper=document.getElementsByClassName('wrapper');
-var navBar=document.createElement('div');
-navBar.setAttribute('class', "navBar");
-wrapper.appendChild(navBar);
-//
-navBar.innerHTML += '<a href="/index/">Accueil</a>';
-navBar.innerHTML += '<a href="https://linktr.ee/mcormier">À Propos</a>';
-navBar.innerHTML += '<a href="/index/MCBrady">#MCBrady</a>';
 /*
+  STRUCTURE HTML DE LA DIV NAV
   <div class="subnav">
     <button class="subnavbtn">Produits</button>
     <div class="subnav-content">
@@ -20,6 +7,18 @@ navBar.innerHTML += '<a href="/index/MCBrady">#MCBrady</a>';
     </div>
   </div>
 */
+/*
+SEARCH W3SCHOOLS.COM FOR INNERHTML+='';
+var navBar=document.createElement('div');
+navBar.setAttribute('class', "navBar");
+document.body.appendChild(navBar);
+*/
+//var navBar = '';
+//navBar += '<div class="navbar" id="navDiv">';
+const navBar = document.querySelector("#navDiv");
+navBar.innerHTML = '<a href="/index/">Accueil</a>';
+navBar.innerHTML += '<a href="https://linktr.ee/mcormier">À Propos</a>';
+navBar.innerHTML += '<a href="/index/MCBrady">#MCBrady</a>';
 navBar.innerHTML += '<div class="subnav">';
 navBar.innerHTML += '<button class="subnavbtn">Produits</button>';
 navBar.innerHTML += '<div class="subnav-content">';
