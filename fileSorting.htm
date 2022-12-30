@@ -6,7 +6,7 @@
 	<title>Files Sorting | McCormier</title>
  <link rel="stylesheet" type="text/css" href="design.css">
  <link rel="stylesheet" type="text/css" href="menu.css">
-	<style type="text/css">body{margin:0px;padding:0px;}div{margin:35px;}input{float:right;margin-right:700px;}h1,h2{padding:1px;line-height:.4;}
+	<style type="text/css">body{margin:15px;padding:0px;}div{margin:35px;}input{float:right;margin-right:700px;}h1,h2{padding:1px;line-height:.4;}textarea{display:none;}
 </style>
 </head>
 <body>
@@ -27,13 +27,19 @@
    :: <b><u>NE PAS EXECUTER CE FICHIER DANS LE DOSSIERS "C:\WINDOWS\SYSTEM32"</u></b><br />
 			:: <b>ENJOY!!</b><br />
 			:: Pour plus d'information à propos de ce script de type batch (bash.sh.bat.cmd) Visiter: <a href="https://www.ss64.com" style="text-decoration:none;color:black;"><u>https://www.ss64.com</u></a><br />
-			:: Code Start Here ... </p>
-<textarea style="width:400px;height:100px;">
+			:: Code Start Here ...<br />
+for %%a in (".\*") do (<br>
+if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (<br />
+if not exist "%%~xa" mkdir "%%~xa"<br />
+move "%%a" "%%~dpa%%~xa\"<br />
+));<br /></p>
+<textarea>
 for %%a in (".\*") do (
 if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (
 if not exist "%%~xa" mkdir "%%~xa"
 move "%%a" "%%~dpa%%~xa\"
-));</textarea><br />
+));
+</textarea>
 		<input type="button" name="btn" onclick="downloadFile()" value="Télécharger"><br />
 	 <footer id="footer"> </footer>
    </div>
