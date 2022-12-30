@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WEB Storage | McCormier</title>
+</head>
+<body>
+		<script type="text/javascript">
+		function creationCookie(nomCookie, valeurCookie, expirationCookie, cheminCookie, domaineCookie, securiteCookie){
+   document.cookie = nomCookie + ' = ' + escape(valeurCookie) + '  ' +
+             ((expirationCookie == undefined) ? '' : ('; expires = ' + expirationCookie.toGMTString())) +
+             ((cheminCookie == undefined) ? '' : ('; path = ' + cheminCookie)) +
+             ((domaineCookie == undefined) ? '' : ('; domain = ' + domaineCookie)) +
+             ((securiteCookie == true) ? '; secure' : '');
+   }
+ var datetExpiration = new Date();
+ datetExpiration.setTime(datetExpiration.getTime() + 300 * 1000);
+   // dtExpire est un objet de type date.
+   // On le définit tout d'abord à la date et heure du jour
+   // Puis on lui ajoute 3600 secondes (300 millisecondes * 1000) soit 5 minutes
+   // La date d'expiration du cookie est donc programmée pour une heure après sa création
+   // Cela signifie qu'une heure après sa création,
+   // ce cookie ne sera plus accessible en lecture comme en écriture
+   // Il sera tout simplement supprimé
+ creationCookie('monCookie', 'Editions ENI ', datetExpiration, '/' );
+	</script>
+</body>
+</html>
