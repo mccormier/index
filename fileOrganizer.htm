@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
-  <title>McCormier</title>
-    <link rel="stylesheet" type="text/css" href="design.css">
-    <link rel="stylesheet" type="text/css" href="menu.css">
-    <link rel="stylesheet" type="text/css" href="footer.css">
-      <script type="text/javascript"> function getIP(json) {return json.ip;} </script> 
-      <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-      <script type="text/javascript" src="data.json"></script>
-      <script src="jQuery3.6.1.min.js"></script> 
-<script type="text/javascript" language="jQuery">
-$(document).ready(function() {
-$('html').mousedown(function(event){
-    switch (event.which) {
-        case 3:
-            alert('Right mouse button pressed\n\nEn construction..\nMenu\nAccueil\nAbout\nService\nProduits\nTemplate (PortFolio)\nSnippets\nRéférences\nDownload\nClient login()\nFile\nEdit\nSave\nView\nParam\nConfig');
-            break;
-        default:
-           break;
-    }
-});
-});
-</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Files Organizer | McCormier</title>
+ <link rel="stylesheet" type="text/css" href="design.css">
+ <link rel="stylesheet" type="text/css" href="menu.css">
+ <link rel="stylesheet" type="text/css" href="footer.css">
+	<style type="text/css">body{margin:0px;padding:0px;}input{float:right;margin-right:700px;}h2{padding:1px;line-height:.3;}textarea{display:none;}
+</style>
 </head>
-<body>
-<main>
-<div class="wrapper">
   <img class="logo" src="/index/img/htmQRcode.png">
   <img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="Site en Maintenance" onclick="navProperties()"> 
-<header> <center> <h1>McCormier</h1> </center> </header>
+<header> <center> <h1>file organizer</h1> </center> </header>
 <div class="navbar">
   <a href="/index/">Accueil</a>
   <a href="https://linktr.ee/mcormier">À Propos</a>
@@ -80,7 +62,7 @@ $('html').mousedown(function(event){
     <div class="subnav">
     <button class="subnavbtn">Download</button>
     <div class="subnav-content">
-<a href="fileOrganizer.htm">File Organiser</a>
+<a href="fileSorting.htm">File Sorting</a>
 <a href="#">Clear Cache</a>
 <a href="#">Clone File Checker</a>
 <a href="#">duplicate files finder</a>
@@ -96,14 +78,56 @@ $('html').mousedown(function(event){
     </div>
   </div> 
 </div>
-<div><center>
+<center><div class="wrapped">
+	<h2>#############################################</h2>
+  <h2>################# ATTENTION #################</h2>
+  <h2>#############################################</h2></center>
+	<div id="content" style="margin-left:95px;"> <p>
+			:: Ceci est un commentaire d'une ligne d'un fichier bash<br />
+			:: Ce fichier sert à organiser vos fichiers<br />
+   :: par example:<br />
+   :: (document text, musique, images/photos/vidéos, logiciels..)<br />
+   :: Du Dossier Dans Des Dossiers Nommées Par Extentions<br />
+   :: (.txt .jpg .png .mp3 .mp4 .swf .xml .html .css .js .json etc..).<br />
+   			:: Il vous sera plus facile par la suite de supprimer les doublons<br />
+			:: <b><u>Sauvegarder dans le dossier où vous souhaitez organiser vos fichiers</u></b><br />
+   :: <b><u>NE PAS EXECUTER CE FICHIER DANS LE DOSSIERS "C:\WINDOWS\SYSTEM32"</u></b><br />
+			:: <b>ENJOY!!</b><br />
+			:: Pour plus d'information à propos de ce script de type batch (bash.sh.bat.cmd) Visiter: <a href="https://www.ss64.com" style="text-decoration:none;color:black;"><u>https://www.ss64.com</u></a><br />
+			:: Code Start Here ...<br />
+			::<br />
+for %%a in (".\*") do (<br>
+if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (<br />
+if not exist "%%~xa" mkdir "%%~xa"<br />
+move "%%a" "%%~dpa%%~xa\"<br />
+));<br /></p>
+<textarea>
+for %%a in (".\*") do (
+if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (
+if not exist "%%~xa" mkdir "%%~xa"
+move "%%a" "%%~dpa%%~xa\"
+));
+</textarea>
+<input type="button" name="btn" onclick="downloadFile()" value="Télécharger"><br /><br />
+<script type="text/javascript">
+	   const downloadFile = () => {
+      const link = document.createElement("a");
+      const content = document.querySelector("textarea").value;
+// Create blob object with file content
+      const file = new Blob([content], { type: 'text/plain' });
+      link.href = URL.createObjectURL(file);
+      link.download = "filesSorting.cmd";
+      link.click();
+      URL.revokeObjectURL(link.href);
+   };
+</script>
+	<div><center>
   <img src="/index/img/enConstruction.jpg" alt="Page En Construction" id="buildingPage"> 
-</center></div>
-    <footer id="footer"> </footer>
-  </div>
+</center> </div>
+<footer id="footer"> </footer>
 </div>
-</main>
-<script type="text/javascript"> var data = JSON.parse(data); </script>
+</div>
+</center>
 <script>
     var xIp='';
   function recordData (data) {
@@ -122,16 +146,39 @@ $('html').mousedown(function(event){
     caracteristiquesNavigateur += "<b>Version :</b> "
     + navigator.appVersion + "<br>";
     caracteristiquesNavigateur += "<b>Support des cookies :</b> "
-    + navigator.cookieEnabled + "</p>";
+    + navigator.cookieEnabled + "<br><br>";
+    caracteristiquesNavigateur += "<b>Browser language :</b> "
+    + navigator.language + "<br>";    
+    caracteristiquesNavigateur += "<b>Browser online :</b> "
+    + navigator.onLine + "<br>";    
+    caracteristiquesNavigateur += "<b>Browser engine name :</b> "
+    + navigator.product + "<br>";    
     caracteristiquesNavigateur += "<b>Systeme d'exploitation :</b> "
-    + navigator.platform + "<br>";
+    + navigator.platform + "<br><br>";
     caracteristiquesNavigateur += "<b>User-agent header :</b> "
     + navigator.userAgent + "<br>";
     caracteristiquesNavigateur += "<b>User-agent language :</b> "
     + navigator.systemLanguage + "<br>";
+    caracteristiquesNavigateur += "<b>User location :</b> "
+    + navigator.geolocation + "<br>";
+    caracteristiquesNavigateur += "<b>Java enabled :</b> "
+    + navigator.javaEnabled() + "<br>";
     var myWindow = window.open("", "MsgWindow", "width=1111,height=250");
   myWindow.document.write("<h1>Un exemple d'API simple</h1>"+"<h2>Ceci est un simple exemple d'API :</h2>"+caracteristiquesNavigateur+xIp);
 }
+</script>
+<script type="text/javascript">
+  visitor = localStorage.visitor;
+  if (localStorage.visitor) {
+    localStorage.visitor = Number(localStorage.visitor)+1;
+
+    const myObj = {ip: xIp};
+    const myJSON = JSON.stringify(myObj);
+    localStorage.setItem("visitor-"+visitor, myJSON);
+  } else {
+    localStorage.visitor = 1; 
+  } 
+  visitor = localStorage.visitor;
 </script>
 <script type="text/javascript" src="footer.js"></script>
 </body>
