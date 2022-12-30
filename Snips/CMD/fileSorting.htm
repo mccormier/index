@@ -20,72 +20,6 @@ html{
 </head>
 <body>
 <main>
-  <div class="wrapper">
-  <div class="navbar">
-  <a href="/index/">Accueil</a>
-  <a href="https://linktr.ee/mcormier">À Propos</a>
-  <a href="/index/MCBrady">#MCBrady</a>
-<!-- <div class="subnav"> <button class="subnavbtn">Produits</button> <div class="subnav-content"> <a href="/index/"></a> </div> </div> -->
-  <div class="subnav">
-    <button class="subnavbtn">Produits</button>
-    <div class="subnav-content">
-      <a href="/index/QRcodeGenerator">QR Code Generator</a>
-      <a href="#"></a>
-    </div>
-  </div>
-  <div class="subnav">
-    <button class="subnavbtn">Services</button>
-    <div class="subnav-content">
-      <a href="/index/inetpub/wwwroot">Internet Information Services Manager (IISS) - (WEB)</a>
-      <a href="#recycle">Recyclage</a>
-      <a href="#company">Réparation - Maintenance - Entretien</a>
-      <a href="#java">Programmation</a>
-      <a href="#formations">Formation Personalisée</a>
-      <a href="https://goulet.ca/produits-numeriques/webformation/">Formation WEB Et Téléchargement de fichiers</a>
-      <a href="https://www.teamviewer.com/fr-ca/telecharger/windows/">Express (TeamViewer)</a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Références</button>
-    <div class="subnav-content">
-      <a href="#lang">Languages</a>
-<!--
-      <a href="#company">WEB</a>
-      <a href="#team">Machine (Assembly)</a>
-      <a href="#careers">Programmation</a>
--->
-      <a href="#Snips">Snippets</a>
-      <a href="#Templates">PortFolio</a>
-      <a href="#modules">Modules</a>
-      <a href="#package">Package</a>
-    </div>
-  </div>
-    <div class="subnav">
-    <button class="subnavbtn">Tools</button>
-    <div class="subnav-content">
-<a href="https://tools.pdf24.org/fr/">Production de document PDF</a>
-</div>
-</div>
-    <a href="/index/pageEnConstruction.htm">SandBox</a>
-    <div class="subnav">
-    <button class="subnavbtn">Download</button>
-    <div class="subnav-content">
-<a href="/index/Snips/CMD/fileSorting.htm">File Sorting</a>
-<a href="#">Clear Cache</a>
-<a href="#">Clone File Checker</a>
-<a href="#">duplicate files finder</a>
-</div>
-</div>
-<a href="#">Useful Link's</a>
-  <div class="subnav" style="float:right;">
-    <button class="subnavbtn">Client(s)</button>
-    <div class="subnav-content">
-      <a href="#login" style="float:right;">Inscription / Connexion</a>
-      <a href="#client-form" style="float:right;">Formulaire</a>
-      <a href="#footer" style="float:right;">Contact</a>
-    </div>
-  </div> 
-</div>
 <header><center><h1>File Sorting</h1>
 		<h2>#############################################</h2>
   <h2>################# ATTENTION #################</h2>
@@ -110,7 +44,9 @@ if not exist "%%~xa" mkdir "%%~xa"
 move "%%a" "%%~dpa%%~xa\"
 ));</textarea><br />
 		<input type="button" name="btn" onclick="downloadFile()" value="Télécharger">
-	 </div> <footer></footer> </main>
+	 </div> <footer id="footer"> </footer>
+ </main>
+ <script type="text/javascript" src="/index/footer.js"></script>
 <script type="text/javascript">
 	   const downloadFile = () => {
       const link = document.createElement("a");
