@@ -43,11 +43,11 @@ if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (
 if not exist "%%~xa" mkdir "%%~xa"
 move "%%a" "%%~dpa%%~xa\"
 ));</textarea><br />
-		<input type="button" name="btn" onclick="downloadFile()" value="Télécharger">
+		<input type="button" name="btn" onclick="downloadFile()" value="Télécharger"><br />
 	 <footer id="footer"> </footer>
    </div>
  </main>
- <script type="text/javascript" src="/index/footer.js"></script>
+ <script type="text/javascript" src="../../footer.js"></script>
 <script type="text/javascript">
 	   const downloadFile = () => {
       const link = document.createElement("a");
