@@ -59,10 +59,19 @@
   <meta name="url" content="https://www.github.io/index" /> 
   <meta name="title" content="Mc Cormier" /> 
   <meta name="author" content="Marc Cormier" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport" content="width= {screenWidth}">
 <meta http-equiv="refresh" content="300">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <title>McCormier</title>
+  <script type="text/javascript">
+    var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+  </script>
     <link rel="stylesheet" type="text/css" href="design.css">
     <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
