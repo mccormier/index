@@ -21,7 +21,7 @@ footer.appendChild(img);
 rCopy=document.createElement('p');
 rCopy.setAttribute('style', 'font-size:13px;');
 footer.appendChild(rCopy);
-rCopy.innerHTML='<br/>&#169 '+year+'&nbsp réalisation <a href="http://www.mccormier.github.io/index">McCormier.</a><br />'+
+rCopy.innerHTML='<br/>&#169 '+year+'&nbsp réalisation <a href="https://mccormier.github.io/index/">McCormier.</a><br />'+
 /* '<i style="font-size:9px;">'+lastModif+"</i>"; */
 /* '<i style="font-size:9px;">'+time.toLocaleString()+"</i>"; */
 '<a onclick="showLS()" style="font-size:9px;">'+time.toLocaleString()+"</a>";
