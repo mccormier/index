@@ -110,7 +110,7 @@ move "%%a" "%%~dpa%%~xa\"
 ));
 </textarea><br/>
 <a id="fObtn" onclick="downloadFile()">Télécharger</a>
-<br /><br/><script type="text/javascript">
+<input type="button" onclick="downloadFile()" value="Télécharger"><br /><br/><script type="text/javascript">
 	   const downloadFile = () => {
       const link = document.createElement("a");
       const content = document.querySelector("textarea").value;
