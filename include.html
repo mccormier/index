@@ -41,19 +41,19 @@ function includeHTML() {
 <div w3-include-html="header.html"></div> 
 <div w3-include-html="nav.html"></div> 
 <div w3-include-html="content.html"></div>
+<a onclick="callBack()">try callBack</a>
 <footer id="footer"> </footer>
 <script>
 includeHTML();
 //w3IncludeHTML();
 //
 //w3.includeHTML();
-/*
-w3.includeHTML(myCallback);
-
-function myCallback() {
+//
+w3.includeHTML(callBack);
+function callBack() {
   // code that has to wait goes here
+  file="contentTwo";
 }
-*/
 </script>
 
 <script type="text/javascript" src="footer.js"></script>
