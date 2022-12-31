@@ -1,3 +1,4 @@
+/* unselectable */
 html{
   -webkit-touch-callout: none; 
   -webkit-user-select: none; 
@@ -7,7 +8,9 @@ html{
   -ms-user-select: none; 
   user-select: none; 
 }
-body{margin:0px;padding:0px;}
+/* unselectable */
+/* design */
+body{padding:0px;}
 h1{margin:0px;padding:0px;}
 .logo{width:75px;margin:20px;margin-bottom:-10px;}
 .buildImg{width:175px;height:auto;margin-left:575px;}
@@ -28,3 +31,10 @@ h1{margin:0px;padding:0px;}
 #fileOrganizer{margin-left:6px;width:333px;}
 }
 .txtLink{text-decoration:none;color:black;font-size:22px;margin-left:13px;}
+/* design */
+/* footer */
+.mailto{width:20px;height:20px; cursor:pointer;}
+footer{padding-top:12px;border-top:1px solid black;text-align:center;}
+footer a{text-decoration:none;color:black;}
+#obj:hover{cursor:pointer;color:white;}
+/* footer */
