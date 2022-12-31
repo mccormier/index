@@ -42,13 +42,13 @@ h1{margin:0px;padding:0px;}
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
-  color: white;
+  background-color: #E5FFE5;
+  color: darkgreen;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 8px;
+  border-radius: 20px;
 }
-#topBtn:hover {background-color: #555;}
+#topBtn:hover {background-color: #00FF33;}
 /* Top Button */
 /* footer */
 .mailto{width:20px;height:20px; cursor:pointer;}
