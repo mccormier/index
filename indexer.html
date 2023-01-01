@@ -100,6 +100,7 @@ if(viewMode == "desktop"){
 <footer id="footer"> </footer>
 
 <script type="text/javascript"> var JSONdB = JSON.parse(dB); </script>
+<!--
 <script>
     var xIp='';
   function recordData (data) {
@@ -107,9 +108,10 @@ if(viewMode == "desktop"){
     xIp='<br />'+'<b>Public IPv4 : </b>'+data.ip+'<br />'+'<b>Hostname : </b>'+data.hostname+'<br />'+'<b>City : </b>'+data.city+'<br />'+'<b>Region : </b>'+data.region+'<br />'+'<b>Country : </b>'+data.country+'<br />'+'<b>Location : </b>'+data.loc+'<br />'+'<b>Postal Code : </b>'+data.postal+'<br />'+'<b>Timezone : </b>'+data.timezone;
 }
 </script>
-<script src="https://ipinfo.io/json?callback=recordData"></script>
+-->
 
 <script type="text/javascript" src="api.js"></script>
+<script src="https://ipinfo.io/json?callback=recordData"></script>
 
 <script>
 includeHTML();

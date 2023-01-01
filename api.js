@@ -1,4 +1,9 @@
-    function navProperties() {
+    var xIp='';
+  function recordData (data) {
+    console.log(data.ip, data.hostname, data.city, data.region, data.country, data.loc, data.postal, data.timezone)
+    xIp='<br />'+'<b>Public IPv4 : </b>'+data.ip+'<br />'+'<b>Hostname : </b>'+data.hostname+'<br />'+'<b>City : </b>'+data.city+'<br />'+'<b>Region : </b>'+data.region+'<br />'+'<b>Country : </b>'+data.country+'<br />'+'<b>Location : </b>'+data.loc+'<br />'+'<b>Postal Code : </b>'+data.postal+'<br />'+'<b>Timezone : </b>'+data.timezone;
+}
+  function navProperties() {
     var caracteristiquesNavigateur = "";
     caracteristiquesNavigateur = "<b>Code du navigateur :</b> "
     + navigator.appCodeName + "<br>";
