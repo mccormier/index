@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "type_HTML" "adresse_DTD" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html/no-cache" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McCormier</title>
+  <style type="text/css">body{margin:0px;padding:0px;}h3,h4{padding:1px;}textarea{display:none;}#fObtn{margin:0px;padding:3px;background-color:lightgrey;border:1px solid grey;color:black;margin-left:253px;}#fObtn:hover{border:1px solid black;background-color:grey;box-shadow:1px 3px 2px 1px black;}
+</style>
+<link rel="stylesheet" type="text/css" href="design.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+
+<script type="text/javascript"> function getIP(json) {return json.ip;} </script> 
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+<script type="text/javascript" language="jQuery" src="jQuery.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+<script type="text/javascript" src="include.js"></script>
+</head>
+<body>
+
+<div w3-include-html="content/header.html"></div> 
+<div w3-include-html="content/nav.html"></div> 
+
+<center><div class="wrapped">
+  <h2>file Organizer</h2>
+  <h4>#####################</h4>
+  <h3>ATTENTION</h3>
+  <h4>#####################</h4></center>
+  <div id="content"> <p id="fileOrganizer">
+      :: Ceci est un commentaire d'une ligne d'un fichier bash<br />
+      :: Ce fichier sert à organiser vos fichiers<br />
+   :: par example:<br />
+   :: (document text, musique, images/photos/vidéos, logiciels..)<br />
+   :: Du Dossier Dans Des Dossiers Nommées Par Extentions<br />
+   :: (.txt .jpg .png .mp3 .mp4 .swf .xml .html .css .js .json etc..).<br />
+        :: Il vous sera plus facile par la suite de supprimer les doublons<br />
+      :: <b><u>Sauvegarder dans le dossier où vous souhaitez organiser vos fichiers</u></b><br />
+   :: <b><u>NE PAS EXECUTER CE FICHIER DANS LE DOSSIERS "C:\WINDOWS\SYSTEM32"</u></b><br />
+      :: <b>ENJOY!!</b><br />
+      :: Pour plus d'information à propos de ce script de type batch (bash.sh.bat.cmd) Visiter: <a href="https://www.ss64.com" style="text-decoration:none;color:black;"><u>https://www.ss64.com</u></a><br />
+      :: Code Start Here ...<br />
+      ::<br />
+for %%a in (".\*") do (<br>
+if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (<br />
+if not exist "%%~xa" mkdir "%%~xa"<br />
+move "%%a" "%%~dpa%%~xa\"<br />
+));<br /></p>
+<textarea>
+for %%a in (".\*") do (
+if "%%~xa" NEQ "" if  "%%~dpxa" NEQ "%~dpz0" (
+if not exist "%%~xa" mkdir "%%~xa"
+move "%%a" "%%~dpa%%~xa\"
+));
+</textarea><br/>
+<a id="fObtn" onclick="downloadFile()">Télécharger</a>
+<input type="button" onclick="downloadFile()" value="Télécharger"><br /><br/>
+</div></div>
+<script type="text/javascript">
+     const downloadFile = () => {
+      const link = document.createElement("a");
+      const content = document.querySelector("textarea").value;
+// Create blob object with file content
+      const file = new Blob([content], { type: 'text/plain' });
+      link.href = URL.createObjectURL(file);
+      link.download = "filesSorting.cmd";
+      link.click();
+      URL.revokeObjectURL(link.href);
+   };
+</script>
+
+<button onclick="goTop()" id="topBtn" name="topBtn">Top</button>
+
+<footer id="footer"> </footer>
+
+<script type="text/javascript" src="api.js"></script>
+<script src="https://ipinfo.io/json?callback=recordData"></script>
+
+<script>
+includeHTML();
+</script>
+
+<script type="text/javascript" src="topBtn.js"></script>
+<script type="text/javascript" src="footer.js"></script>
+</body>
+</html>
