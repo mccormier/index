@@ -4,6 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html/no-cache" charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>McCormier</title>
+<link rel="stylesheet" type="text/css" href="../design.css">
 <link rel="stylesheet" type="text/css" href="../menu.css">
 <link rel="stylesheet" type="text/css" href="../footer.css">
 
@@ -19,46 +20,6 @@ $('html').mousedown(function(event){
            break;
     }
 });
-});
-</script>
-<script>
-$(document).ready(function(){ 
-  $('.child_1').show();
-  $('.child_2').hide();
-
-  $('.child_3').show();
-  $('.child_4').hide();
-
-  $('.child_5').show();
-  $('.child_6').hide();
-
-  $('.child_7').show();
-  $('.child_8').hide();
-
-  $('.parent_1').click( function() {
-    $(this).each( function() {
-      $('.child_1, .child_2').toggle();
-    });
-  });
-
-  $('.parent_2').click( function() {
-    $(this).each( function() {
-      $('.child_3, .child_4').toggle();
-    });
-  });
-
-  $('.parent_3').click( function() {
-    $(this).each( function() {
-      $('.child_5, .child_6').toggle();
-    });
-  });
-
-  $('.parent_4').click( function() {
-    $(this).each( function() {
-      $('.child_7, .child_8').toggle();
-    });
-  });
-
 });
 </script>
 <style type="text/css">
