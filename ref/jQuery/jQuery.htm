@@ -1,0 +1,856 @@
+<!--
+# Nom du fichier: jQuery
+# NOM DU SCRIPT:  JavaScript Librairie
+# Extention du script:  htm
+# REALISATION:  Marc C.
+# Auteur: Marc Cormier
+# Date de creation: 2021
+# Last update:  2021-12-31 12:21
+# OBJET:  Example.
+# Description:
+#
+# Entretien et Reparation informatique,
+# Specialiste internet (html5,css3,javascript,json,xml,AJAX),
+# jQuery, PHP, mySQL, SQL.
+# Programmation informatique (JAVA).
+#
+# Copy / Paste / Save As jQuery.HTM
+-->
+<!-- Syntaxe d'un Commentaire HTML ? une ou plusieurs lignes -->
+<!-- Declaration du type de document en html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery JavaScript Librairie</title>
+	<style type="text/css">
+	body{margin:30px;padding:0px;}
+	div{margin:5px;margin-left:30px;padding:0px;}
+	button{margin:5px;padding:5px;}
+	#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+	#panel2, #flip2 {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel2 {
+  padding: 50px;
+  display: none;
+}
+#panel3, #flip3 {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel3 {
+  padding: 50px;
+  display: none;
+}
+.remClassP {
+  color: red;
+  font-size: 20px;
+}
+
+.important {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.blue {
+  color: blue;
+}
+#rHW {
+  height: 65px;
+  width: 300px;
+  padding: 10px;
+  margin: 3px;
+  border: 1px solid blue;
+  background-color: lightblue;
+}
+#div1 {
+  height: 65px;
+  width: 300px;
+  padding: 10px;
+  margin: 3px;
+  border: 1px solid blue;
+  background-color: lightblue;
+}
+.ancestors * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+}
+.descendants * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+}
+.siblings * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>jQuery</h1><h2>JavaScript Librairie</h2>
+	<div id="flip"><b><u>Examples</u></b></div>
+<div id="panel">.slideDown()<br/>.slideUp()</div>
+<hr>
+	<div id="flip2">.slideToggle()</div>
+<div id="panel2">Hello World !</div>
+</div>
+	<div><div>
+	<h2><u>jQuery Selectors</u></h2><div>
+<p style="font-size:20px;">.hide() Can HIDE all p Elements</p>
+<p id="test">.hide() can HIDE element with id="test"</p>
+<p class="test">.hide() can HIDE element with class="test"</p>
+<h4>.hide() Can HIDE current HTML element</h4>
+<hr></div></div><div>
+	<h2><u>jQuery Events</u></h2><div>
+	<pre>.dbclick() <b>double-click</b> on me, I will disappear</pre>
+	<p id="p1" style="width:317px;">.mouseEnter() Passer la souris au dessus de moi !</p>
+	<p id="p2" style="width:220px;">.mouseLeave() element HTML p2</p>
+	<p id="p3">.mouseDown() </p>
+	<p id="p4">.mouseUp() </p>
+	<p id="p5" style="width:1px;">.hover() </p>
+	.focus() <input type="text" name="fullname" value="name"><br>
+.blur() <input type="text" name="email" value="email">
+	<hr></div></div>
+<h2><u>jQuery Hide/Show</u></h2>
+<button id="btnHIDEshow">.hide()</button>
+<button id="btnShow">.show()</button><br/>
+<button id="toggle">.toggle() hide/show</button>
+<p id="toggleHideShow">.toggle()</p>
+<hr></div>
+<h2>jQuery Fade</h2><div>
+<button id="fadeIn">.fadeIn()</button> <button id="fadeOut">.fadeOut()</button> <button id="fadeToggle">Click to .fadeToggle() fade in/out boxes</button> <button id="fadeTo">Click to .fadeTo()</button>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br/>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br/>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+<hr></div>
+<h2><u>jQuery Animate</u></h2>
+<div>
+<button id="Anim">animate()</button>
+<button id="Anim2">animate() multiple </button>
+<button id="Anim3">animate() using relative values </button>
+<button id="Anim4">animate() using pre-defined values </button>
+<button id="Anim5">animate() several calls after each other </button>
+<div id="divAnim" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+<br/><br/><br/><br/><br/><br/><br/><hr></div>
+<h2>jQuery Stop Animations</h2><div>
+<button id="stop">Stop sliding</button>
+<div id="flip3">Click to slide down panel</div>
+<div id="panel3">.slideDown()<br/>.stop()</div><br/><br/>
+<button id="start">Start</button>
+<button id="stop1">Stop</button>
+<button id="stop2">Stop all</button>
+<button id="stop3">Stop but finish</button>
+<div id="Anim6" style="background:#98bf21;height:100px;width:200px;position:absolute;"> .stop() animation with parameters</div><br/><br/><br/><br/><br/><br/><br/><hr>
+</div>
+<h2>jQuery HTML Get Content and Attributes</h2><div>
+	<p id="get">This is some <b>bold</b> text in a paragraph.</p>
+<button id="btnGet1">Show Text</button>
+<button id="btnGet2">Show HTML</button>
+<p>Name: <input type="text" id="val" value="Mickey Mouse"></p>
+<button id="btnVal">Show Value</button>
+<p><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_get" id="w3sHREF">W3Schools jQuery Examples</a></p>
+<button id="w3s">Show href Value</button>
+<hr></div>
+<h2>jQuery HTML Set Content and Attributes</h2><div>
+<p id="set1">This is a paragraph.</p>
+<p id="set2">This is another paragraph.</p>
+<p>Input field: <input type="text" id="set3" value="Mickey Mouse"></p>
+<button id="btnSet1">Set Text</button>
+<button id="btnSet2">Set HTML</button>
+<button id="btnSet3">Set Value</button>
+<p id="OT1">This is a <b>bold</b> paragraph.</p>
+<p id="OT2">This is another <b>bold</b> paragraph.</p>
+<button id="btnOT1">Show Old/New Text</button>
+<button id="btnOT2">Show Old/New HTML</button><br/>
+<button id="w3sSetAtt">Click to change the link</button><br/>
+<a href="https://www.w3schools.com" id="w3sSetAttr">Change link HREF Value</a>
+<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+<br/>
+<p><a href="https://www.w3schools.com" title="some title" id="w3sSetMatt">W3Schools.com</a></p>
+<button id="w3sSetMattr">Change href and title</button>
+<p>Mouse over the link to see that the href attribute has changed and a title attribute is set.</p>
+<br/>
+<p><a href="https://www.w3schools.com" id="w3sScB">W3Schools.com</a></p>
+<button id="w3sScBbtn">Change href Value</button>
+<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+<hr></div>
+<h2>jQuery HTML Add Elements/Content</h2><div>
+<p id="pAppend">This is a paragraph.</p>
+<p id="pAppend">This is another paragraph.</p>
+<ol id="olAppend">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+<button id="btnAppend1">Append text</button>
+<button id="btnAppend2">Append list items</button>
+<br/>
+<p id="pPrepend">This is a paragraph.</p>
+<p id="pPrepend">This is another paragraph.</p>
+<ol id="olPrepend">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+<button id="btnPrepend1">Prepend text</button>
+<button id="btnPrepend2">Prepend list item</button>
+<br/>
+<p>This is a paragraph.</p>
+<button onclick="appendText()">Append text</button>
+<br/>
+<div id="before" style="background-color:lightgreen; width:100px; height:100px;"></div><br><br>
+<button id="btnBefore1">Insert before</button>
+<button id="btnBefore2">Insert after</button>
+<hr>
+<h2>jQuery HTML Remove Elements/Content</h2><div>
+<div id="remove" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+This is some text in the div.
+<p>This is a paragraph in the div.</p>
+<p>This is another paragraph in the div.</p>
+</div>
+<br>
+<button id="btnRemove">Remove div element</button>
+<br/><br/>
+<p>This is a paragraph.</p>
+<p class="remClassP">This is another paragraph.</p>
+<p class="remClassP">This is another paragraph.</p>
+<button id="remClass">Remove all p elements with class="test"</button>
+<br/>
+<div id="divEmpty" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+This is some text in the div.
+<p id="empty">This is a paragraph in the div.</p>
+<p id="empty">This is another paragraph in the div.</p>
+</div>
+<br>
+<button id="emptyBtn">Empty the div element</button>
+<br/>
+</div>
+<h2>jQuery Get and Set CSS Classes</h2><div>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<p id="addClass">This is a paragraph.</p>
+<p id="addClass">This is another paragraph.</p>
+<div id="addClass">This is some important text!</div><br>
+<button id="addClass">Add classes to elements</button>
+<br/>
+<div id="addClass2">This is some text.</div>
+<div>This is some text.</div>
+<br>
+<button id="addClass2">Add classes to first div element</button>
+<br/>
+<h1 class="blue">Heading 1</h1>
+<h2 class="blue">Heading 2</h2>
+<p class="blue">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<button id="RemBlue">Remove class from elements</button>
+<br/>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<button id="tC">Toggle class</button>
+<br/></div>
+<h2>jQuery css() Method</h2><div>
+<p id="cssMethod" style="background-color:#ff0000">This is a paragraph.</p>
+<p id="cssMethod" style="background-color:#00ff00">This is a paragraph.</p>
+<p id="cssMethod" style="background-color:#0000ff">This is a paragraph.</p>
+<button id="cssMethod">Return background-color of p</button>
+<br/>
+<p id="cssMethod2" style="background-color:#ff0000">This is a paragraph.</p>
+<p id="cssMethod2" style="background-color:#00ff00">This is a paragraph.</p>
+<p id="cssMethod2" style="background-color:#0000ff">This is a paragraph.</p>
+<p id="cssMethod2">This is a paragraph.</p>
+<button id="cssMethod2">Set background-color of p</button>
+<br/>
+<p id="cssMethod3" style="background-color:#ff0000">This is a paragraph.</p>
+<p id="cssMethod3" style="background-color:#00ff00">This is a paragraph.</p>
+<p id="cssMethod3" style="background-color:#0000ff">This is a paragraph.</p>
+<p id="cssMethod3">This is a paragraph.</p>
+<button id="cssMethod3">Set multiple styles for p</button>
+<br/><hr> </div>
+<h2>jQuery Dimensions</h2><div>
+	<div id="rHW"></div>
+<button id="btnrHW">Display dimensions of div</button>
+<p>width() - returns the width of an element.</p>
+<p>height() - returns the height of an element.</p>
+<button id="btnrHW2">Display dimensions of div</button>
+<p>innerWidth() - returns the width of an element (includes padding).</p>
+<p>innerHeight() - returns the height of an element (includes padding).</p>
+<button id="btnrHW3">Display dimensions of div</button>
+<p>outerWidth() - returns the width of an element (includes padding and border).</p>
+<p>outerHeight() - returns the height of an element (includes padding and border).</p>
+<button id="btnrHW4">Display dimensions of div</button>
+<p>outerWidth(true) - returns the width of an element (includes padding, border, and margin).</p>
+<p>outerHeight(true) - returns the height of an element (includes padding, border, and margin).</p>
+<button id="btnrHW5">Display dimensions of document and window</button>
+<br/>
+<button id="btnrHW6"><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dim_width_height_set">Resize div</a></button>
+<br/><hr> </div>
+<h2>jQuery Traversing Ancestors</h2><div>
+<div class="ancestors">
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>   
+  </div>
+
+  <div style="width:500px;">div (grandparent)   
+    <p>p (direct parent)
+      <span>parent()</span>
+    </p> 
+  </div>
+</div>
+<br/>
+<button id="parents"><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_parents">great-great-grandparent parents()</a> </button>
+<br/>
+<div class="ancestors"> body (great-great-grandparent)
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span id="parents">parentsUntil</span>
+      </li>
+    </ul>   
+  </div></div>
+<br/><hr>
+</div>
+<h2>jQuery Traversing Descendants</h2><div>
+	<div class="descendants" style="width:500px;">div (current element)
+  <p>p (child)
+    <span>span (grandchild)</span>   
+  </p>
+  <p>p (child)
+    <span>span (grandchild)</span>
+  </p> 
+</div>
+<br/>
+<button id="Find">find()</button>
+<br/> </div>
+<h2>jQuery Traversing Siblings</h2><div>
+<div class="siblings">
+<div>div (parent)
+  <p>p</p>
+  <span>span</span>
+  <h2 id="sibling">h2</h2>
+  <h3>.sibling()</h3>
+  <p>p</p>
+</div></div>
+<br/>
+<div class="siblings">
+<div>div (parent)
+  <p>p</p>
+  <span>span</span>
+  <h2>h2</h2>
+  <h3 id="next">h3</h3>
+  <p>.next()</p>
+</div></div>
+<br/>
+<div class="siblings">
+<div>div (parent)
+  <p>p</p>
+  <span>span</span>
+  <h2 id="nxAll">h2</h2>
+  <h3>.nextAll()</h3>
+  <p>p</p>
+</div>
+<br/>
+<div class="siblings">
+<div>div (parent)
+  <p>p</p>
+  <span>span</span>
+  <h2 id="nxUntil">h2</h2>
+  <h3>h3</h3>
+  <h4>.nextUntil()</h4>
+  <h5>h5</h5>
+  <h6>h6</h6>
+  <p>p</p>
+</div></div>
+<hr></div>
+<h2>jQuery Traversing Filtering</h2><div>
+<p><b>.first().css();</b></p>
+<div id="first" style="border: 1px solid black;">
+  <p>A paragraph in a div.</p>
+  <p>Another paragraph in a div.</p>
+</div>
+<br>
+<div id="first" style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+<br>
+<div id="first" style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+<br/>
+<p><b>.last().css();</b></p>
+<div id="last" style="border: 1px solid black;">
+  <p>A paragraph in a div.</p>
+  <p>Another paragraph in a div.</p>
+</div>
+<br>
+<div id="last" style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+<br>
+<div id="last" style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+<br/>
+<p><b>.eq().css();</b></p>
+<p id="EQ">My name is Donald (index 0).</p>
+<p id="EQ">Donald Duck (index 1).</p>
+<p id="EQ">I live in Duckburg (index 2).</p>
+<p id="EQ">My best friend is Mickey (index 3).</p>
+<br/>
+<p><b>.filter().css();</b></p>
+<p>My name is Donald.</p>
+<p class="intro">I live in Duckburg.</p>
+<p class="intro">I love Duckburg.</p>
+<p>My best friend is Mickey.</p>
+<br/>
+<button><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_not"><b>.not().css();</b>
+</a></button>
+<br/></div><hr>
+<h2>jQuery Filters</h2><div>
+  <div>
+    <h2>Filterable Table</h2>
+<p>Type something in the input field to search the table for first names, last names or emails:</p>  
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+<table>
+  <thead>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>john@example.com</td>
+  </tr>
+  <tr>
+    <td>Mary</td>
+    <td>Moe</td>
+    <td>mary@mail.com</td>
+  </tr>
+  <tr>
+    <td>July</td>
+    <td>Dooley</td>
+    <td>july@greatstuff.com</td>
+  </tr>
+  <tr>
+    <td>Anja</td>
+    <td>Ravendale</td>
+    <td>a_r@test.com</td>
+  </tr>
+  </tbody>
+</table>
+<p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+  </div><br/>
+  <div>
+    <h2>Filterable List</h2>
+<p>Type something in the input field to search the list for specific items:</p>  
+<input id="myInputList" type="text" placeholder="Search..">
+<br>
+<ul id="myList">
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth</li>
+</ul>
+  </div>
+  <div>
+    <h2>Filter Anything</h2>
+<p>Type something in the input field to search for a specific text inside the div element with id="myDIV":</p>
+<input id="myInputAnything" type="text" placeholder="Search..">
+<div id="myDIV">
+  <p>I am a paragraph.</p>
+  <div>I am a div element inside div.</div>
+  <button>I am a button</button>
+  <button>Another button</button>
+  <p>Another paragraph.</p>
+</div></div><br/><hr> 
+  </div>
+<h2>jQuery AJAX load() Method</h2><div>
+  <button><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_load_callback">.load("text.txt", function(responseTxt, statusTxt, xhr){};</a></button>
+<h3>jQuery AJAX <button><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_get">get()</a></button> and <button><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_post">post()</a></button> Methods</h3>
+<div></div>
+</div>
+</div>
+</div>
+</div>
+<center><p>&#169 2021 Réalisé par Marc Cormier</p></center>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("p").click(function(){
+    $("p").hide();
+  });
+});
+  $("#test").click(function(){
+    $("#test").hide();
+  });
+  $(".test").click(function(){
+    $(".test").hide();
+  });
+  $("h4").click(function(){
+    $(this).hide();
+  });
+// 	<h2>jQuery Events</h2>
+  $("pre").dblclick(function(){
+    $(this).hide();
+  });
+  $("#p1").mouseenter(function(){
+    alert("Vous avez passez au dessus d'un element HTML <p> identifier id='p1' !");
+  });
+  $("#p2").mouseleave(function(){
+    alert("Bye! Vous avez quitter l'element HTML <p> identifier id='p2' !");
+  });
+  $("#p3").mousedown(function(){
+    alert("Mouse down over p3!");
+  });
+    $("#p4").mouseup(function(){
+    alert("Mouse up over p4!");
+  });
+      $("#p5").hover(function(){
+    alert(".hover() p5!");
+  },
+  function(){
+    alert("Bye! You now leave p5!");
+  }); 
+    $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+  });
+    $("#btnHIDEshow").click(function(){
+    $("#btnHIDEshow").hide();
+  });
+  $("#btnShow").click(function(){
+    $("#btnHIDEshow").show();
+  });
+  $("#toggle").click(function(){
+    $("#toggleHideShow").toggle();
+  });
+  //
+    $("#fadeIn").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+      $("#fadeOut").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+        $("#fadeToggle").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+          $("#fadeTo").click(function(){
+    $("#div1").fadeTo("slow", 0.15);
+    $("#div2").fadeTo("slow", 0.4);
+    $("#div3").fadeTo("slow", 0.7);
+  });
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+  $("#panel").click(function(){
+    $("#panel").slideUp("slow");
+  });
+    $("#flip2").click(function(){
+    $("#panel2").slideToggle("slow");
+  });
+    //
+      $("#Anim").click(function(){
+    $("#divAnim").animate({left: '250px'});
+  });
+      //
+        $("#Anim2").click(function(){
+    $("#divAnim").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+  });
+          $("#Anim3").click(function(){
+    $("#divAnim").animate({
+      left: '250px',
+      height: '+=150px',
+      width: '+=150px'
+    });
+  });
+            $("#Anim4").click(function(){
+    $("#divAnim").animate({
+      height: 'toggle'
+    });
+  });
+              $("#Anim5").click(function(){
+    var div = $("#divAnim");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
+  });
+//
+  $("#flip3").click(function(){
+    $("#panel3").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel3").stop();
+  });
+    $("#start").click(function(){
+    $("#Anim6").animate({left: '100px'}, 5000);
+    $("#Anim6").animate({width: '700px'}, 6000);
+    $("#Anim6").animate({fontSize: '3em'}, 5000);
+  });
+    $("#stop1").click(function(){
+    $("#Anim6").stop();
+  });
+  $("#stop2").click(function(){
+    $("#Anim6").stop(true);
+  });
+  $("#stop3").click(function(){
+    $("#Anim6").stop(true, true);
+  }); 
+  //
+  $("#btnGet1").click(function(){
+    alert("Text: " + $("#get").text());
+  });
+  $("#btnGet2").click(function(){
+    alert("HTML: " + $("#get").html());
+  });
+    $("#btnVal").click(function(){
+    alert("Value: " + $("#val").val());
+  });
+      $("#w3s").click(function(){
+    alert($("#w3sHREF").attr("href"));
+  });
+      //
+        $("#btnSet1").click(function(){
+    $("#set1").text(".text()");
+  });
+  $("#btnSet2").click(function(){
+    $("#set2").html("<b>.html()</b>");
+  });
+  $("#btnSet3").click(function(){
+    $("#set3").val("Dolly Duck");
+  });
+    $("#btnOT1").click(function(){
+    $("#OT1").text(function(i, origText){
+      return "Old text: " + origText + " New text: .text() (index: " + i + ")"; 
+    });
+  });
+  $("#btnOT2").click(function(){
+    $("#OT2").html(function(i, origText){
+      return "Old html: " + origText + " New html: .text(i, origText)</b> (index: " + i + ")"; 
+    });
+  });
+    $("#w3sSetAtt").click(function(){
+    $("#w3sSetAttr").attr("href", "https://www.w3schools.com/jquery/");
+  });
+      $("#w3sSetMattr").click(function(){
+    $("#w3sSetMatt").attr({
+      "href" : "https://www.w3schools.com/jquery/",
+      "title" : "W3Schools jQuery Tutorial"
+    });
+  });
+        $("#w3sScBbtn").click(function(){
+    $("#w3sScB").attr("href", function(i, origValue){
+      return origValue + "/jquery/"; 
+    });
+  });
+  // 
+          $("#btnAppend1").click(function(){
+    $("p#pAppend").append(" <b>Appended text</b>.");
+  });
+
+  $("#btnAppend2").click(function(){
+    $("#olAppend").append("<li>Appended item</li>");
+  });
+    $("#btnPrepend1").click(function(){
+    $("p#pPrepend").prepend("<b>Prepended text</b>. ");
+  });
+  $("#btnPrepend2").click(function(){
+    $("#olPrepend").prepend("<li>Prepended item</li>");
+  });
+  function appendText() {
+  var txt1 = "<p>Text.</p>";        // Create text with HTML
+  var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+  var txt3 = document.createElement("p");
+  txt3.innerHTML = "Text.";         // Create text with DOM
+  $("body").append(txt1, txt2, txt3);   // Append new elements
+}
+  $("#btnBefore1").click(function(){
+    $("#before").before("<b>Before</b>");
+  });
+
+  $("#btnBefore2").click(function(){
+    $("#before").after("<i>After</i>");
+  });
+    $("#btnRemove").click(function(){
+    $("#remove").remove();
+  });
+      $("#remClass").click(function(){
+    $("p").remove(".remClassP");
+  });
+        $("#emptyBtn").click(function(){
+    $("#divEmpty").empty();
+  });
+        //
+   $("button#addClass").click(function(){
+    $("h4, h5, p#addClass").addClass("blue");
+    $("div#addClass").addClass("important");
+  });
+     $("button#addClass2").click(function(){
+    $("div#addClass2").addClass("important blue");
+  });
+       $("button#RemBlue").click(function(){
+    $("h1, h2, p").removeClass("blue");
+  });
+         $("button#tC").click(function(){
+    $("h1, h2, p").toggleClass("blue");
+  });
+         //
+  $("button#cssMethod").click(function(){
+    alert("Background color = " + $("p#cssMethod").css("background-color"));
+  });
+    $("button#cssMethod2").click(function(){
+    $("p#cssMethod2").css("background-color", "yellow");
+  });
+      $("button").click(function(){
+    $("p#cssMethod3").css({"background-color": "yellow", "font-size": "200%"});
+  });
+      //
+        $("button#btnrHW").click(function(){
+    var txt1 = "";
+    txt1 += "Width of div: " + $("div#rHW").width() + "</br>";
+    txt1 += "Height of div: " + $("div#rHW").height();
+    $("div#rHW").html(txt1);
+  });
+
+          $("button#btnrHW2").click(function(){
+    var txt2 = "";
+    txt2 += "Width of div: " + $("#rHW").width() + "</br>";
+    txt2 += "Height of div: " + $("#rHW").height() + "</br>";
+    txt2 += "Inner width of div: " + $("#rHW").innerWidth() + "</br>";
+    txt2 += "Inner height of div: " + $("#rHW").innerHeight();
+    $("#rHW").html(txt2);
+  });
+            $("button#btnrHW3").click(function(){
+    var txt3 = "";
+    txt3 += "Width of div: " + $("#rHW").width() + "</br>";
+    txt3 += "Height of div: " + $("#rHW").height() + "</br>";
+    txt3 += "Outer width of div: " + $("#rHW").outerWidth() + "</br>";
+    txt3 += "Outer height of div: " + $("#rHW").outerHeight();
+    $("#rHW").html(txt3);
+  });
+  $("button#btnrHW4").click(function(){
+    var txt4 = "";
+    txt4 += "Width of div: " + $("#rHW").width() + "</br>";
+    txt4 += "Height of div: " + $("#rHW").height() + "</br>";
+    txt4 += "Outer width of div (margin included): " + $("#rHW").outerWidth(true) + "</br>";
+    txt4 += "Outer height of div (margin included): " + $("#rHW").outerHeight(true);
+    $("#rHW").html(txt4);
+  });
+    $("button#btnrHW5").click(function(){
+    var txt5 = "";
+    txt5 += "Document width/height: " + $(document).width();
+    txt5 += "x" + $(document).height() + "\n";
+    txt5 += "Window width/height: " + $(window).width();
+    txt5 += "x" + $(window).height();
+    alert(txt5);
+  });
+//
+  $("span").parent().css({"color": "red", "border": "2px solid red"});
+  $("span#parents").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
+    $("div.descendants").children().css({"color": "red", "border": "2px solid red"});
+
+      $("#Find").click(function(){
+  $("div").find("span").css({"color": "red", "border": "2px solid red"});
+  });
+//
+  $("h2#sibling").siblings().css({"color": "red", "border": "2px solid red"});
+  $("#next").next().css({"color": "red", "border": "2px solid red"});
+  $("h2#nxAll").nextAll().css({"color": "red", "border": "2px solid red"});
+  $("h2#nxUntil").nextUntil("h6").css({"color": "red", "border": "2px solid red"});
+//
+  $("div#first").first().css("background-color", "yellow");
+  $("div#last").last().css("background-color", "yellow");
+  $("p#EQ").eq(1).css("background-color", "yellow");
+$("p").filter(".intro").css("background-color", "yellow");
+//
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+    $("#myInputList").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+      $("#myInputAnything").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+</script>
+
+</body>
+
+</html>

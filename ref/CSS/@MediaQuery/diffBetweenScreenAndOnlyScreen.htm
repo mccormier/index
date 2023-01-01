@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body><center>
+	<h1>difference between "screen" and "only screen" in media queries</h1>
+</center>
+<div style="width:900px;margin:auto;">
+<textarea style="width:680px;height:45px;" readonly>
+<link media="screen and (max-device-width: 480px)" rel="stylesheet" href="m.css" /> 
+<link media="only screen and (max-device-width: 480px)" rel="stylesheet" href="m.css" /></textarea>
+<p><u>Let's break down your examples one by one.</u><br /><br />
+@media (max-width:632px)<br />
+This one is saying for a window with a max-width of 632px that you want to apply these styles.<br />At that size you would be talking about anything smaller than a desktop screen in most cases.<br /><br />
+@media screen and (max-width:632px)<br />
+This one is saying for a device with a screen and a window with max-width of 632px apply the style.<br />This is almost identical to the above except you are specifying screen as opposed to the other available media types the most common other one being print.<br /><br />
+@media only screen and (max-width:632px)<br />
+Here is a quote straight from W3C to explain this one.<br /><br />
+The keyword ‘only’ can also be used to hide style sheets from older user agents. User agents must process media queries starting with ‘only’ as if the ‘only’ keyword was not present.<br /><br />
+As there is no such media type as "only", the style sheet should be ignored by older browsers.
+</p>
+</div>
+</body>
+</html>

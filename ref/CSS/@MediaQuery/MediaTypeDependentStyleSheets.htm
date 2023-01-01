@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		textarea{width:600px;height:250px;}
+	</style>
+</head>
+<body>
+<div>
+	<center><h1>CSS @Media Query Dependent Style Sheets</h1></center><hr>
+	<h2>Media.CSS</h2>
+	<textarea>
+@media screen{
+    body {
+        color: #32cd32;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+}
+@media print {
+    body {
+        color: #ff6347;
+        font-family: Times, serif;
+        font-size: 12pt;
+    }
+}
+@media screen, print {
+    body {
+        line-height: 1.2;
+    }
+}
+	</textarea><hr>
+	<h2>@import At-rules</h2>
+	<textarea>
+@import url("css/screen.css") screen;
+@import url("css/print.css") print;
+body {
+    background: #f5f5f5;
+    line-height: 1.2;
+}
+	</textarea><hr>
+	<h2>Using the < link > element</h2>
+	<textarea>
+<link rel="stylesheet" media="all" href="css/common.css">
+<link rel="stylesheet" media="screen" href="css/screen.css">
+<link rel="stylesheet" media="print" href="css/print.css">
+	</textarea><hr>
+	<h2>Different Media Types</h2>
+	<textarea>
+The following table lists the various media types that may used to target different types of devices such as printers, handheld devices, computer screens etc.
+
+Media Type - Description
+all	- Used for all media type devices.
+aural - Used for speech and sound synthesizers.
+braille - Used for braille tactile feedback devices.
+embossed - Used for paged braille printers.
+handheld - Used for small or handheld devices — usually small screen devices such as mobile phones or PDAs.
+print - Used for printers.
+projection - Used for projected presentations, for example projectors.
+screen - Used primarily for color computer screens.
+tty - Used for media using a fixed-pitch character grid — such as teletypes, terminals, or portable devices with limited display capabilities.
+tv - Used for television-type devices — low resolution, color, limited-scrollability screens, sound available.
+</textarea><center><p><b>Warning:</b> <u>However there are several media types to choose from but most of the browser only support all, screen and print media types.</u></p></center><hr>
+</div>
+</body>
+</html>

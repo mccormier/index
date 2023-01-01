@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON</title>
+	<style type="text/css">
+		textarea{width:400px;height:125px;}
+		p{font-size:17px;}
+	</style>
+</head>
+<body><center>
+	<h1>JSON stands for JavaScript Object Notation</h1>
+	<h2>JavaScript has a built in function for converting JSON strings into JavaScript objects:</h2>
+<p>JSON.parse()</p>
+<h2>JavaScript also has a built in function for converting an object into a JSON string:</h2>
+<p>JSON.stringify()</p><hr>
+<h2>JSON syntax is derived from JavaScript object notation syntax:</h2><p><ul>
+Data is in name/value pairs<br/>
+Data is separated by commas<br/>
+Curly braces hold objects<br/>
+Square brackets hold arrays</ul></p><hr>
+<h2>JSON objects can contain arrays:</h2>
+<textarea>
+{
+"name":"John",
+"age":30,
+"cars":["Ford", "BMW", "Fiat"]
+}
+</textarea><br/><textarea>
+{
+"employees":[
+  {"firstName":"mohammad", "lastName":"alshraideh"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+}
+</textarea><hr>
+<h2>In JSON, values must be one of the following data types:</h2>
+<p><ul>
+a string<br/>
+a number<br/>
+an object<br/>
+an array<br/>
+a boolean<br/>
+null</ul></p><hr>
+<h2>JavaScript Objects</h2>
+<p>With JavaScript you can create an object and assign data to it, like this:<br/>
+person = {name:"John", age:31, city:"New York"};<br/>
+</p><hr><h3>The file type for JSON files is ".json"</h3>
+</center>
+</body>
+</html>
