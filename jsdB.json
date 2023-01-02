@@ -7,14 +7,22 @@ JSON arrays can be of multiple data types.
 JSON array can store string , number , boolean , object or other array inside JSON array.
 In JSON array, values must be separated by comma.
 //
-data='[
-	{"fName":"Marc", "lName":"Cormier", "age" : "37"},
+jsdB='[
+	{"fName":"Marc", "lName":"Cormier", "age" : "37", "siteTitle":"McCormier"},
 	{"weather": [
     {
       "id": 800,
       "main": "Clear",
       "desc": "clear sky",
       "icon": "01d"
+    }
+  ]
+},
+	{"site": [
+    {
+      "title": "McCormier",
+      "desc": "web site",
+      "ico": "FAV"
     }
   ]
 },
@@ -29,4 +37,4 @@ data='[
 } 
 ]';
 */
-data='[{"fName":"Marc", "lName":"Cormier", "age" : "37"}, {"weather": [{"id": 800, "main": "Clear", "desc": "clear sky", "icon": "01d"} ] }, {"class" : {"temp": 282.55, "feels_like": "Blue Sky!", "temp_min": 280.37, "temp_max": 284.26, "pressure": 1023, "humidity": 100 } } ]';
+jsdB='[{"fName":"Marc", "lName":"Cormier", "age" : "37", "siteTitle":"McCormier"}, {"weather": [{"id": 800, "main": "Clear", "desc": "clear sky", "icon": "01d"} ] }, {"site": [{"title": "McCormier", "desc": "web site", "ico": "FAV"} ] }, {"class" : {"temp": 282.55, "feels_like": "Blue Sky!", "temp_min": 280.37, "temp_max": 284.26, "pressure": 1023, "humidity": 100 } } ]';
