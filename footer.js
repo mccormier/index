@@ -15,7 +15,7 @@ time=new Date();
 img=document.createElement('img');
 img.src='/index/img/mailto.png';
 img.alt='mailto'
-img.setAttribute('onclick', "location.href='mailto:marccormierpro@gmail.com'");
+img.setAttribute('onclick', "location.href='mailto:marccormierpro@gmail.com?subject=#footer'");
 img.setAttribute('class', 'mailto');
 footer.appendChild(img);
 rCopy=document.createElement('p');
