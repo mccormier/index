@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body onclick="myFunction(event)" id="docBody">
+<body onclick="click(event)" id="docBody">
 <h1 id="docH1">The Element Object</h1>
 <h2 id="docH2">The tagName Property</h2>
 <p id="docP">Click on any elements in this document to see which element triggered the onclick event.</p>
@@ -9,19 +9,11 @@
 <a href="target.htm">this is a link</a>
 <p id="demo"></p>
 <script>
-function myFunction(event) { 
-  const element=event.target;
-
-//let str=elm.toString();
-//let split=str.split("/", 1);
-//let slice=str.slice(-1);
-
-document.getElementById("demo").innerHTML = "Triggered by " + element.href;
-}
-function file(event) {
+function click(event) {
     // body...
     const element=event.target;
-        
+      document.getElementById("demo").innerHTML = "Triggered by " + element;
+  
 }
 </script>
 </body>
