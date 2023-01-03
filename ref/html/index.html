@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "type_HTML" "adresse_DTD" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html/no-cache" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McCormier</title>
+
+<link rel="stylesheet" type="text/css" href="../../design.css">
+<link rel="stylesheet" type="text/css" href="../../menu.css">
+<link rel="stylesheet" type="text/css" href="../../footer.css">
+
+<script type="text/javascript"> function getIP(json) {return json.ip;} </script> 
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+<script type="text/javascript" language="jQuery" src="../../jQuery.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+<script type="text/javascript" src="../../include.js"></script>
+</head>
+<body>
+
+<div w3-include-html="../../content/header.html"></div> 
+<div w3-include-html="../../content/nav.html"></div> 
+
+<center> <textarea class="homeHtm">
+<!--
+# Nom du fichier : index.html
+# NOM DU SCRIPT : #Home
+# Extention(type) du Fichier : .html
+# REALISATION : McCormier
+# Auteur : Marc Cormier
+# OBJET:
+# Languages informatique, production web, prommagration progiciels operationnel.
+# Description:
+# Reparation, Recyclage, Entretien & Maintenance informatique.
+# Specialiste internet. (XHTML5,CSS3,JavaScript,jQuery,JSON,PHP,mySQL,SQL,XML,AJAX).
+# Programmation informatique (JAVA).
+# Formation Personnalisee.
+# http://mccormier.github.io/index 
+# 
+-->
+<!-- Syntaxe d'un Commentaire HTML a une ou plusieurs lignes -->
+<!-- Declaration du type de document en html -->
+<!-- XML - RDF(resource docs framework) - OGP.me(Open Graph Protocol) - TTL(turtle) - W3C -->
+<!DOCTYPE HTML PUBLIC "type_HTML" "adresse_DTD" -->
+<!-- -//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html/no-cache" charset="utf-8" />
+  <meta name="expires" content="never" /> 
+  <meta name="keywords" content="TEXT/HTML/CSS/JavaScript/jQuery/JSON" /> 
+  <meta name="description" content="" /> 
+  <meta name="locale" content="fr_CA" />
+  <meta name="distribution" content="global" />
+  <meta name="type" content="website" /> 
+  <meta name="url" content="" /> 
+  <meta name="title" content="" /> 
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title></title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript" language="javascript" src="script.js"></script>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" language="jQuery" src="jQuery.js"></script>
+
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript">var jsonData=JSON.parse(data);</script>
+
+</head>
+<body>
+
+  <main>
+
+    <section>
+
+      <div>
+
+        <p>Hello World !</p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+<script type="text/javascript"></script>
+
+</body>
+</html>
+</textarea><br />
+<button onclick="downloadFile()"> save File </button></center>
+
+<button onclick="goTop()" id="topBtn" name="topBtn">Top</button>
+
+<footer id="footer"> </footer>
+
+<script type="text/javascript" src="../../api.js"></script>
+<script src="https://ipinfo.io/json?callback=recordData"></script>
+
+<script>
+includeHTML();
+</script>
+
+<script>
+   const downloadFile = () => {
+      const link = document.createElement("a");
+      const content = document.querySelector("textarea").value;
+// Create blob object with file content
+      const file = new Blob([content], { type: 'text/plain' });
+      link.href = URL.createObjectURL(file);
+      link.download = "index.html";
+      link.click();
+      URL.revokeObjectURL(link.href);
+   };
+</script>
+
+<script type="text/javascript" src="../../topBtn.js"></script>
+<script type="text/javascript" src="../../footer.js"></script>
+</body>
+</html>
