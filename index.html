@@ -1,84 +1,9 @@
-<!--
-# Nom du fichier : index.html
-# NOM DU SCRIPT : #Home
-# Extention(type) du Script : .html
-# REALISATION : McCormier
-# Auteur : Marc Cormier
-# OBJET:
-# Languages informatique, production web, prommagration progiciels operationnel.
-# Description:
-# Reparation, Recyclage, Entretien & Maintenance informatique.
-# Specialiste internet. (XHTML5,CSS3,JavaScript,jQuery,JSON,PHP,mySQL,SQL,XML,AJAX).
-# Programmation informatique (JAVA).
-# Formation Personnalisee.
-# 
--->
-<!-- Syntaxe d'un Commentaire HTML a une ou plusieurs lignes -->
-<!-- Declaration du type de document en html -->
-<!-- XML - RDF(resource docs framework) - OGP.me(Open Graph Protocol) - TTL(turtle) - W3C -->
 <!DOCTYPE HTML PUBLIC "type_HTML" "adresse_DTD" -->
-<!-- -//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-<!--
-# gitHub.io
-# MSYSTEM Environment Information
-# Licensed under public domain
-# MSYSTEM is emacs based
-# /etc/nsswitch.conf
-# fetch - branch (main-master)
-# push - origin, remote (Blob)
-# cygwin.org
-# iana.org
-#
-# /gitconfig
-# [http]
-# sslCAInfo = ../ssl/certs/ca-bundle.crt
-# [credential "https://dev.azure.com"]
-# useHttpPath = true
-# [init]
-# defaultBranch = master
-#
-# localhost name resolution is handled within DNS itself.
-# 127.0.0.1       localhost
-# Added by Docker Desktop
-#
-# For a description of the file format, see the Users Guide
-# https://cygwin.com/cygwin-ug-net/using.html#mount-table
-# https://www.w3.org/2002/ws/databinding/examples/6/09/Include/
-::
-:: gitHub Account: McCormier
-:: Folder Name: Index
-::
--->
 <head>
-  <!-- 
-    <meta http-equiv="refresh" content="0; URL=http://www.mccormier.github.io/index"> 
-  -->
-  <meta http-equiv="refresh" content="300">
   <meta http-equiv="Content-Type" content="text/html/no-cache" charset="utf-8" />
-  <meta name="expires" content="never" /> 
-  <meta name="keywords" content="TEXT/HTML/CSS/JavaScript/jQuery/JSON" /> 
-  <meta name="description" content="Recyclage, Reparation, Entretien Et Maintenance Informatique, Specialiste Internet (Xhtml5, css3, javascript, json, jquery, xml, php, mysql, sql, ajax.). Programmation Information (progiciels operationnel java)." /> 
-  <meta name="locale" content="fr_CA" />
-  <meta name="distribution" content="global" />
-  <meta name="type" content="website" /> 
-  <meta name="url" content="https://www.github.io/index" /> 
-  <meta name="title" content="Mc Cormier" /> 
-  <meta name="author" content="Marc Cormier" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <title></title>
-<!--
-  <script type="text/javascript">
-    var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
-  </script>
--->
-
+    <title>McCormier</title>
 <link rel="stylesheet" type="text/css" href="design.css">
 <link rel="stylesheet" type="text/css" href="menu.css">
 <link rel="stylesheet" type="text/css" href="footer.css">
@@ -86,23 +11,19 @@ if(viewMode == "desktop"){
 <script type="text/javascript"> function getIP(json) {return json.ip;} </script> 
 <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
 <script type="text/javascript" language="jQuery" src="jQuery.js"></script>
 <script src="http://www.w3schools.com/lib/w3data.js"></script>
-<!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
-
 <script type="text/javascript" src="include.js"></script>
-
-<script type="text/javascript" src="jsdB.json"></script>
-<script type="text/javascript"> var jsdBase = JSON.parse(jsdB); </script>
-<script type="text/javascript">document.title=jsdBase[0].siteTitle;</script>
-
 </head>
 <body>
-  
+
 <div w3-include-html="content/header.html"></div> 
 <div w3-include-html="content/nav.html"></div> 
-<div w3-include-html="content/accueil.html"></div>
+
+<div><center>
+  <img src="/index/img/enConstruction.jpg" alt="Page En Construction" id="buildingPage">
+<a href="build.htm">Cliquer ici pour accéder à la version en construction.</a> </center></div>
 
 <button onclick="goTop()" id="topBtn" name="topBtn">Top</button>
 
@@ -113,31 +34,9 @@ if(viewMode == "desktop"){
 
 <script>
 includeHTML();
-//w3IncludeHTML();
-//
-//w3.includeHTML();
-/*
-w3.includeHTML(myCallback);
-
-function myCallback() {
-  // code that has to wait goes here
-}
-*/
 </script>
 
 <script type="text/javascript" src="topBtn.js"></script>
 <script type="text/javascript" src="footer.js"></script>
 </body>
 </html>
-<!--
-Failed to load resource: the server responded with a status of 404 () /favicon.ico:1
-might have to use HTTP Request()
-Router might be needed to act like server side..
-HTML favicon.ico rel link tag at line:6
-
-DevTools failed to load source map: Could not load content for chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/editor/config.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
-config.js.map
-
-DevTools failed to load source map: Could not load content for chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/editor/content.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
-content.js.map
--->
