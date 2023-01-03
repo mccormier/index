@@ -182,9 +182,30 @@ document.write(obj.name);
   </main>
 
 <script type="text/javascript" language="javascript">
-  function function_name(argument) {
-    // body...
+// function Constructeur
+  class Storage {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
   }
+}
+function oBj(first, last, User, eMail, age, gender) {
+}
+// function Mathematique
+var addition = function(x, y) {return x + y; };
+var substraction = function(x, y) {return x - y; };
+var multiply = function(x, y) {return x * y; };
+var division = function(x, y) {return x / y; };
+var modulo = function(x, y) {return x % y; };
+var exponent = function(x, y) {return x ** y; };
+//
+// Date
+const date = new Date();
+document.getElementById("date").innerHTML = date.toDateString();
+//
+function function_name(argument) {
+  // body...
+}
 </script>
 
 <footer></footer>
