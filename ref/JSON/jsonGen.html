@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "type_HTML" "adresse_DTD" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html/no-cache" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McCormier</title>
+
+<link rel="stylesheet" type="text/css" href="../../design.css">
+<link rel="stylesheet" type="text/css" href="../../menu.css">
+<link rel="stylesheet" type="text/css" href="../../footer.css">
+
+<script type="text/javascript"> function getIP(json) {return json.ip;} </script> 
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+<script type="text/javascript" language="jQuery" src="../../jQuery.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
+
+<script type="text/javascript" src="../../include.js"></script>
+</head>
+<body>
+
+<div w3-include-html="../../content/header.html"></div> 
+<div w3-include-html="../../content/nav.html"></div> 
+<div w3-include-html="jsonGen.htm"></div> 
+
+<button onclick="goTop()" id="topBtn" name="topBtn">Top</button>
+
+<footer id="footer"> </footer>
+
+<script type="text/javascript" src="../../api.js"></script>
+<script src="https://ipinfo.io/json?callback=recordData"></script>
+
+<script>
+includeHTML();
+</script>
+
+<script type="text/javascript" src="../../topBtn.js"></script>
+<script type="text/javascript" src="../../footer.js"></script>
+</body>
+</html>

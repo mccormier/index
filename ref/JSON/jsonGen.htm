@@ -1,0 +1,65 @@
+<!-- -->
+<!DOCTYPE html>
+<html lang="fr/en">
+<head>
+   <style type="text/css">
+   textarea{
+   width:999px;
+height:410px;
+}
+    body{margin:1px;padding:0px;}
+    button, input, p, label, p{font-size:21px;margin:0px;}
+    input{margin:10px;padding:5px;}
+    button{margin:10px;padding:5px;}
+    label{margin:110px;text-decoration:underline;}
+    textarea{width:900px;height:100px;}
+    #keyI, #getI{padding:3px;}
+    #getI{margin-left:50px;}
+</style>
+</head>
+<body>
+  <center><h1>data.JSON file Generator</h1></center>
+
+<input type="text" id="data" value="data"><b>:</b>
+<input type="text" id="value" value="value"> <br/>
+<button onclick="createItems()">Create</button> 
+<button onclick="show()">Generate</button><hr>
+
+<p>data.json</p>
+<textarea id="demo"> </textarea> <br/>
+<button onclick = "downloadFile()"> save File </button>
+
+<script type="text/javascript">
+  function createItems() {
+var data = document.getElementById('data').value;
+var dValue = document.getElementById('value').value;
+
+const myObj = { prenom: data, nom: dValue };
+//const myObj = { "data": data, "value": dValue };
+
+const myJSON = JSON.stringify(myObj);
+sessionStorage.setItem("account", myJSON);
+}
+  function show() {
+const text = sessionStorage.getItem("account");
+const obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = strO+text+strEnd;
+}
+const strO="data='[\n";
+const strEnd="\n]';";
+</script>
+
+<script>
+   const downloadFile = () => {
+      const link = document.createElement("a");
+      const content = document.querySelector("textarea").value;
+// Create blob object with file content
+      const file = new Blob([content], { type: 'text/plain' });
+      link.href = URL.createObjectURL(file);
+      link.download = "data.json";
+      link.click();
+      URL.revokeObjectURL(link.href);
+   };
+</script>
+</body>
+</html>
