@@ -75,13 +75,60 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
 
+<style type="text/css">
+  *{}
+  html{}
+  body{
+    margin:0px;
+    padding:0px;
+  }
+</style>
+
 <script type="text/javascript" language="javascript" src="script.js"></script>
+<script type="text/javascript" language="javascript">
+  function changePara() {
+  document.getElementById("papa").innerHTML = "HELLO WORLD !";
+}
+</script>
 
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" language="jQuery" src="jQuery.js"></script>
+<script type="text/javascript" language="jQuery">
+  // jQuery document ready using anonymous function -------------
+$(document).ready(function() {
+    // ...
+});
+// jQuery using named function -----------------
+$(document).ready(sample);
+function sample() {
+    // ...
+}
+// jQuery Shorthand ----------------------------
+$(() => {
+    // ...
+});
+// ES6 -----------------------------------------
+// Use any of the following:
+//   onDOMContentLoaded - DOM ready
+//   onload - Page fully loaded
+//   onloadeddata - Data loaded
+onDOMContentLoaded = (() => {
+    // ...
+})();
+</script>
 
 <script type="text/javascript" src="data.json"></script>
 <script type="text/javascript">var jsonData=JSON.parse(data);</script>
+<script type="text/javascript" language="JSON">
+  // Storing data:
+myObj = {name: "Marc", age: 37, city: "Laval"};
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("myJSON", myJSON);
+// Retrieving data:
+text = localStorage.getItem("myJSON");
+obj = JSON.parse(text);
+document.write(obj.name);
+</script>
 
 </head>
 <body>
@@ -97,52 +144,33 @@
       <div>
 
         <p>Hello World !</p>
+        <button type="button" onclick="changePara()">Click ME!</button>
+
         <canvas></canvas>
         <svg></svg>
 
         <span>
 <html> Définit la racine d'un document HTML </html>
-
 <title> Définit un titre pour le document </title>
-
 <header> Définit un en-tête pour un document ou une section </header>
-
 <main> Spécifie le contenu principal d'un document </main>
-
 <p> Définit un paragraphe </p>
-
 <a> Définit un lien hypertexte </a>
-
 <b> Définit le texte en gras </b>
-
 <br> Définit un seul saut de ligne </br>
-
 <button> Définit un bouton cliquable </button>
-
 <div> Définit une section dans un document </div>
-
 <footer> Définit un pied de page pour un document ou une section </footer>
-
 <h1> à <h6> Définit les titres HTML </h1> à </h6>
-
 <img> Définit une image </img>
-
 <ol> Définit une liste ordonnée </ol>
-
 <ul> Définit une liste non ordonnée </ul>
-
 <li> Définit un élément de liste  </li>
-
 <script> Définit un script côté client </script>
-
 <span> Définit une section dans un document </span>
-
 <table> Définit un tableau </table>
-
 <td> Définit une cellule dans un tableau </td>
-
 <th> Définit une cellule d'en-tête dans un tableau </th>
-
 <tr> Définit une ligne dans un tableau </tr>
         </span>
 
@@ -163,7 +191,7 @@
 </body>
 </html>
 </textarea>
-<br /> <button onclick="downloadFile()"> Download </button></center><br />
+<br /><br /> <button onclick="downloadFile()"> Download </button></center><br />
 
 <button onclick="goTop()" id="topBtn" name="topBtn">Top</button>
 
