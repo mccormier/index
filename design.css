@@ -20,7 +20,7 @@ h1{margin:0px;padding:0px;}
 .couponDiv{width:150px;padding:1px;margin-left:655px;}
 #couponCode{font-size:11px;font-family:Comic Sans MS;}
 #fileOrganizer{margin-left:95px;}
-.homeHtm{width:888px;min-height:500px;margin-top:15px;}
+.homeHtm{width:888px;min-height:500px;margin-top:45px;}
 @media only screen and (max-width: 576px) {
   .wrap {width:350px;margin:auto;}
   .logo{width:37px;margin:10px;margin-bottom:-5px;}
