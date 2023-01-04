@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-image: radial-gradient(circle, #6699ff, #6600cc);
+    overflow: hidden;
+}
+
+#slideshow {
+  position: fixed;
+  aling-items: center;
+  justify-content: center;
+}
+#div2{
+  width:350px;
+}
+img{
+  width:200px;
+}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="slideshow">
+      <div>
+        <img src="https://image.ibb.co/jwQpBp/reloj1.png">
+      </div>
+      <div>  
+        <img src="https://image.ibb.co/cVqNWp/reloj2.png">
+      </div>
+      <div>  
+        <img src="https://image.ibb.co/ir02Z9/reloj2_5.png">
+      </div>
+      <div>
+        <img src="https://image.ibb.co/bSjuBp/reloj3_5.png">
+      </div>
+      <div>
+        <img src="https://image.ibb.co/j7Jbrp/reloj4.png"  id="3">
+      </div>
+    </div>
+<img src="https://image.ibb.co/kDfexU/text.png" style="display:none" id="div2" onload="setTimeout('msj()',2300);">
+
+
+		<script type="text/javascript">
+	$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(0)
+    .next()
+    .fadeIn(0)
+    .end()
+    .appendTo('#3');
+},  411);
+
+  function msj(){
+ $("#div2").fadeIn(3000);
+  }
+</script>
+
+</body>
+</html>
