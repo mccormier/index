@@ -203,6 +203,36 @@ var exponent = function(x, y) {return x ** y; };
 const date = new Date();
 document.getElementById("date").innerHTML = date.toDateString();
 //
+class cookies {
+  constructor(mail) {
+    this.email = mail;
+  }
+  present() {
+    return 'I have an account with the email: ' + this.email;
+  }
+}
+class User extends cookies {
+  constructor(mail, usr) {
+    super(mail);
+    this.user = usr;
+  }
+  show() {
+    return this.present() + ', it is ' + this.user;
+  }
+}
+function val() {
+  let account = new User("Ford", "Mustang"); 
+  document.getElementById("para").innerHTML = account.show();
+}
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName
+};
 function function_name(argument) {
   // body...
 }
