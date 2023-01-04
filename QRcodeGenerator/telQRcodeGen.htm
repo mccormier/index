@@ -1,86 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML PUBLIC "type_HTML" "adresse_DTD" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8">
   <meta http-equiv="refresh" content="300; URL=/index/408timeout.htm"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tel. QR Code Gen. | McCormier</title>
-		<link rel="stylesheet" type="text/css" href="../design.css">
-  <link rel="stylesheet" type="text/css" href="../menu.css">
-  <link rel="stylesheet" type="text/css" href="qrCode.css">
-	<link rel="stylesheet" type="text/css" href="../footer.css">
+  <meta http-equiv="Content-Type" content="text/html/no-cache" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tel. QR Code Gen. | McCormier</title>
+
+<link rel="stylesheet" type="text/css" href="../design.css">
+<link rel="stylesheet" type="text/css" href="../menu.css">
+<link rel="stylesheet" type="text/css" href="qrCode.css">
+<link rel="stylesheet" type="text/css" href="../footer.css">
+
+<script type="text/javascript"> function getIP(json) {return json.ip;} </script> 
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+<script type="text/javascript" language="jQuery" src="../jQuery.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script type="text/javascript" src="../include.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-<img class="logo" src="/index/img/htmQRcode.png">
-<img class="buildImg" src="/index/img/site-en-maintenance.jpg" alt="Site en Maintenance" onclick="navProperties()"> 
-<header> <center> <h1>McCormier</h1> </center> </header>
-<div class="navbar">
-  <a href="/index/">Accueil</a>
-  <a href="https://linktr.ee/mcormier">À Propos</a>
-  <a href="/index/MCBrady">#MCBrady</a>
-<!-- <div class="subnav"> <button class="subnavbtn">Produits</button> <div class="subnav-content"> <a href="/index/"></a> </div> </div> -->
-  <div class="subnav">
-    <button class="subnavbtn">Produits</button>
-    <div class="subnav-content">
-      <a href="/index/QRcodeGenerator">QR Code Generator</a>
-      <a href="#"></a>
-    </div>
-  </div>
-  <div class="subnav">
-    <button class="subnavbtn">Services</button>
-    <div class="subnav-content">
-      <a href="/index/inetpub/wwwroot">Internet Information Services Manager (IISS) - (WEB)</a>
-      <a href="#recycle">Recyclage</a>
-      <a href="#company">Réparation - Maintenance - Entretien</a>
-      <a href="#java">Programmation</a>
-      <a href="#formations">Formation Personalisée</a>
-      <a href="https://goulet.ca/produits-numeriques/webformation/">Formation WEB Et Téléchargement de fichiers</a>
-      <a href="https://www.teamviewer.com/fr-ca/telecharger/windows/">Express (TeamViewer)</a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Références</button>
-    <div class="subnav-content">
-      <a href="#lang">Languages</a>
-<!--
-      <a href="#company">WEB</a>
-      <a href="#team">Machine (Assembly)</a>
-      <a href="#careers">Programmation</a>
--->
-      <a href="#Snips">Snippets</a>
-      <a href="#Templates">PortFolio</a>
-      <a href="#modules">Modules</a>
-      <a href="#package">Package</a>
-    </div>
-  </div>
-    <div class="subnav">
-    <button class="subnavbtn">Tools</button>
-    <div class="subnav-content">
-<a href="https://tools.pdf24.org/fr/">Production de document PDF</a>
-</div>
-</div>
-    <a href="/index/pageEnConstruction.htm">SandBox</a>
-    <div class="subnav">
-    <button class="subnavbtn">Download</button>
-    <div class="subnav-content">
-<a href="/index/fileOrganizer.htm">File Organiser</a>
-<a href="#">Clear Cache</a>
-<a href="#">Clone File Checker</a>
-<a href="#">duplicate files finder</a>
-</div>
-</div>
-<a href="#">Useful Link's</a>
-  <div class="subnav" style="float:right;">
-    <button class="subnavbtn">Client(s)</button>
-    <div class="subnav-content">
-      <a href="#login" style="float:right;">Inscription / Connexion</a>
-      <a href="#client-form" style="float:right;">Formulaire</a>
-      <a href="#footer" style="float:right;">Contact</a>
-    </div>
-  </div> 
-</div>
-	<center>
+
+<div w3-include-html="../content/header.html"></div> 
+<div w3-include-html="../content/nav.html"></div> 
+
+<div>
+  
+  <center>
 <!-- Formulaire de demande de création de code QR correspondant à un numéro de téléphone -->
 <!-- NG: ne pas modifier les attributs name des différents input -->
 <h2>QR code permettant de lancer un appel téléphonique</h2>
@@ -94,7 +40,21 @@ Numéro de téléphone : <input type="text" name="tel-num" id="tel-num" value="(
 <input type="submit" name="sub" value="Génération du code QR" />
 </form>
 </center>
-<footer id="footer"></footer>
+  
+</div>
+
+<button onclick="goTop()" id="topBtn" name="topBtn">Top</button>
+
+<footer id="footer"> </footer>
+
+<script type="text/javascript" src="../api.js"></script>
+<script src="https://ipinfo.io/json?callback=recordData"></script>
+
+<script>
+includeHTML();
+</script>
+
+<script type="text/javascript" src="../topBtn.js"></script>
 <script type="text/javascript" src="../footer.js"></script>
 </body>
 </html>
